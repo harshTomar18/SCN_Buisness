@@ -7,13 +7,14 @@ function Navbar() {
       <div className="container">
         <div className="hdr_main d-flex justify-content-between align-items-center flex-wrap">
           {/* Brand Logo */}
-          <div className="logo_main">
+          <div className="logo_main py-2">
             <Link to="/">
               <img 
-                src="https://www.thebrigadegranada.in/images/brigade-group/icons/brigade-granada-logo.webp" 
-                alt="Brigade Granada" 
-                title="Brigade Granada Logo" 
+                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
+                alt="SCN Business Group Logo" 
+                title="SCN Business Group Logo" 
                 className="main_logo"
+                style={{ maxHeight: '48px', width: 'auto' }}
               />
             </Link>
           </div>
@@ -27,49 +28,34 @@ function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/location" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Location
+                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/master-plan" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Master Plan
+                <NavLink to="/our-business" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  Our Business
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/floor-plan" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Floor Plan
+                <NavLink to="/as-employer" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  As Employer
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/price" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Price
+                <NavLink to="/as-employee" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  As Employee
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/amenities" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Amenities
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/specification" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Specifications
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/gallery" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Gallery
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Contact
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
             
             {/* Quick Consultation button */}
-            <Link to="/contact" className="Book_Consultation btn_main" title="Brigade Granada Enquiry">
+            <Link to="/contact-us" className="Book_Consultation btn_main" title="SCN Business Group Enquiry">
               <i className="fa fa-envelope-o me-1"></i> Enquire Now
             </Link>
           </nav>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: 'General Enquiry', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
@@ -10,7 +10,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => {
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', service: 'General Enquiry', message: '' });
     }, 2000);
   };
 
@@ -21,7 +21,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
     >
       <div 
         className="bg-white rounded-4 shadow-lg p-4 position-relative mx-3 animate-slide-down" 
-        style={{ maxWidth: '440px', width: '100%' }}
+        style={{ maxWidth: '460px', width: '100%' }}
       >
         {/* Close Button */}
         <button 
@@ -34,36 +34,32 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
 
         {/* Title & Subtitle */}
         <div className="text-center mb-4 mt-2">
-          <h2 className="fw-bold mb-1" style={{ color: '#2563eb', fontSize: '24px' }}>
-            Brigade Granada Hoskote
+          <img 
+            src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
+            alt="SCN Business Group Logo" 
+            className="mb-2" 
+            style={{ maxHeight: '42px' }} 
+          />
+          <h2 className="fw-bold mb-1" style={{ color: 'var(--colorPrimary)', fontSize: '22px' }}>
+            SCN Business Group
           </h2>
-          <h3 className="fw-semibold text-secondary mb-3" style={{ fontSize: '18px' }}>
-            Enquire Now
+          <h3 className="fw-semibold text-secondary mb-3" style={{ fontSize: '15px' }}>
+            {title}
           </h3>
 
           {/* Quick Badges / Support Icons */}
           <div className="d-flex justify-content-around text-center py-2 border-top border-bottom my-3">
             <div>
-              {/* Phone Icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#2563eb" className="d-block mx-auto mb-1">
-                <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1A17 17 0 0 1 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                <path d="M18 8.5a4 4 0 0 0-4-4v1.5a2.5 2.5 0 0 1 2.5 2.5H18z" />
-              </svg>
+              <i className="fa fa-headphones fs-4 text-primary d-block mb-1"></i>
               <span className="text-muted" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>24/7 Support</span>
             </div>
             <div>
-              {/* Building/Person Icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#2563eb" className="d-block mx-auto mb-1">
-                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
-              </svg>
-              <span className="text-muted" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>Free Site Visit</span>
+              <i className="fa fa-briefcase fs-4 text-primary d-block mb-1"></i>
+              <span className="text-muted" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>Staffing & IT</span>
             </div>
             <div>
-              {/* Unmatched Price Icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#2563eb" className="d-block mx-auto mb-1">
-                <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
-              </svg>
-              <span className="text-muted" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>Unmatched Price</span>
+              <i className="fa fa-certificate fs-4 text-primary d-block mb-1"></i>
+              <span className="text-muted" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>21+ Yrs Legacy</span>
             </div>
           </div>
         </div>
@@ -72,7 +68,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
           <div className="alert alert-success border-0 text-center py-4 rounded-3 mb-0" role="alert">
             <div className="fs-3 mb-2">✅</div>
             <h4 className="alert-heading fw-bold mb-2">Request Submitted!</h4>
-            <p className="small mb-0 text-muted">Thank you. Our sales representative will connect with you on your mobile shortly.</p>
+            <p className="small mb-0 text-muted">Thank you. Our representative will connect with you shortly.</p>
             <button onClick={() => { setSubmitted(false); onClose(); }} className="btn btn-primary btn-sm mt-3 px-4 rounded-pill">
               Close Window
             </button>
@@ -103,7 +99,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
               />
             </div>
 
-            {/* Mobile with Dropdown */}
+            {/* Mobile with Country Code */}
             <div className="d-flex align-items-center gap-2 border-bottom pb-1">
               <select className="border-0 bg-transparent text-dark small py-2" style={{ outline: 'none', cursor: 'pointer', minWidth: '95px', fontSize: '15px' }}>
                 <option value="+91">India (+91)</option>
@@ -116,33 +112,55 @@ function EnquiryModal({ isOpen, onClose, title = 'Enquire Now' }) {
                 type="tel" 
                 className="form-control border-0 bg-transparent py-1 shadow-none" 
                 style={{ outline: 'none', fontSize: '15px' }}
-                placeholder="Mobile"
+                placeholder="Mobile Number"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 required
               />
             </div>
 
+            {/* Service Selection */}
+            <div>
+              <select 
+                className="form-select border-0 border-bottom rounded-0 shadow-none text-muted"
+                value={formData.service}
+                onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+              >
+                <option value="General Enquiry">Select Service / Vertical</option>
+                <option value="IT Services">SCN Global IT Services</option>
+                <option value="IT Training">SCN Global IT Training Institute</option>
+                <option value="HR Training">SCN Global HR Training Institute</option>
+                <option value="Personality Training">Personality Development Training</option>
+                <option value="US Staffing">SCN Global U.S. Staffing</option>
+                <option value="Payroll Management">SCN Global Payroll Management</option>
+                <option value="General Staffing">SCN Global General Staffing</option>
+                <option value="BPO Services">SCN Global BPO Services</option>
+                <option value="Real Estate">SCN Global Real Estate</option>
+                <option value="Employer Hiring">As Employer / Hiring Partner</option>
+                <option value="Employee Career">As Employee / Job Seeker</option>
+              </select>
+            </div>
+
             {/* Message */}
             <div>
               <textarea 
                 className="form-control modal-underline-input" 
-                rows="1" 
+                rows="2" 
                 style={{ resize: 'none' }}
-                placeholder="Message" 
+                placeholder="How can we help you?" 
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               ></textarea>
             </div>
 
-            {/* Enquire Now Button */}
-            <div className="mt-3">
+            {/* Submit Button */}
+            <div className="mt-2">
               <button 
                 type="submit" 
                 className="btn w-100 py-3 border-0 rounded-3 text-white fw-bold" 
-                style={{ backgroundColor: '#2563eb', fontSize: '16px', letterSpacing: '0.5px' }}
+                style={{ backgroundColor: 'var(--colorPrimary)', fontSize: '16px', letterSpacing: '0.5px' }}
               >
-                Enquire Now
+                Submit Enquiry
               </button>
             </div>
           </form>

@@ -17,13 +17,14 @@ function Header({ onEnquireClick }) {
       <div className="container">
         <div className="hdr_main d-flex justify-content-between align-items-center position-relative flex-wrap">
           {/* Brand Logo */}
-          <div className="logo_main">
-            <Link to="/" onClick={closeMobileMenu}>
+          <div className="logo_main py-2">
+            <Link to="/" onClick={closeMobileMenu} className="d-flex align-items-center gap-2 text-decoration-none">
               <img 
-                src="https://www.thebrigadegranada.in/images/brigade-group/icons/brigade-granada-logo.webp" 
-                alt="Brigade Granada" 
-                title="Brigade Granada Logo" 
+                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
+                alt="SCN Business Group Logo" 
+                title="SCN Business Group Logo" 
                 className="main_logo"
+                style={{ maxHeight: '48px', width: 'auto' }}
               />
             </Link>
           </div>
@@ -37,43 +38,28 @@ function Header({ onEnquireClick }) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/location" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Location
+                <NavLink to="/about-us" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/master-plan" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Master Plan
+                <NavLink to="/our-business" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  Our Business
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/floor-plan" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Floor Plan
+                <NavLink to="/as-employer" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  As Employer
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/price" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Price
+                <NavLink to="/as-employee" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  As Employee
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/amenities" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Amenities
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/specification" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Specifications
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/gallery" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Gallery
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? 'menu-active' : ''}>
-                  Contact
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'menu-active' : ''}>
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
@@ -82,7 +68,18 @@ function Header({ onEnquireClick }) {
             <button 
               type="button" 
               className="btn-outline-custom ms-4" 
-              onClick={() => onEnquireClick('Get Instant Call Back')}
+              onClick={() => onEnquireClick('Get Instant Consultation')}
+              style={{
+                border: '1px solid var(--colorPrimary)',
+                color: 'var(--colorPrimary)',
+                padding: '7px 18px',
+                borderRadius: '6px',
+                backgroundColor: 'transparent',
+                fontWeight: '600',
+                fontSize: '14px',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
             >
               <i className="fa fa-envelope-o me-1"></i> Enquire Now
             </button>
@@ -110,34 +107,26 @@ function Header({ onEnquireClick }) {
                   <Link to="/" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/location" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Location</Link>
+                  <Link to="/about-us" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>About Us</Link>
                 </li>
                 <li>
-                  <Link to="/master-plan" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Master Plan</Link>
+                  <Link to="/our-business" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Our Business</Link>
                 </li>
                 <li>
-                  <Link to="/floor-plan" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Floor Plan</Link>
+                  <Link to="/as-employer" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>As Employer</Link>
                 </li>
                 <li>
-                  <Link to="/price" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Price</Link>
+                  <Link to="/as-employee" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>As Employee</Link>
                 </li>
                 <li>
-                  <Link to="/amenities" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Amenities</Link>
-                </li>
-                <li>
-                  <Link to="/specification" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Specifications</Link>
-                </li>
-                <li>
-                  <Link to="/gallery" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Gallery</Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Contact</Link>
+                  <Link to="/contact-us" className="d-block py-2 text-dark text-decoration-none fw-semibold" onClick={closeMobileMenu}>Contact Us</Link>
                 </li>
                 <li className="mt-2">
                   <button 
                     type="button" 
-                    className="btn btn-primary w-100 py-2 border-0 bg-primary text-white text-uppercase tracking-wider fw-bold rounded-pill"
-                    onClick={() => { closeMobileMenu(); onEnquireClick('Get Instant Call Back'); }}
+                    className="btn w-100 py-2 border-0 text-white text-uppercase tracking-wider fw-bold rounded-3"
+                    style={{ backgroundColor: 'var(--colorPrimary)' }}
+                    onClick={() => { closeMobileMenu(); onEnquireClick('Get Instant Consultation'); }}
                   >
                     Enquire Now
                   </button>

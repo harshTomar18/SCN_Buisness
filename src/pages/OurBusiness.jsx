@@ -9,7 +9,7 @@ const businessVerticals = [
     image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181316-1181316-1024x684.jpg',
     alt: 'SCN Global IT Services',
     tagline: 'End-to-End Enterprise Technology Solutions & Software Services',
-    description: 'We deliver cutting-edge IT services including Web Development, Mobile Applications, UI/UX Design, SEO, Digital Marketing, and Cloud Infrastructure management to empower business digital transformation.'
+    description: 'We deliver cutting-edge IT services including Web Development, Android & Mobile App Development, UI/UX Design, SEO, Digital Marketing, and Cloud Infrastructure management to empower business digital transformation.'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const businessVerticals = [
     image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/annie-spratt-QckxruozjRg-unsplash-1-1024x683.jpg',
     alt: 'SCN Global IT Training Institute',
     tagline: 'Skill Development & Technical Training Programs',
-    description: 'Empowering students and working professionals with job-ready tech skills in Full Stack Web Development, UI/UX Design, SEO, Graphic Design, and modern software engineering.'
+    description: 'Empowering students and working professionals with job-ready tech skills in Full Stack Web Development, Android App Development, UI/UX Design, SEO, Graphic Design, and modern software engineering.'
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ const businessVerticals = [
 
 function OurBusiness({ onEnquireClick }) {
   return (
-    <div className="our-business-page animate-fade-in">
+    <div className="our-business-page animate-fade-in bg-black text-white min-vh-100">
       {/* Top Banner / Breadcrumb Area */}
       <div className="bradcam_area position-relative">
         <div className="container py-4">
@@ -96,15 +96,15 @@ function OurBusiness({ onEnquireClick }) {
               <div className="bradcam_text">
                 <h2 className="display-6 text-white fw-bold mb-2">Our Businesses</h2>
                 <ul className="breadcrumb mb-0">
-                  <li><Link to="/">Home</Link></li>
-                  <li className="text-white opacity-75">Our Business</li>
+                  <li><Link to="/" className="text-white opacity-75">Home</Link></li>
+                  <li className="text-white fw-bold">Our Business</li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
               <button 
                 type="button" 
-                className="btn btn-light text-primary fw-bold px-4 py-2 rounded-pill shadow-sm"
+                className="btn btn-solid px-4 py-2 fw-bold"
                 onClick={() => onEnquireClick && onEnquireClick('Business Consultation')}
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
@@ -115,25 +115,25 @@ function OurBusiness({ onEnquireClick }) {
       </div>
 
       {/* Main Business Verticals Grid */}
-      <div className="main_warpper py-5">
+      <div className="main_warpper py-5 bg-black">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-5">
             <div className="d-flex align-items-center justify-content-center gap-3 mb-2">
               <span className="text-muted fs-4">—</span>
-              <h2 className="text-uppercase fw-bold text-dark mb-0" style={{ letterSpacing: '3px', fontSize: '24px' }}>
+              <h2 className="text-uppercase fw-bold text-white mb-0" style={{ letterSpacing: '3px', fontSize: '24px' }}>
                 Our Business
               </h2>
               <span className="text-muted fs-4">—</span>
             </div>
-            <p className="lead text-secondary mt-2" style={{ fontSize: '16px' }}>
-              Discover how our specialized business units deliver end-to-end workforce, IT, training, payroll, and infrastructure solutions.
+            <p className="lead text-light opacity-75 mt-2" style={{ fontSize: '16px' }}>
+              Discover how our specialized business units deliver end-to-end workforce, IT, mobile apps, training, payroll, and infrastructure solutions.
             </p>
           </div>
 
           <div className="row g-4">
             {businessVerticals.map((item) => (
               <div className="col-lg-4 col-md-6" key={item.id}>
-                <div className="business-card attractive-card h-100 shadow-sm border-0">
+                <div className="business-card attractive-card h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm">
                   <div className="business-card-img-wrapper">
                     <Link to={`/our-business/${item.slug}`}>
                       <img 
@@ -143,32 +143,31 @@ function OurBusiness({ onEnquireClick }) {
                       />
                     </Link>
                     <div className="position-absolute top-0 end-0 m-3">
-                      <span className="badge bg-dark text-white px-2 py-1 small rounded-pill opacity-75">
+                      <span className="badge bg-black text-white px-2 py-1 small rounded-pill opacity-75 border border-secondary">
                         Vertical #{item.id}
                       </span>
                     </div>
                   </div>
                   <div className="p-4 d-flex flex-column flex-grow-1">
                     <h3 className="h5 fw-bold mb-2">
-                      <Link to={`/our-business/${item.slug}`} className="text-dark text-decoration-underline hover-primary">
+                      <Link to={`/our-business/${item.slug}`} className="text-white text-decoration-none hover-primary">
                         {item.title}
                       </Link>
                     </h3>
                     <p className="text-primary fw-semibold small mb-3">{item.tagline}</p>
-                    <p className="text-secondary small mb-4 flex-grow-1" style={{ lineHeight: '1.6' }}>
+                    <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.6' }}>
                       {item.description}
                     </p>
-                    <div className="mt-auto pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <div className="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center flex-wrap gap-2">
                       <Link 
                         to={`/our-business/${item.slug}`} 
-                        className="btn btn-primary btn-sm rounded-2 fw-semibold px-3"
-                        style={{ backgroundColor: 'var(--colorAccent)' }}
+                        className="btn btn-solid btn-sm px-3"
                       >
                         Explore Details <i className="fa fa-arrow-right ms-1"></i>
                       </Link>
                       <button 
                         type="button" 
-                        className="btn btn-outline-secondary btn-sm rounded-2 fw-semibold"
+                        className="btn btn-ghost btn-sm"
                         onClick={() => onEnquireClick && onEnquireClick(`Enquiry for ${item.title}`)}
                       >
                         Enquire Now
@@ -183,22 +182,21 @@ function OurBusiness({ onEnquireClick }) {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-light py-5 border-top">
+      <div className="py-5 border-top border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
         <div className="container text-center py-3">
-          <h3 className="fw-bold text-dark mb-3">Looking for Customized Corporate Solutions?</h3>
-          <p className="text-secondary max-w-2xl mx-auto mb-4" style={{ maxWidth: '650px' }}>
-            Partner with SCN Business Group today to elevate your business operations with our end-to-end staffing, IT, and HR management services.
+          <h3 className="fw-bold text-white mb-3">Looking for Customized Corporate Solutions?</h3>
+          <p className="text-light opacity-75 max-w-2xl mx-auto mb-4" style={{ maxWidth: '650px' }}>
+            Partner with SCN Business Group today to elevate your business operations with our end-to-end staffing, IT, Android app development, and HR management services.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <button 
               type="button" 
-              className="btn btn-primary px-4 py-2 rounded-3 fw-bold"
-              style={{ backgroundColor: 'var(--colorAccent)' }}
+              className="btn btn-solid px-4 py-2 fw-bold"
               onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
             >
               Contact Sales Team
             </button>
-            <Link to="/contact-us" className="btn btn-outline-dark px-4 py-2 rounded-3 fw-bold">
+            <Link to="/contact-us" className="btn btn-ghost px-4 py-2 fw-bold">
               Visit Branch Office
             </Link>
           </div>

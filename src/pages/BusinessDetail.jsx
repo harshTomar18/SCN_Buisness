@@ -7,7 +7,6 @@ const verticalsData = {
     subtitle: 'Innovative Solutions for Growth & Digital Transformation',
     heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181316-1181316-1024x684.jpg',
     
-    // Exact user content sections
     heroHeadline: 'Innovative Solutions for Growth',
     heroIntro: 'At SCN Business Group, we are committed to empowering people by creating inclusive and sustainable workspaces. By blending human-first design with the power of top brains, we foster collaboration and increase engagement across all roles. Our tailored, persona-driven environments enhance productivity, promote well-being, and support a healthy work-life balance. These dynamic spaces fuel innovation and creativity—placing individuals at the centre of progress.',
     
@@ -28,22 +27,22 @@ const verticalsData = {
       },
       {
         num: '03',
-        title: 'Technology Solutions',
-        tagline: 'Empower your business with our cutting-edge technology solutions.',
-        description: 'We deliver innovative, scalable, and secure tech services designed to streamline operations, enhance productivity, and future-proof your enterprise. From cloud integration and IT infrastructure to custom software and automation, our solutions are tailored to meet your evolving digital needs. Let’s transform your vision into reality through technology.',
+        title: 'Android & Mobile App Development',
+        tagline: 'Empower your business with high-performance native Android & iOS mobile applications.',
+        description: 'We deliver innovative, scalable, and secure Android and cross-platform mobile apps designed to streamline operations, enhance customer engagement, and future-proof your enterprise. From native Android development (Kotlin/Java) and Flutter apps to UI/UX design, cloud API integration, and Play Store deployment, our solutions turn your mobile vision into reality.',
         image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7793726-7793726-1024x683.jpg'
       }
     ],
 
-    coreEmpowermentStatement: 'At SCN Business Group, we empower businesses with cutting-edge digital solutions. Our expert team delivers high-performance Web Development, results-driven Digital Marketing, strategic SEO, and impactful UI/UX & Graphic Design services. Whether you’re building your online presence or optimising for growth, we provide tailored solutions that turn ideas into digital success.',
+    coreEmpowermentStatement: 'At SCN Business Group, we empower businesses with cutting-edge digital solutions. Our expert team delivers high-performance Web Development, results-driven Digital Marketing, strategic SEO, native Android App Development, and impactful UI/UX & Graphic Design services. Whether you’re building your online presence or optimising for growth, we provide tailored solutions that turn ideas into digital success.',
 
     workplaceEvolutionTitle: 'Cutting-Edge Solutions for Workplace Evolution',
     workplaceEvolutionServices: [
       {
-        icon: '🎧',
-        title: 'IT Enablement and Service Desk',
-        tagline: 'Streamline your operations with our IT Enablement and Service Desk solutions.',
-        description: 'We provide responsive, efficient, and user-centric IT support to empower your workforce and ensure seamless business continuity. From onboarding and issue resolution to proactive system monitoring, our service desk acts as a single point of contact for all your IT needs—enhancing productivity, minimising downtime, and driving digital transformation.',
+        icon: '📱',
+        title: 'Android & Mobile Solutions',
+        tagline: 'Custom Android apps, Play Store deployment, and mobile API integration.',
+        description: 'Our mobile engineering team builds responsive, feature-rich Android applications with intuitive interfaces, real-time sync, secure authentication, and high performance across all mobile devices.',
         image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7709224-7709224-1024x683.jpg'
       },
       {
@@ -66,7 +65,7 @@ const verticalsData = {
       {
         icon: '🏆',
         title: 'Proven Expertise & Industry Experience',
-        desc: 'Our skilled team brings years of industry expertise to deliver top-tier web solutions customised to your specific needs.'
+        desc: 'Our skilled team brings years of industry expertise to deliver top-tier web & mobile solutions customised to your specific needs.'
       },
       {
         icon: '🎯',
@@ -90,9 +89,9 @@ const verticalsData = {
     numberedServices: [
       {
         num: '01',
-        title: 'Full-Stack Web Development',
-        tagline: 'Master modern web technologies through hands-on development.',
-        description: 'Comprehensive training in React.js, Node.js, Express, MongoDB, Python, HTML5, CSS3, and Git workflows with live client projects.'
+        title: 'Full-Stack Web & Android Development',
+        tagline: 'Master modern web & mobile technologies through hands-on development.',
+        description: 'Comprehensive training in React.js, Android (Kotlin/Java), Node.js, Express, MongoDB, Python, HTML5, CSS3, and Git workflows with live client projects.'
       },
       {
         num: '02',
@@ -111,10 +110,10 @@ const verticalsData = {
     workplaceEvolutionTitle: 'Specialized Skill Modules',
     workplaceEvolutionServices: [
       {
-        icon: '⚛️',
-        title: 'React & Node.js Development',
-        tagline: 'Build scalable full-stack applications.',
-        description: 'Learn modern JavaScript frameworks, state management, REST APIs, and database deployment.'
+        icon: '📱',
+        title: 'Android & Mobile App Training',
+        tagline: 'Build native Android apps from scratch.',
+        description: 'Learn Kotlin, Android SDK, Jetpack Compose, REST APIs, Room database, and Google Play Store publishing.'
       },
       {
         icon: '🔍',
@@ -130,7 +129,7 @@ const verticalsData = {
       }
     ],
     differentiators: [
-      { icon: '💻', title: '100% Practical Projects', desc: 'Work on real corporate projects under senior software engineering mentors.' },
+      { icon: '💻', title: '100% Practical Projects', desc: 'Work on real corporate web & Android projects under senior software engineering mentors.' },
       { icon: '🤝', title: 'Placement Assistance', desc: 'Mock interviews, resume building, and direct referrals across SCN partner network.' },
       { icon: '📜', title: 'Recognized Certification', desc: 'Receive ISO-compliant course completion certificates valued by employers.' }
     ]
@@ -336,7 +335,7 @@ function BusinessDetail({ onEnquireClick }) {
   }
 
   return (
-    <div className="business-detail-page animate-fade-in">
+    <div className="business-detail-page animate-fade-in bg-black text-white min-vh-100">
       {/* Top Banner */}
       <div className="bradcam_area position-relative">
         <div className="container py-4">
@@ -345,16 +344,16 @@ function BusinessDetail({ onEnquireClick }) {
               <div className="bradcam_text">
                 <h2 className="display-6 text-white fw-bold mb-2">{data.title}</h2>
                 <ul className="breadcrumb mb-0">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/our-business">Our Business</Link></li>
-                  <li className="text-white opacity-75">{data.title}</li>
+                  <li><Link to="/" className="text-white opacity-75">Home</Link></li>
+                  <li><Link to="/our-business" className="text-white opacity-75">Our Business</Link></li>
+                  <li className="text-white fw-bold">{data.title}</li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
               <button 
                 type="button" 
-                className="btn btn-light text-primary fw-bold px-4 py-2 rounded-pill shadow-sm"
+                className="btn btn-solid px-4 py-2 fw-bold"
                 onClick={() => onEnquireClick && onEnquireClick(`Consultation for ${data.title}`)}
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
@@ -364,27 +363,27 @@ function BusinessDetail({ onEnquireClick }) {
         </div>
       </div>
 
-      {/* Hero Overview Section (Headline & Intro Paragraph) */}
+      {/* Hero Overview Section */}
       <div className="container py-5">
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
             <span className="badge bg-primary px-3 py-2 text-uppercase mb-3" style={{ letterSpacing: '1px' }}>
               Innovative Solutions
             </span>
-            <h1 className="display-6 fw-bold text-dark mb-3">{data.heroHeadline || data.title}</h1>
-            <p className="text-secondary" style={{ lineHeight: '1.8', fontSize: '16px' }}>
+            <h1 className="display-6 fw-bold text-white mb-3">{data.heroHeadline || data.title}</h1>
+            <p className="text-light opacity-75" style={{ lineHeight: '1.8', fontSize: '16px' }}>
               {data.heroIntro || data.overview}
             </p>
 
-            <div className="p-4 rounded-4 bg-light border-start border-4 border-primary mt-4">
-              <p className="text-dark fw-semibold mb-0" style={{ fontSize: '15px', lineHeight: '1.7' }}>
+            <div className="p-4 rounded-4 bg-dark border-start border-4 border-primary mt-4 border border-secondary border-opacity-25">
+              <p className="text-white fw-semibold mb-0" style={{ fontSize: '15px', lineHeight: '1.7' }}>
                 "{data.coreEmpowermentStatement}"
               </p>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <div className="attractive-card overflow-hidden p-0 shadow-lg">
+            <div className="attractive-card overflow-hidden p-0 shadow-lg border border-secondary border-opacity-25 bg-dark">
               <img 
                 src={data.heroImage} 
                 alt={data.title} 
@@ -398,29 +397,29 @@ function BusinessDetail({ onEnquireClick }) {
 
       {/* Numbered Core Services Section (01, 02, 03) */}
       {data.numberedServices && (
-        <div className="py-5 bg-light border-top border-bottom">
+        <div className="py-5 border-top border-bottom border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
           <div className="container py-2">
             <div className="text-center max-w-2xl mx-auto mb-5">
               <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Core Services</span>
-              <h2 className="display-6 fw-bold text-dark">Targeted Solutions for Growth</h2>
+              <h2 className="display-6 fw-bold text-white">Targeted Solutions for Growth</h2>
             </div>
 
             <div className="row g-4">
               {data.numberedServices.map((service, index) => (
                 <div className="col-lg-4 col-md-6" key={index}>
-                  <div className="attractive-card p-4 d-flex flex-column h-100 position-relative">
+                  <div className="attractive-card p-4 d-flex flex-column h-100 position-relative bg-dark text-white border border-secondary border-opacity-25">
                     <div className="d-flex justify-content-between align-items-center mb-3">
-                      <span className="display-6 fw-bold text-primary opacity-50 font-monospace">{service.num}</span>
+                      <span className="display-6 fw-bold text-primary font-monospace">{service.num}</span>
                       <span className="badge bg-primary text-white px-2 py-1 small rounded-pill">Vertical Focus</span>
                     </div>
-                    <h3 className="h5 fw-bold text-dark mb-2">{service.title}</h3>
+                    <h3 className="h5 fw-bold text-white mb-2">{service.title}</h3>
                     <p className="text-primary fw-semibold small mb-3">{service.tagline}</p>
-                    <p className="text-secondary small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                    <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                       {service.description}
                     </p>
                     <button 
                       type="button" 
-                      className="btn btn-outline-primary btn-sm rounded-2 fw-semibold mt-auto align-self-start"
+                      className="btn btn-ghost btn-sm rounded-2 fw-semibold mt-auto align-self-start"
                       onClick={() => onEnquireClick && onEnquireClick(`Inquiry for ${service.title}`)}
                     >
                       Enquire for Details <i className="fa fa-arrow-right ms-1"></i>
@@ -435,29 +434,28 @@ function BusinessDetail({ onEnquireClick }) {
 
       {/* Workplace Evolution & Technical Solutions Section */}
       {data.workplaceEvolutionServices && (
-        <div className="py-5 bg-white">
+        <div className="py-5 bg-black">
           <div className="container py-2">
             <div className="text-center max-w-3xl mx-auto mb-5">
               <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Workplace Evolution</span>
-              <h2 className="display-6 fw-bold text-dark">{data.workplaceEvolutionTitle}</h2>
+              <h2 className="display-6 fw-bold text-white">{data.workplaceEvolutionTitle}</h2>
             </div>
 
             <div className="row g-4">
               {data.workplaceEvolutionServices.map((item, idx) => (
                 <div className="col-lg-4 col-md-6" key={idx}>
-                  <div className="attractive-card p-4 d-flex flex-column h-100">
+                  <div className="attractive-card p-4 d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
                     <div className="card-icon-badge mb-3">
                       <span>{item.icon}</span>
                     </div>
-                    <h3 className="h5 fw-bold text-dark mb-2">{item.title}</h3>
+                    <h3 className="h5 fw-bold text-white mb-2">{item.title}</h3>
                     <p className="text-primary fw-semibold small mb-2">{item.tagline}</p>
-                    <p className="text-secondary small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                    <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                       {item.description}
                     </p>
                     <button 
                       type="button" 
-                      className="btn btn-primary btn-sm rounded-2 fw-semibold mt-auto align-self-start"
-                      style={{ backgroundColor: 'var(--colorAccent)' }}
+                      className="btn btn-solid btn-sm rounded-2 fw-semibold mt-auto align-self-start"
                       onClick={() => onEnquireClick && onEnquireClick(`Consultation for ${item.title}`)}
                     >
                       Learn More <i className="fa fa-arrow-right ms-1"></i>
@@ -472,22 +470,22 @@ function BusinessDetail({ onEnquireClick }) {
 
       {/* Differentiators & Support Pillars Section */}
       {data.differentiators && (
-        <div className="bg-light py-5 border-top border-bottom">
+        <div className="py-5 border-top border-bottom border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
           <div className="container py-2">
             <div className="text-center max-w-2xl mx-auto mb-5">
               <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Why Choose SCN</span>
-              <h2 className="display-6 fw-bold text-dark">Proven Support & Industry Leadership</h2>
+              <h2 className="display-6 fw-bold text-white">Proven Support & Industry Leadership</h2>
             </div>
 
             <div className="row g-4 justify-content-center">
               {data.differentiators.map((diff, idx) => (
                 <div className="col-lg-4 col-md-6" key={idx}>
-                  <div className="attractive-card p-4 text-center d-flex flex-column h-100">
+                  <div className="attractive-card p-4 text-center d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
                     <div className="card-icon-badge mx-auto mb-3">
                       <span>{diff.icon}</span>
                     </div>
-                    <h4 className="h5 fw-bold text-dark mb-2">{diff.title}</h4>
-                    <p className="text-secondary small mb-0" style={{ lineHeight: '1.65' }}>
+                    <h4 className="h5 fw-bold text-white mb-2">{diff.title}</h4>
+                    <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.65' }}>
                       {diff.desc}
                     </p>
                   </div>
@@ -499,22 +497,21 @@ function BusinessDetail({ onEnquireClick }) {
       )}
 
       {/* Bottom CTA Section */}
-      <div className="py-5 bg-white">
+      <div className="py-5 bg-black">
         <div className="container text-center py-3">
-          <h3 className="fw-bold text-dark mb-3">Ready to Transform Your Business with {data.title}?</h3>
-          <p className="text-secondary max-w-2xl mx-auto mb-4" style={{ maxWidth: '650px' }}>
+          <h3 className="fw-bold text-white mb-3">Ready to Transform Your Business with {data.title}?</h3>
+          <p className="text-light opacity-75 max-w-2xl mx-auto mb-4" style={{ maxWidth: '650px' }}>
             Contact our Client Account Managers or visit our Head Office in Noida Sector 63 to discuss tailored enterprise solutions.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <button 
               type="button" 
-              className="btn btn-primary px-4 py-3 rounded-3 fw-bold"
-              style={{ backgroundColor: 'var(--colorAccent)' }}
+              className="btn btn-solid px-4 py-3 rounded-3 fw-bold"
               onClick={() => onEnquireClick && onEnquireClick(`Get Consultation for ${data.title}`)}
             >
               Get Instant Consultation
             </button>
-            <Link to="/our-business" className="btn btn-outline-dark px-4 py-3 rounded-3 fw-bold">
+            <Link to="/our-business" className="btn btn-ghost px-4 py-3 rounded-3 fw-bold">
               Explore All Business Verticals
             </Link>
           </div>

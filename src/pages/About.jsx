@@ -49,7 +49,7 @@ const coreValues = [
 const faqs = [
   {
     q: 'When was SCN Business Group established?',
-    a: 'SCN Business Group was established in 2004 and has been delivering corporate staffing, HR training, IT, and payroll solutions for over 21 years.'
+    a: 'SCN Business Group was established in 2004 and has been delivering corporate staffing, HR training, IT, Android app development, and payroll solutions for over 21 years.'
   },
   {
     q: 'Where is the corporate head office located?',
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: 'What business verticals does SCN operate in?',
-    a: 'SCN operates 9 specialized verticals: IT Services, IT Training, Personality Development, HR Training, US Staffing, Payroll Management, General Staffing, BPO Services, and Real Estate Advisory.'
+    a: 'SCN operates 9 specialized verticals: IT Services (Web & Android Apps), IT Training, Personality Development, HR Training, US Staffing, Payroll Management, General Staffing, BPO Services, and Real Estate Advisory.'
   },
   {
     q: 'How can employers submit hiring requirements?',
@@ -67,7 +67,7 @@ const faqs = [
 
 function About({ onEnquireClick }) {
   return (
-    <div className="about-page animate-fade-in">
+    <div className="about-page animate-fade-in bg-black text-white min-vh-100">
       {/* Top Banner */}
       <div className="bradcam_area position-relative">
         <div className="container py-4">
@@ -76,15 +76,15 @@ function About({ onEnquireClick }) {
               <div className="bradcam_text">
                 <h2 className="display-6 text-white fw-bold mb-2">About Us</h2>
                 <ul className="breadcrumb mb-0">
-                  <li><Link to="/">Home</Link></li>
-                  <li className="text-white opacity-75">About Us</li>
+                  <li><Link to="/" className="text-white opacity-75">Home</Link></li>
+                  <li className="text-white fw-bold">About Us</li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
               <button 
                 type="button" 
-                className="btn btn-light text-primary fw-bold px-4 py-2 rounded-pill shadow-sm"
+                className="btn btn-solid px-4 py-2 fw-bold"
                 onClick={() => onEnquireClick && onEnquireClick('Corporate Consultation')}
               >
                 <i className="fa fa-phone me-2"></i> Contact Corporate HQ
@@ -101,41 +101,41 @@ function About({ onEnquireClick }) {
             <span className="badge bg-primary px-3 py-2 text-uppercase mb-3" style={{ letterSpacing: '1px' }}>
               Established in 2004
             </span>
-            <h2 className="display-6 fw-bold text-dark mb-4">Building High-Performing Teams & Empowering Growth</h2>
-            <p className="text-secondary" style={{ lineHeight: '1.7', fontSize: '16px' }}>
-              Established in 2004, <strong>SCN Business Group</strong> has positioned itself as a leading provider of staffing, payroll, IT, and training solutions in India. Headquartered in Noida Sector 63—the company leverages its strategic location to offer high-impact human resource services to businesses nationwide.
+            <h2 className="display-6 fw-bold text-white mb-4">Building High-Performing Teams & Empowering Growth</h2>
+            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
+              Established in 2004, <strong>SCN Business Group</strong> has positioned itself as a leading provider of staffing, payroll, IT, Android app development, and training solutions in India. Headquartered in Noida Sector 63—the company leverages its strategic location to offer high-impact human resource and technology services to businesses nationwide.
             </p>
-            <p className="text-secondary" style={{ lineHeight: '1.7', fontSize: '16px' }}>
+            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
               With a dedicated focus on workforce solutions, SCN Business Group has evolved into a trusted partner for companies seeking reliable, scalable, and efficient staffing models. Our operations span IT staffing, general staffing, industrial placements, payroll processing, and specialized US staffing.
             </p>
-            <p className="text-secondary" style={{ lineHeight: '1.7', fontSize: '16px' }}>
+            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
               What truly sets SCN Business Group apart is its holistic perspective on human capital. By bridging the gap between people and purpose, SCN not only supports business growth but also uplifts individual careers and communities.
             </p>
           </div>
           <div className="col-lg-6">
             <div className="row g-3">
               <div className="col-6">
-                <div className="stat-box text-center">
-                  <h3 className="display-5 fw-bold gradient-text mb-1">21+</h3>
-                  <p className="text-secondary small mb-0 fw-semibold">Years of Industry Legacy</p>
+                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
+                  <h3 className="display-5 fw-bold text-primary mb-1">21+</h3>
+                  <p className="text-white-50 small mb-0 fw-semibold">Years of Industry Legacy</p>
                 </div>
               </div>
               <div className="col-6">
-                <div className="stat-box text-center">
-                  <h3 className="display-5 fw-bold gradient-text mb-1">500+</h3>
-                  <p className="text-secondary small mb-0 fw-semibold">Corporate Partners</p>
+                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
+                  <h3 className="display-5 fw-bold text-primary mb-1">500+</h3>
+                  <p className="text-white-50 small mb-0 fw-semibold">Corporate Partners</p>
                 </div>
               </div>
               <div className="col-6">
-                <div className="stat-box text-center">
-                  <h3 className="display-5 fw-bold gradient-text mb-1">10k+</h3>
-                  <p className="text-secondary small mb-0 fw-semibold">Candidates Placed</p>
+                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
+                  <h3 className="display-5 fw-bold text-primary mb-1">10k+</h3>
+                  <p className="text-white-50 small mb-0 fw-semibold">Candidates Placed</p>
                 </div>
               </div>
               <div className="col-6">
-                <div className="stat-box text-center">
-                  <h3 className="display-5 fw-bold gradient-text mb-1">3</h3>
-                  <p className="text-secondary small mb-0 fw-semibold">Corporate Offices</p>
+                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
+                  <h3 className="display-5 fw-bold text-primary mb-1">3</h3>
+                  <p className="text-white-50 small mb-0 fw-semibold">Corporate Offices</p>
                 </div>
               </div>
             </div>
@@ -144,27 +144,27 @@ function About({ onEnquireClick }) {
       </div>
 
       {/* Mission & Vision Section */}
-      <div className="bg-light py-5 border-top border-bottom">
+      <div className="py-5 border-top border-bottom border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
         <div className="container py-2">
           <div className="row g-4">
             <div className="col-md-6">
-              <div className="attractive-card p-4 p-md-5">
+              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25">
                 <div className="card-icon-badge mb-3">
                   <i className="fa fa-bullseye"></i>
                 </div>
-                <h3 className="fw-bold text-dark mb-3">Our Mission</h3>
-                <p className="text-secondary mb-0" style={{ lineHeight: '1.7' }}>
-                  To bridge talent with opportunity by offering exceptional recruitment, training, payroll, and IT services that drive sustainable growth for organizations and meaningful career advancement for individuals.
+                <h3 className="fw-bold text-white mb-3">Our Mission</h3>
+                <p className="text-light opacity-75 mb-0" style={{ lineHeight: '1.7' }}>
+                  To bridge talent with opportunity by offering exceptional recruitment, training, payroll, Android app development, and IT services that drive sustainable growth for organizations and meaningful career advancement for individuals.
                 </p>
               </div>
             </div>
             <div className="col-md-6">
-              <div className="attractive-card p-4 p-md-5">
+              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25">
                 <div className="card-icon-badge mb-3">
                   <i className="fa fa-eye"></i>
                 </div>
-                <h3 className="fw-bold text-dark mb-3">Our Vision</h3>
-                <p className="text-secondary mb-0" style={{ lineHeight: '1.7' }}>
+                <h3 className="fw-bold text-white mb-3">Our Vision</h3>
+                <p className="text-light opacity-75 mb-0" style={{ lineHeight: '1.7' }}>
                   To be India's most trusted multi-level corporate services provider, recognized for operational excellence, innovation in workforce deployment, and unwavering client commitment.
                 </p>
               </div>
@@ -177,22 +177,22 @@ function About({ onEnquireClick }) {
       <div className="container py-5">
         <div className="text-center max-w-2xl mx-auto mb-5">
           <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Our Guiding Principles</span>
-          <h2 className="display-6 fw-bold text-dark">SCN Core Values</h2>
+          <h2 className="display-6 fw-bold text-white">SCN Core Values</h2>
         </div>
 
         <div className="row g-4">
           {coreValues.map((v, idx) => (
             <div className="col-lg-4 col-md-6" key={idx}>
-              <div className="attractive-card h-100 shadow-sm border-0 d-flex flex-column">
+              <div className="attractive-card h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex flex-column">
                 <div className="business-card-img-wrapper" style={{ height: '190px' }}>
                   <img src={v.image} alt={v.title} loading="lazy" />
                 </div>
                 <div className="p-4 d-flex flex-column flex-grow-1">
                   <div className="d-flex align-items-center gap-2 mb-2">
                     <span className="fs-5">{v.icon}</span>
-                    <h4 className="h5 fw-bold text-dark mb-0">{v.title}</h4>
+                    <h4 className="h5 fw-bold text-white mb-0">{v.title}</h4>
                   </div>
-                  <p className="text-secondary small mb-0 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                  <p className="text-light opacity-75 small mb-0 flex-grow-1" style={{ lineHeight: '1.65' }}>
                     {v.desc}
                   </p>
                 </div>
@@ -203,20 +203,20 @@ function About({ onEnquireClick }) {
       </div>
 
       {/* FAQs Section */}
-      <div className="bg-light py-5 border-top">
+      <div className="py-5 border-top border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
         <div className="container py-2">
           <div className="text-center max-w-2xl mx-auto mb-5">
             <span className="badge bg-primary px-3 py-2 text-uppercase mb-2">FAQs</span>
-            <h2 className="display-6 fw-bold text-dark">Frequently Asked Questions</h2>
+            <h2 className="display-6 fw-bold text-white">Frequently Asked Questions</h2>
           </div>
 
           <div className="max-w-3xl mx-auto" style={{ maxWidth: '800px' }}>
             <div className="accordion" id="scnFaqAccordion">
               {faqs.map((faq, index) => (
-                <div className="accordion-item" key={index}>
+                <div className="accordion-item bg-dark border border-secondary border-opacity-25" key={index}>
                   <h2 className="accordion-header" id={`heading${index}`}>
                     <button 
-                      className={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
+                      className={`accordion-button bg-dark text-white ${index !== 0 ? 'collapsed' : ''}`}
                       type="button" 
                       data-bs-toggle="collapse" 
                       data-bs-target={`#collapse${index}`} 
@@ -232,7 +232,7 @@ function About({ onEnquireClick }) {
                     aria-labelledby={`heading${index}`} 
                     data-bs-parent="#scnFaqAccordion"
                   >
-                    <div className="accordion-body">
+                    <div className="accordion-body bg-dark text-light opacity-90">
                       {faq.a}
                     </div>
                   </div>

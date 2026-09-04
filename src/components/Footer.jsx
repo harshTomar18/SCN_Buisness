@@ -57,7 +57,7 @@ function Footer() {
             <div className="row g-3 small" style={{ fontSize: '13px' }}>
               <div className="col-md-6">
                 <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Head Office (Noida):</p>
-                <p className="text-white-50 mb-3">G 31, Sector 63 Rd, G Block, Sector 63, Noida, Chotpur, Uttar Pradesh 201301</p>
+                <p className="text-white-50 mb-3">H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301</p>
               </div>
               <div className="col-md-6">
                 <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Branch Office (Rohini):</p>

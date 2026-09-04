@@ -168,7 +168,7 @@ function Contact() {
                 <h4 className="h5 fw-bold text-dark mb-2">Noida Sector 63</h4>
                 <p className="text-secondary small mb-0" style={{ lineHeight: '1.6' }}>
                   <i className="fa fa-map-marker text-primary me-2 fs-5"></i>
-                  G 31, Sector 63 Rd, G Block, Sector 63, Noida, Chotpur, Uttar Pradesh 201301
+                  H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301
                 </p>
               </div>
 

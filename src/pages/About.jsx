@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: 'Where is the corporate head office located?',
-    a: 'Our corporate head office is located at G 31, Sector 63 Rd, G Block, Sector 63, Noida, Uttar Pradesh 201301. We also operate branch offices in Rohini and Seemapuri, Delhi.'
+    a: 'Our corporate head office is located at H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301. We also operate branch offices in Rohini and Seemapuri, Delhi.'
   },
   {
     q: 'What business verticals does SCN operate in?',

@@ -17,7 +17,7 @@ function MainLayout({ children }) {
   };
 
   return (
-    <div className="d-flex flex-column min-vh-100 justify-content-between">
+    <div className="d-flex flex-column min-vh-100 justify-content-between position-relative">
       {/* Header Navigation */}
       <Header onEnquireClick={openModal} />
 
@@ -33,7 +33,6 @@ function MainLayout({ children }) {
       <main className="flex-grow-1">
         {React.Children.map(children, child => {
           if (React.isValidElement(child)) {
-            // inject openModal callback so pages can trigger modals
             return React.cloneElement(child, { onEnquireClick: openModal });
           }
           return child;

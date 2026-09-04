@@ -9,10 +9,10 @@ function Navbar() {
           {/* Brand Logo */}
           <div className="logo_main py-1">
             <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none">
-              <img 
-                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
-                alt="SCN Business Group Logo" 
-                title="SCN Business Group Logo" 
+              <img
+                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png"
+                alt="SCN Business Group Logo"
+                title="SCN Business Group Logo"
                 className="main_logo"
                 style={{ maxHeight: '42px', width: 'auto' }}
               />
@@ -43,9 +43,9 @@ function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/as-employee" className={({ isActive }) => `nav-pill-metal ${isActive ? 'active' : ''}`}>
-                  As Employee
-                </NavLink>
+                <a href="https://scnjobs.com/" target="_blank" rel="noopener noreferrer" className="nav-pill-metal">
+                  Apply for Jobs
+                </a>
               </li>
               <li>
                 <NavLink to="/contact-us" className={({ isActive }) => `nav-pill-metal ${isActive ? 'active' : ''}`}>
@@ -53,7 +53,7 @@ function Navbar() {
                 </NavLink>
               </li>
             </ul>
-            
+
             {/* Quick Consultation button */}
             <Link to="/contact-us" className="btn-vesper btn-solid-vesper ms-2" title="SCN Business Group Enquiry">
               <i className="fa fa-envelope-o me-1"></i> Enquire Now

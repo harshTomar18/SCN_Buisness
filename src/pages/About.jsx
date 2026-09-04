@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: 'How can employers submit hiring requirements?',
-    a: 'Employers can navigate to our "As Employer" page or contact our Client Helpdesk (Mr. Jatin Chandel +91 9650068863 / info@scnbusinessgroup.com) to submit talent requirements.'
+    a: 'Employers can navigate to our "As Employer" page or contact our Client Helpdesk (Mr. Jatin Chandel +91 9891910542 / info@scnbusinessgroup.com) to submit talent requirements.'
   }
 ];
 
@@ -82,8 +82,8 @@ function About({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="btn btn-solid px-4 py-2 fw-bold"
                 onClick={() => onEnquireClick && onEnquireClick('Corporate Consultation')}
               >
@@ -215,21 +215,21 @@ function About({ onEnquireClick }) {
               {faqs.map((faq, index) => (
                 <div className="accordion-item bg-dark border border-secondary border-opacity-25" key={index}>
                   <h2 className="accordion-header" id={`heading${index}`}>
-                    <button 
+                    <button
                       className={`accordion-button bg-dark text-white ${index !== 0 ? 'collapsed' : ''}`}
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target={`#collapse${index}`} 
-                      aria-expanded={index === 0 ? 'true' : 'false'} 
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#collapse${index}`}
+                      aria-expanded={index === 0 ? 'true' : 'false'}
                       aria-controls={`collapse${index}`}
                     >
                       {faq.q}
                     </button>
                   </h2>
-                  <div 
-                    id={`collapse${index}`} 
-                    className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`} 
-                    aria-labelledby={`heading${index}`} 
+                  <div
+                    id={`collapse${index}`}
+                    className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
+                    aria-labelledby={`heading${index}`}
                     data-bs-parent="#scnFaqAccordion"
                   >
                     <div className="accordion-body bg-dark text-light opacity-90">

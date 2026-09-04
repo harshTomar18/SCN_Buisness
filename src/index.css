@@ -431,6 +431,55 @@ main.hero {
   box-shadow: 0 0 12px rgba(37, 99, 235, 0.8);
 }
 
+/* Slider Arrow Controls */
+.btn-slider-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.btn-slider-arrow:hover {
+  background: var(--colorAccent);
+  border-color: var(--colorAccent);
+  transform: scale(1.12);
+  box-shadow: 0 0 14px rgba(37, 99, 235, 0.6);
+}
+
+/* Breadcrumb Navigation Styling & Separators */
+.breadcrumb {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 10px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 14.5px !important;
+}
+
+.breadcrumb li {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.breadcrumb li + li::before {
+  content: '/' !important;
+  display: inline-block !important;
+  padding-right: 10px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 400 !important;
+}
+
 /* Stats Footer */
 footer.stats {
   display: flex;
@@ -524,20 +573,64 @@ footer.stats {
   padding: 12px 24px;
 }
 
-/* Form Controls Polish */
-.form-control, .form-select {
-  border-radius: 8px;
-  padding: 0.7rem 0.95rem;
-  font-size: 14.5px;
-  color: #1e293b;
+/* Crisp Dark Theme Form Controls */
+.form-control, 
+.form-select, 
+input.form-control, 
+textarea.form-control,
+select.form-select {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 14.5px !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}
+
+.form-control:focus, 
+.form-select:focus, 
+input.form-control:focus, 
+textarea.form-control:focus,
+select.form-select:focus {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35) !important;
+  outline: none !important;
+}
+
+.form-control::placeholder, 
+textarea.form-control::placeholder, 
+input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.65) !important;
+  opacity: 1 !important;
+}
+
+.form-select option {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover, 
+.form-control:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0f172a inset !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .modal-underline-input {
   border: none !important;
-  border-bottom: 1.5px solid var(--colorBorder) !important;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3) !important;
   border-radius: 0 !important;
   padding-left: 0 !important;
   background: transparent !important;
+  color: #ffffff !important;
+}
+
+.modal-underline-input::placeholder {
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 /* Motion Animations */

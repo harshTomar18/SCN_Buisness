@@ -71,14 +71,16 @@ function Header({ onEnquireClick }) {
           >
             As Employer
           </NavLink>
-          <NavLink 
-            to="/as-employee" 
-            className={({ isActive }) => `nav-pill appear appear--scale ${isActive ? 'active' : ''}`} 
+          <a 
+            href="https://scnjobs.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="nav-pill appear appear--scale" 
             style={{ '--d': '0.44s' }}
             onClick={closeMenu}
           >
-            As Employee
-          </NavLink>
+            Apply for Jobs
+          </a>
           <NavLink 
             to="/contact-us" 
             className={({ isActive }) => `nav-pill appear appear--soft ${isActive ? 'active' : ''}`} 

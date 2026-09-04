@@ -226,27 +226,33 @@ const verticalsData = {
   },
 
   'payroll-management': {
-    title: 'SCN Global Payroll Management',
-    subtitle: 'Automated, Compliant & Error-Free Workforce Payroll Outsourcing',
+    title: 'SCN Global Payroll & Corporate Solutions',
+    subtitle: 'One Stop Corporate Solutions, Facility Management & Automated Payroll Outsourcing',
     heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-6694543-6694543-1024x683.jpg',
-    heroHeadline: 'Audit-Proof Automated Payroll Services',
-    heroIntro: 'Managing payroll for growing teams requires precision and statutory compliance. SCN Global Payroll Management delivers end-to-end automated payroll outsourcing services, ensuring your employees are paid accurately and on time while maintaining 100% compliance with statutory regulations.',
-    numberedServices: [
-      { num: '01', title: 'Monthly Salary Processing', tagline: 'Accurate salary calculation & disbursal.', description: 'Computation of gross-to-net pay, CTC breakdowns, overtime, bonus, incentives, and automated bank transfer files.' },
-      { num: '02', title: 'Statutory Filings (PF/ESI/PT)', tagline: 'Zero non-compliance risk.', description: 'Timely generation and filing of ECR challans, ESI returns, Professional Tax, and Labor Welfare Fund returns.' },
-      { num: '03', title: 'Form 16 & Tax Management', tagline: 'End-to-end TDS & Income Tax compliance.', description: 'Tax deduction at source (TDS) computation, investment proof verification, quarterly 24Q filing, and annual Form 16 distribution.' }
+    heroHeadline: 'One Stop Corporate Solutions & Payroll Management',
+    heroIntro: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.',
+    corporateOverviewParagraphs: [
+      "One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.",
+      "We bring manpower, facility management, workplace support, procurement, maintenance, safety, technology and corporate services together under one roof. This enables clients to reduce fragmented vendor coordination and manage multiple operational requirements through a single accountable partner.",
+      "Our services are shaped around each site's specific requirements, including operating hours, manpower strength, recurring supply needs, maintenance priorities, workplace safety and reporting expectations.",
+      "Our objective is to deliver dependable services, quality products, trained manpower and customized solutions with timely execution and clear coordination."
     ],
-    coreEmpowermentStatement: 'SCN Payroll Management provides transparent, error-free salary administration with dedicated account management and statutory peace of mind.',
-    workplaceEvolutionTitle: 'Payroll Solutions Overview',
+    numberedServices: [
+      { num: '01', title: 'Monthly Salary & Payroll Processing', tagline: 'Accurate salary calculation & disbursal.', description: 'Computation of gross-to-net pay, CTC breakdowns, overtime, bonus, incentives, and automated bank transfer files.' },
+      { num: '02', title: 'Corporate Facility & Workplace Management', tagline: 'Integrated manpower, maintenance & safety.', description: 'Facility support, workplace procurement, site maintenance, safety standards, and single-window vendor coordination.' },
+      { num: '03', title: 'Statutory Filings (PF/ESI/PT) & Tax', tagline: 'Zero non-compliance & audit-ready TDS.', description: 'Timely generation of ECR challans, ESI returns, Professional Tax, Form 16 issuance, and statutory compliance audits.' }
+    ],
+    coreEmpowermentStatement: 'Our objective is to deliver dependable services, quality products, trained manpower and customized solutions with timely execution and clear coordination.',
+    workplaceEvolutionTitle: 'One Stop Corporate Solutions Overview',
     workplaceEvolutionServices: [
+      { icon: '🏢', title: 'Workplace Operations & Support', tagline: 'Customized site solutions.', description: 'Services shaped around operating hours, manpower strength, recurring supply needs, and workplace reporting expectations.' },
       { icon: '📱', title: 'Employee Self-Service (ESS)', tagline: 'Digital payslips & leave management.', description: 'Mobile app and web portal for downloading payslips, applying for leave, and viewing Form 16.' },
-      { icon: '📊', title: 'Attendance & Biometric Sync', tagline: 'Automated leave & punch tracking.', description: 'Seamless API integration with biometric machines, attendance software, and leave tracking.' },
-      { icon: '🛡️', title: 'Statutory Payroll Audit', tagline: 'Audit-ready payroll documentation.', description: 'Complete maintenance of registers under Payment of Wages Act, PF Act, and ESI Act.' }
+      { icon: '🛡️', title: 'Single Accountable Partner', tagline: 'Zero fragmented vendor coordination.', description: 'Integrated management bringing manpower, facility management, procurement, maintenance, and safety under one roof.' }
     ],
     differentiators: [
-      { icon: '✅', title: '100% Accuracy Guarantee', desc: 'Zero error monthly salary disbursals and tax calculations.' },
-      { icon: '🔒', title: 'Data Confidentiality', desc: 'Bank-grade encryption protecting sensitive employee salary data.' },
-      { icon: '🧑‍💼', title: 'Dedicated Payroll Lead', desc: 'Single point of contact for all payroll, tax, and compliance queries.' }
+      { icon: '✅', title: 'Integrated Solutions', desc: 'Bringing manpower, facility management, safety, and tech under one single accountable partner.' },
+      { icon: '🔒', title: 'Tailored Site Execution', desc: 'Customized around site operating hours, manpower strength, and maintenance priorities.' },
+      { icon: '🧑‍💼', title: 'Dependable Coordination', desc: 'Quality products, trained manpower, and timely execution with clear coordination.' }
     ]
   },
 
@@ -371,9 +377,19 @@ function BusinessDetail({ onEnquireClick }) {
               Innovative Solutions
             </span>
             <h1 className="display-6 fw-bold text-white mb-3">{data.heroHeadline || data.title}</h1>
-            <p className="text-light opacity-75" style={{ lineHeight: '1.8', fontSize: '16px' }}>
-              {data.heroIntro || data.overview}
-            </p>
+            {data.corporateOverviewParagraphs ? (
+              <div className="d-flex flex-column gap-3 mt-3">
+                {data.corporateOverviewParagraphs.map((paragraph, idx) => (
+                  <p key={idx} className="text-light opacity-75 mb-0" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ) : (
+              <p className="text-light opacity-75" style={{ lineHeight: '1.8', fontSize: '16px' }}>
+                {data.heroIntro || data.overview}
+              </p>
+            )}
 
             <div className="p-4 rounded-4 bg-dark border-start border-4 border-primary mt-4 border border-secondary border-opacity-25">
               <p className="text-white fw-semibold mb-0" style={{ fontSize: '15px', lineHeight: '1.7' }}>

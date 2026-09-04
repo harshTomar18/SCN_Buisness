@@ -3,19 +3,28 @@ import { Link } from 'react-router-dom';
 
 const heroSlides = [
   {
+    badge: 'SCN BUSINESS GROUP • EST. 2004',
     line1: 'Building <em>high-performing</em> teams &',
     line2: 'empowering global business growth.',
     subtitle: 'Leading provider of staffing, IT solutions, HR training, and corporate management services.'
   },
   {
-    line1: '21+ Years of <em>industry leadership</em> &',
-    line2: 'empowering enterprise progress.',
-    subtitle: 'Partnering with organizations from emerging startups to Fortune 5000 enterprises.'
+    badge: 'ENTERPRISE IT & MOBILE SOLUTIONS',
+    line1: 'Custom <em>Web & Android App</em>',
+    line2: 'engineering for digital growth.',
+    subtitle: 'Native Android (Kotlin), iOS, Flutter apps, full-stack web architectures, and Google Play Store deployment.'
   },
   {
-    line1: 'Delivering <em>specialized staffing</em> &',
-    line2: 'cutting-edge IT solutions.',
-    subtitle: 'Deploying specialized US IT recruiters, general staffing, BPO, and corporate real estate services.'
+    badge: 'GLOBAL TALENT & US STAFFING',
+    line1: 'Specialized <em>offshore recruitment</em> &',
+    line2: 'cross-border staffing solutions.',
+    subtitle: 'Deploying expert US IT recruiters, general staffing, BPO support, and enterprise workforce management.'
+  },
+  {
+    badge: '21+ YEARS INDUSTRY LEGACY',
+    line1: 'Job-oriented <em>training institutes</em> &',
+    line2: 'practical HR generalist certification.',
+    subtitle: 'Empowering students and corporate professionals with hands-on skill modules and placement support.'
   }
 ];
 
@@ -132,6 +141,15 @@ const partnerLogos = [
 function Home({ onEnquireClick }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
+  // Auto-play timer for hero text slider (every 4.5 seconds)
+  React.useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentSlideIndex((prev) => (prev + 1) % heroSlides.length);
+    }, 4500);
+
+    return () => clearInterval(slideInterval);
+  }, []);
+
   // Entrance animation fallback handler
   React.useEffect(() => {
     const appearEls = document.querySelectorAll('.appear');
@@ -147,7 +165,7 @@ function Home({ onEnquireClick }) {
     }, 1600);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [currentSlideIndex]);
 
   const currentTitle = heroSlides[currentSlideIndex];
 
@@ -168,23 +186,23 @@ function Home({ onEnquireClick }) {
 
         {/* Hero Content */}
         <main className="hero" id="top">
-          <div className="hero-copy">
+          <div className="hero-copy" key={currentSlideIndex}>
             {/* Badge */}
-            <div className="badge appear appear--pop" style={{ '--d': '0.22s' }}>
+            <div className="badge appear appear--pop" style={{ '--d': '0.15s' }}>
               <svg viewBox="0 0 24 24" width="18" height="20" fill="white" className="badge-star">
                 <path d="M12 2.6C12.55 2.6 12.88 3.15 13.08 4.7c.62 4.7 1.52 5.6 6.22 6.22 1.55.2 2.1.53 2.1 1.08s-.55.88-2.1 1.08c-4.7.62-5.6 1.52-6.22 6.22-.2 1.55-.53 2.1-1.08 2.1s-.88-.55-1.08-2.1c-.62-4.7-1.52-5.6-6.22-6.22C3.15 12.88 2.6 12.55 2.6 12s.55-.88 2.1-1.08c4.7-.62 5.6-1.52 6.22-6.22C11.12 3.15 11.45 2.6 12 2.6Z" />
               </svg>
-              <span>SCN BUSINESS GROUP • EST. 2004</span>
+              <span>{currentTitle.badge}</span>
             </div>
 
             {/* H1 Headline */}
             <h1>
-              <span className="headline-line appear appear--mask" style={{ '--d': '0.42s' }} dangerouslySetInnerHTML={{ __html: currentTitle.line1 }} />
-              <span className="headline-line appear appear--mask" style={{ '--d': '0.62s' }} dangerouslySetInnerHTML={{ __html: currentTitle.line2 }} />
+              <span className="headline-line appear appear--mask" style={{ '--d': '0.35s' }} dangerouslySetInnerHTML={{ __html: currentTitle.line1 }} />
+              <span className="headline-line appear appear--mask" style={{ '--d': '0.50s' }} dangerouslySetInnerHTML={{ __html: currentTitle.line2 }} />
             </h1>
 
             {/* Lede Paragraph */}
-            <p className="lede appear appear--soft" style={{ '--d': '0.82s' }}>
+            <p className="lede appear appear--soft" style={{ '--d': '0.65s' }}>
               {currentTitle.subtitle}
             </p>
 
@@ -193,7 +211,7 @@ function Home({ onEnquireClick }) {
               <button
                 type="button"
                 className="btn btn-solid appear appear--btn"
-                style={{ '--d': '0.96s' }}
+                style={{ '--d': '0.80s' }}
                 onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
               >
                 Get Started Now
@@ -201,23 +219,43 @@ function Home({ onEnquireClick }) {
               <Link
                 to="/our-business"
                 className="btn btn-ghost appear appear--side"
-                style={{ '--d': '1.10s' }}
+                style={{ '--d': '0.90s' }}
               >
                 Explore Business Verticals
               </Link>
             </div>
 
-            {/* Slide Switchers */}
-            <div className="d-flex align-items-center justify-content-center gap-2 mt-4">
-              {heroSlides.map((_, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  className={`hero-slide-indicator ${idx === currentSlideIndex ? 'active' : ''}`}
-                  onClick={() => setCurrentSlideIndex(idx)}
-                  aria-label={`Go to slide ${idx + 1}`}
-                />
-              ))}
+            {/* Slide Switchers & Arrow Controls */}
+            <div className="d-flex align-items-center justify-content-center gap-3 mt-4">
+              <button
+                type="button"
+                className="btn-slider-arrow"
+                onClick={() => setCurrentSlideIndex((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)}
+                aria-label="Previous Slide"
+              >
+                <i className="fa fa-chevron-left"></i>
+              </button>
+
+              <div className="d-flex align-items-center gap-2">
+                {heroSlides.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    className={`hero-slide-indicator ${idx === currentSlideIndex ? 'active' : ''}`}
+                    onClick={() => setCurrentSlideIndex(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                type="button"
+                className="btn-slider-arrow"
+                onClick={() => setCurrentSlideIndex((prev) => (prev + 1) % heroSlides.length)}
+                aria-label="Next Slide"
+              >
+                <i className="fa fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </main>

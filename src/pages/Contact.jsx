@@ -43,13 +43,13 @@ function Contact() {
           <div className="col-md-6">
             <div className="p-4 rounded-4 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex align-items-center gap-3">
               <div className="bg-primary text-white p-3 rounded-circle fs-3">
-                <i className="fa fa-user-circle"></i>
+                <i className="fa fa-headphones"></i>
               </div>
               <div>
-                <span className="badge bg-black text-primary border border-secondary mb-1">Help Desk Specialist</span>
-                <h4 className="h5 fw-bold text-white mb-1">Mr. Aryan Rastogi</h4>
-                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> aryan@scnbusinessgroup.com</p>
-                <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 7982941427</p>
+                <span className="badge bg-black text-primary border border-secondary mb-1">General Support Help Desk</span>
+                <h4 className="h5 fw-bold text-white mb-1">SCN Client Support Team</h4>
+                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> info@scnbusinessgroup.com</p>
+                <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 99905 06631</p>
               </div>
             </div>
           </div>
@@ -57,13 +57,13 @@ function Contact() {
           <div className="col-md-6">
             <div className="p-4 rounded-4 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex align-items-center gap-3">
               <div className="bg-primary text-white p-3 rounded-circle fs-3">
-                <i className="fa fa-user-circle"></i>
+                <i className="fa fa-briefcase"></i>
               </div>
               <div>
-                <span className="badge bg-black text-primary border border-secondary mb-1">Client Relations Manager</span>
-                <h4 className="h5 fw-bold text-white mb-1">Mr. Aasif Ahmad</h4>
-                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> info@scnbusinessgroup.com</p>
-                <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 9650068863</p>
+                <span className="badge bg-black text-primary border border-secondary mb-1">Corporate Client Relations</span>
+                <h4 className="h5 fw-bold text-white mb-1">SCN Business Desk</h4>
+                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> contact@scnbusinessgroup.com</p>
+                <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 96500 68863</p>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ function Contact() {
                     <label className="form-label small fw-semibold text-white">Your Name *</label>
                     <input
                       type="text"
-                      className="form-control bg-black text-white border-secondary shadow-none"
+                      className="form-control shadow-none"
                       placeholder="Full Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -104,7 +104,7 @@ function Contact() {
                       <label className="form-label small fw-semibold text-white">Email Address *</label>
                       <input
                         type="email"
-                        className="form-control bg-black text-white border-secondary shadow-none"
+                        className="form-control shadow-none"
                         placeholder="you@domain.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -115,7 +115,7 @@ function Contact() {
                       <label className="form-label small fw-semibold text-white">Phone Number *</label>
                       <input
                         type="tel"
-                        className="form-control bg-black text-white border-secondary shadow-none"
+                        className="form-control shadow-none"
                         placeholder="+91 98765 43210"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -128,7 +128,7 @@ function Contact() {
                     <label className="form-label small fw-semibold text-white">Subject</label>
                     <input
                       type="text"
-                      className="form-control bg-black text-white border-secondary shadow-none"
+                      className="form-control shadow-none"
                       placeholder="IT services, Android app, staffing, etc."
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -138,7 +138,7 @@ function Contact() {
                   <div>
                     <label className="form-label small fw-semibold text-white">Your Message *</label>
                     <textarea
-                      className="form-control bg-black text-white border-secondary shadow-none"
+                      className="form-control shadow-none"
                       rows="4"
                       placeholder="Type your message here..."
                       value={formData.message}
@@ -164,7 +164,7 @@ function Contact() {
               {/* Head Office */}
               <div className="attractive-card p-4 bg-dark text-white border border-secondary border-opacity-25">
                 <span className="badge bg-primary text-uppercase mb-2">Corporate Head Office</span>
-                <h4 className="h5 fw-bold text-white mb-2">Noida Sector 63</h4>
+                <h4 className="h5 fw-bold text-white mb-2">Noida Sector 63-Uttar Pradesh</h4>
                 <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.6' }}>
                   <i className="fa fa-map-marker text-primary me-2 fs-5"></i>
                   H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301

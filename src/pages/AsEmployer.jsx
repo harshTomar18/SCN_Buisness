@@ -26,8 +26,8 @@ function AsEmployer({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="btn btn-solid px-4 py-2 fw-bold"
                 onClick={() => onEnquireClick && onEnquireClick('Employer Hiring Request')}
               >
@@ -58,22 +58,22 @@ function AsEmployer({ onEnquireClick }) {
                 <div className="d-flex flex-column gap-3">
                   <div className="d-flex align-items-start gap-3">
                     <div className="bg-primary text-white p-2 rounded-circle">
-                      <i className="fa fa-user-circle fs-5"></i>
+                      <i className="fa fa-briefcase fs-5"></i>
                     </div>
                     <div>
-                      <p className="mb-0 fw-semibold text-white">Mr. Jatin Chandel</p>
-                      <p className="mb-0 text-white-50 small">Employer Relations Head</p>
-                      <a href="tel:+919650068863" className="text-primary fw-semibold small text-decoration-none">+91 9650068863</a>
+                      <p className="mb-0 fw-semibold text-white">Employer Hiring Desk</p>
+                      <p className="mb-0 text-white-50 small">Corporate Talent Sourcing</p>
+                      <a href="tel:+919891910542" className="text-primary fw-semibold small text-decoration-none">+91 9891910542</a>
                     </div>
                   </div>
 
                   <div className="d-flex align-items-start gap-3">
                     <div className="bg-primary text-white p-2 rounded-circle">
-                      <i className="fa fa-user-circle fs-5"></i>
+                      <i className="fa fa-envelope fs-5"></i>
                     </div>
                     <div>
-                      <p className="mb-0 fw-semibold text-white">Mr. Aasif Ahmad</p>
-                      <p className="mb-0 text-white-50 small">Senior Client Manager</p>
+                      <p className="mb-0 fw-semibold text-white">Client Account Services</p>
+                      <p className="mb-0 text-white-50 small">Senior Accounts Desk</p>
                       <a href="mailto:info@scnbusinessgroup.com" className="text-primary fw-semibold small text-decoration-none">info@scnbusinessgroup.com</a>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ function AsEmployer({ onEnquireClick }) {
                 <div className="alert alert-success p-4 rounded-3 text-center my-4 bg-dark text-white border-success">
                   <div className="fs-1 mb-2">🎉</div>
                   <h4 className="fw-bold alert-heading text-white">Requirement Received!</h4>
-                  <p className="small mb-0 text-white-50">Thank you for reaching out to SCN Business Group. Mr. Jatin Chandel or our team will contact you shortly.</p>
+                  <p className="small mb-0 text-white-50">Thank you for reaching out to SCN Business Group. Our corporate employer relations team will contact you shortly.</p>
                   <button onClick={() => setSubmitted(false)} className="btn btn-solid btn-sm mt-3 px-4 rounded-pill">
                     Submit Another Requirement
                   </button>
@@ -109,10 +109,10 @@ function AsEmployer({ onEnquireClick }) {
                 <form onSubmit={handleSubmit} className="d-flex flex-column gap-3">
                   <div>
                     <label className="form-label small fw-semibold text-white">Company / Organization Name *</label>
-                    <input 
-                      type="text" 
-                      className="form-control bg-black text-white border-secondary shadow-none" 
-                      placeholder="e.g. Acme Corp" 
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      placeholder="e.g. Acme Corp"
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                       required
@@ -121,10 +121,10 @@ function AsEmployer({ onEnquireClick }) {
 
                   <div>
                     <label className="form-label small fw-semibold text-white">Contact Person Name *</label>
-                    <input 
-                      type="text" 
-                      className="form-control bg-black text-white border-secondary shadow-none" 
-                      placeholder="Your Full Name" 
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      placeholder="Your Full Name"
                       value={formData.contactPerson}
                       onChange={(e) => setFormData({ ...formData, contactPerson: e.target.value })}
                       required
@@ -134,10 +134,10 @@ function AsEmployer({ onEnquireClick }) {
                   <div className="row g-3">
                     <div className="col-md-6">
                       <label className="form-label small fw-semibold text-white">Work Email ID *</label>
-                      <input 
-                        type="email" 
-                        className="form-control bg-black text-white border-secondary shadow-none" 
-                        placeholder="name@company.com" 
+                      <input
+                        type="email"
+                        className="form-control shadow-none"
+                        placeholder="name@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
@@ -145,10 +145,10 @@ function AsEmployer({ onEnquireClick }) {
                     </div>
                     <div className="col-md-6">
                       <label className="form-label small fw-semibold text-white">Contact Phone *</label>
-                      <input 
-                        type="tel" 
-                        className="form-control bg-black text-white border-secondary shadow-none" 
-                        placeholder="+91 98765 43210" 
+                      <input
+                        type="tel"
+                        className="form-control shadow-none"
+                        placeholder="+91 98765 43210"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         required
@@ -158,8 +158,8 @@ function AsEmployer({ onEnquireClick }) {
 
                   <div>
                     <label className="form-label small fw-semibold text-white">Number of Open Positions / Service Needed</label>
-                    <select 
-                      className="form-select bg-black text-white border-secondary shadow-none"
+                    <select
+                      className="form-select shadow-none"
                       value={formData.positions}
                       onChange={(e) => setFormData({ ...formData, positions: e.target.value })}
                     >
@@ -174,17 +174,17 @@ function AsEmployer({ onEnquireClick }) {
 
                   <div>
                     <label className="form-label small fw-semibold text-white">Role Requirements & Description</label>
-                    <textarea 
-                      className="form-control bg-black text-white border-secondary shadow-none" 
-                      rows="3" 
+                    <textarea
+                      className="form-control shadow-none"
+                      rows="3"
                       placeholder="Specify skills, experience level, budget, or timeline..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     ></textarea>
                   </div>
 
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="btn btn-solid py-3 fw-bold rounded-3 mt-2 shadow-sm"
                   >
                     Send Hiring Request

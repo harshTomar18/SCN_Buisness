@@ -50,11 +50,11 @@ const businessVerticals = [
   {
     id: 6,
     slug: 'payroll-management',
-    title: 'SCN Global Payroll Management',
+    title: 'SCN Global Payroll & Corporate Solutions',
     image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-6694543-6694543-1024x683.jpg',
-    alt: 'SCN Global Payroll Management',
-    tagline: 'Automated & Compliant Workforce Payroll Processing',
-    description: 'Streamlined salary administration, PF/ESI tax compliance, attendance integration, reimbursement management, and audit-proof payroll outsourcing.'
+    alt: 'SCN Global Payroll & Corporate Solutions',
+    tagline: 'One Stop Corporate Solutions, Facility Management & Payroll Outsourcing',
+    description: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations, manpower, procurement, maintenance, safety, and payroll efficiently and cost-effectively.'
   },
   {
     id: 7,

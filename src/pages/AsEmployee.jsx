@@ -60,8 +60,8 @@ function AsEmployee({ onEnquireClick }) {
                     <i className="fa fa-user-circle fs-5"></i>
                   </div>
                   <div>
-                    <p className="mb-0 fw-semibold text-white">Mr. Aryan Rastogi</p>
-                    <p className="mb-0 text-white-50 small">Talent Acquisition Lead</p>
+                    <p className="mb-0 fw-semibold text-white">SCN Talent Acquisition Desk</p>
+                    <p className="mb-0 text-white-50 small">Recruitment & Placement Lead</p>
                     <p className="mb-0 text-white small"><i className="fa fa-envelope text-success me-1"></i> <a href="mailto:hr@scnbusinessgroup.com" className="text-decoration-none text-success font-weight-bold">hr@scnbusinessgroup.com</a></p>
                     <p className="mb-0 text-white small"><i className="fa fa-phone text-success me-1"></i> <a href="tel:+917982941427" className="text-decoration-none text-success font-weight-bold">+91-7982941427</a></p>
                   </div>
@@ -108,7 +108,7 @@ function AsEmployee({ onEnquireClick }) {
                 <div className="alert alert-success p-4 rounded-3 text-center my-4 bg-dark text-white border-success">
                   <div className="fs-1 mb-2">🎓</div>
                   <h4 className="fw-bold alert-heading text-white">Application Submitted!</h4>
-                  <p className="small mb-0 text-white-50">Thank you. Mr. Aryan Rastogi and the SCN HR Team will review your profile and reach out.</p>
+                  <p className="small mb-0 text-white-50">Thank you. The SCN Talent Acquisition & HR Team will review your profile and reach out.</p>
                   <button onClick={() => setSubmitted(false)} className="btn btn-solid btn-sm mt-3 px-4 rounded-pill">
                     Submit Another Application
                   </button>
@@ -119,7 +119,7 @@ function AsEmployee({ onEnquireClick }) {
                     <label className="form-label small fw-semibold text-white">Full Name *</label>
                     <input 
                       type="text" 
-                      className="form-control bg-black text-white border-secondary shadow-none" 
+                      className="form-control shadow-none" 
                       placeholder="Enter your full name" 
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
@@ -132,7 +132,7 @@ function AsEmployee({ onEnquireClick }) {
                       <label className="form-label small fw-semibold text-white">Email Address *</label>
                       <input 
                         type="email" 
-                        className="form-control bg-black text-white border-secondary shadow-none" 
+                        className="form-control shadow-none" 
                         placeholder="you@domain.com" 
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -143,7 +143,7 @@ function AsEmployee({ onEnquireClick }) {
                       <label className="form-label small fw-semibold text-white">Mobile Number *</label>
                       <input 
                         type="tel" 
-                        className="form-control bg-black text-white border-secondary shadow-none" 
+                        className="form-control shadow-none" 
                         placeholder="+91 98765 43210" 
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -156,7 +156,7 @@ function AsEmployee({ onEnquireClick }) {
                     <div className="col-md-6">
                       <label className="form-label small fw-semibold text-white">Highest Qualification</label>
                       <select 
-                        className="form-select bg-black text-white border-secondary shadow-none"
+                        className="form-select shadow-none"
                         value={formData.qualification}
                         onChange={(e) => setFormData({ ...formData, qualification: e.target.value })}
                       >
@@ -170,7 +170,7 @@ function AsEmployee({ onEnquireClick }) {
                     <div className="col-md-6">
                       <label className="form-label small fw-semibold text-white">Experience Level</label>
                       <select 
-                        className="form-select bg-black text-white border-secondary shadow-none"
+                        className="form-select shadow-none"
                         value={formData.experience}
                         onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
                       >
@@ -186,7 +186,7 @@ function AsEmployee({ onEnquireClick }) {
                   <div>
                     <label className="form-label small fw-semibold text-white">Paste Resume Text / Key Skills Summary *</label>
                     <textarea 
-                      className="form-control bg-black text-white border-secondary shadow-none" 
+                      className="form-control shadow-none" 
                       rows="3" 
                       placeholder="Summary of skills, Android development, tech stack, past experience, or job preferences..."
                       value={formData.resume}

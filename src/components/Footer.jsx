@@ -46,7 +46,7 @@ function Footer() {
               <li><Link to="/about-us" className="text-white-50 text-decoration-none hover-white">About Us</Link></li>
               <li><Link to="/our-business" className="text-white-50 text-decoration-none hover-white">Our Business</Link></li>
               <li><Link to="/as-employer" className="text-white-50 text-decoration-none hover-white">As Employer</Link></li>
-              <li><Link to="/as-employee" className="text-white-50 text-decoration-none hover-white">As Employee</Link></li>
+              <li><a href="https://scnjobs.com/" target="_blank" rel="noopener noreferrer" className="text-white-50 text-decoration-none hover-white">Apply for Jobs</a></li>
               <li><Link to="/contact-us" className="text-white-50 text-decoration-none hover-white">Contact Us</Link></li>
             </ul>
           </div>

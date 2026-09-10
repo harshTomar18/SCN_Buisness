@@ -24,19 +24,19 @@ function Footer() {
             </p>
             {/* Social Media Links */}
             <div className="d-flex gap-2">
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="social-icon-btn" title="Instagram">
+              <a href="https://www.instagram.com/scnglobal.recruitment/" target="_blank" rel="noreferrer" className="social-icon-btn" title="Instagram">
                 <i className="fa fa-instagram"></i>
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="social-icon-btn" title="Facebook">
+              <a href="https://www.facebook.com/SCNGlobalRecruitment" target="_blank" rel="noreferrer" className="social-icon-btn" title="Facebook">
                 <i className="fa fa-facebook"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="social-icon-btn" title="X (Twitter)">
+              <a href="https://x.com/SCNGlobal2024" target="_blank" rel="noreferrer" className="social-icon-btn" title="X (Twitter)">
                 <i className="fa fa-twitter"></i>
               </a>
               <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="social-icon-btn" title="LinkedIn">
                 <i className="fa fa-linkedin"></i>
               </a>
-              <a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="social-icon-btn" title="YouTube">
+              <a href="https://www.youtube.com/@SCNGlobalPvtLtd" target="_blank" rel="noreferrer" className="social-icon-btn" title="YouTube">
                 <i className="fa fa-youtube-play"></i>
               </a>
             </div>
@@ -60,11 +60,11 @@ function Footer() {
             <h6 className="text-white fw-bold mb-3 border-bottom border-secondary pb-2">Corporate Office & Branches</h6>
             <div className="row g-3 small" style={{ fontSize: '13px' }}>
               <div className="col-md-6">
-                <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Head Office (Noida):</p>
+                <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Branch Office (Noida):</p>
                 <p className="text-white-50 mb-3">H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301</p>
               </div>
               <div className="col-md-6">
-                <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Branch Office (Rohini):</p>
+                <p className="mb-1 text-white fw-semibold"><i className="fa fa-map-marker text-primary me-1"></i> Head Office (Rohini):</p>
                 <p className="text-white-50 mb-3">Office No-111, 1st floor, Aggarwal City Square, Mangalam Place, Sector-3, Rohini, Delhi 110085</p>
               </div>
               <div className="col-md-12">

@@ -156,14 +156,14 @@ function AsEmployer({ onEnquireClick }) {
                   </div>
 
                   <div>
-                    <label className="form-label small fw-semibold text-white">Number of Open Positions / Service Needed</label>
+                    <label className="form-label small fw-semibold text-white"> Service Needed</label>
                     <select
                       className="form-select shadow-none"
                       value={formData.positions}
                       onChange={(e) => setFormData({ ...formData, positions: e.target.value })}
                     >
                       <option value="">Select Option</option>
-                      <option value="IT Staffing">IT & Android App Developers</option>
+                      <option value="IT Staffing">IT Services</option>
                       <option value="US Staffing">US Offshore Staffing</option>
                       <option value="General Staffing">General & Industrial Staffing</option>
                       <option value="Payroll Outsourcing">Payroll Management Outsourcing</option>
@@ -186,7 +186,7 @@ function AsEmployer({ onEnquireClick }) {
                     type="submit"
                     className="btn btn-solid py-3 fw-bold rounded-3 mt-2 shadow-sm"
                   >
-                    Send Hiring Request
+                    Submit Requirement
                   </button>
                 </form>
               )}

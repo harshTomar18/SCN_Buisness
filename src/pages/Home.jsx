@@ -64,19 +64,20 @@ const businessOverview = [
     image: '/images/vertical_us_staffing.jpg',
     desc: 'Offshore recruitment solutions, US IT bench sales recruiters, W2/C2C placements.'
   },
+
   {
     id: 6,
-    slug: 'event-management',
-    title: 'SCN Global Event Management',
-    image: '/images/vertical_payroll_management.jpg',
-    desc: 'Corporate events, trade shows, BTL promotions, exhibitions, custom exhibits, and MICE services.'
-  },
-  {
-    id: 7,
     slug: 'general-staffing',
     title: 'SCN Global General Staffing',
     image: '/images/vertical_general_staffing.jpg',
     desc: 'Temporary, contractual, and permanent workforce deployment for diverse industries.'
+  },
+  {
+    id: 7,
+    slug: 'event-management',
+    title: 'SCN Global Event Management',
+    image: '/images/vertical_payroll_management.jpg',
+    desc: 'Corporate events, trade shows, BTL promotions, exhibitions, custom exhibits, and MICE services.'
   },
   {
     id: 8,
@@ -109,7 +110,8 @@ const testimonials = [
     quote: "SCN Global Payroll Management transformed our compliance and monthly salary process. Error-free and timely every single month.",
     author: "Amit Verma",
     role: "Founder & CEO, Retail Chain"
-  }
+  },
+
 ];
 
 const partnerLogos = [
@@ -135,7 +137,9 @@ const partnerLogos = [
   { name: 'JSR Global', tagline: 'Network' },
   { name: 'Filo', tagline: 'EdTech' },
   { name: 'MS Infotech', tagline: 'Software' },
-  { name: 'Dangal Games', tagline: 'Gaming' }
+  { name: 'Dangal Games', tagline: 'Gaming' },
+  { name: 'Easy Solar Solutions ', tagline: 'Tech Solutions' },
+
 ];
 
 function Home({ onEnquireClick }) {
@@ -286,7 +290,7 @@ function Home({ onEnquireClick }) {
               <path d="M12 7.1v7.4" stroke="#111111" strokeWidth="1.85" strokeLinecap="round" />
               <path d="M8.15 12.35L12 16.2l3.85-3.85" stroke="#111111" strokeWidth="1.85" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <span>500+ Corporate Partners Onboarded</span>
+            <span>1000+ Corporate Partners Onboarded</span>
           </div>
 
           <div className="stat appear appear--stat" style={{ '--d': '1.44s' }}>
@@ -319,7 +323,7 @@ function Home({ onEnquireClick }) {
               <p className="small mb-0 text-white-50">Years Legacy (Est. 2004)</p>
             </div>
             <div className="col-md-3 col-6">
-              <h3 className="fw-bold mb-0 text-white">500+</h3>
+              <h3 className="fw-bold mb-0 text-white">1000+</h3>
               <p className="small mb-0 text-white-50">Enterprise Clients</p>
             </div>
             <div className="col-md-3 col-6">
@@ -342,10 +346,10 @@ function Home({ onEnquireClick }) {
               <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>About SCN Global</span>
               <h2 className="display-6 fw-bold text-white my-2">Your Trusted Partner in Workforce & Technology Excellence</h2>
               <p className="text-light opacity-75" style={{ lineHeight: '1.7' }}>
-                SCN Global is a premier multi-level business company providing top-tier staffing solutions, IT services, HR training, personality development programs, payroll management, BPO operations, and real estate services.
+                SCN Global is a premier multi-level business company providing top-tier staffing solutions, IT services, HR training, english and personality development programs, payroll management, BPO operations, real estate services and event management services.
               </p>
               <p className="text-light opacity-75" style={{ lineHeight: '1.7' }}>
-                Headquartered in Noida Sector 63, our deep industry expertise empowers companies to build high-performing teams, optimize operational efficiency, and drive sustainable growth across India and international markets.
+                Headquartered in Delhi, our deep industry expertise empowers companies to build high-performing teams, optimize operational efficiency, and drive sustainable growth across India and international markets.
               </p>
               <div className="d-flex gap-3 mt-4">
                 <Link to="/about-us" className="btn btn-solid px-4 py-2 fw-semibold">
@@ -474,7 +478,7 @@ function Home({ onEnquireClick }) {
         <div className="container text-center">
           <h2 className="fw-bold text-white mb-3">Ready to Grow Your Business with SCN?</h2>
           <p className="lead text-white-50 max-w-xl mx-auto mb-4" style={{ maxWidth: '600px' }}>
-            Get in touch with our Client Helpdesk or visit our Corporate Head Office in Noida Sector 63.
+            Get in touch with our Client Helpdesk or visit our Corporate  Office in Noida Sector 63 and Sector-3, Rohini, Delhi.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Link

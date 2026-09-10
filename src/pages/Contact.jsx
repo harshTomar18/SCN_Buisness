@@ -48,7 +48,7 @@ function Contact() {
               <div>
                 <span className="badge bg-black text-primary border border-secondary mb-1">General Support Help Desk</span>
                 <h4 className="h5 fw-bold text-white mb-1">SCN Client Support Team</h4>
-                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:hr@scnglobalpvtltd.com" className="text-decoration-none text-light">info@scnglobalpvtltd.com</a></p>
+                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:hr@scnglobalpvtltd.com" className="text-decoration-none text-light">hr@scnglobalpvtltd.com</a></p>
                 <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 9891910542</p>
               </div>
             </div>

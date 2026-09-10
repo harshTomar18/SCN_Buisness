@@ -9,14 +9,14 @@ function Footer() {
           {/* Company Brief & Logo */}
           <div className="col-lg-4 col-md-6">
             <img 
-              src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
-              alt="SCN Business Group Logo" 
-              className="bg-white p-2 rounded mb-3"
-              style={{ maxHeight: '50px', width: 'auto' }}
+              src="/images/scn_global_logo.jpg" 
+              alt="SCN Global Logo" 
+              className="rounded-circle mb-3 border border-secondary border-opacity-50"
+              style={{ maxHeight: '55px', width: 'auto', objectFit: 'cover' }}
             />
-            <h5 className="text-white fw-bold mb-2">SCN Business Group</h5>
+            <h5 className="text-white fw-bold mb-2">SCN Global</h5>
             <p className="small text-white-50 mb-3" style={{ fontSize: '13px', lineHeight: '1.6' }}>
-              Backed by 21+ years of experience, SCN Business Group partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, IT, and HR solutions.
+              Backed by 21+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, IT, and HR solutions.
             </p>
             {/* Social Media Links */}
             <div className="d-flex gap-2">
@@ -75,7 +75,7 @@ function Footer() {
 
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-white-50" style={{ fontSize: '13px' }}>
           <p className="mb-0">
-            &copy; {new Date().getFullYear()} SCN Business Group. All Rights Reserved.
+            &copy; {new Date().getFullYear()} SCN Global. All Rights Reserved.
           </p>
           <div className="d-flex gap-3">
             <Link to="/contact-us" className="text-white-50 text-decoration-none hover-white">Privacy Policy</Link>

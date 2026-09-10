@@ -5,10 +5,10 @@ const verticalsData = {
   'it-services': {
     title: 'SCN Global IT Services',
     subtitle: 'Innovative Solutions for Growth & Digital Transformation',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181316-1181316-1024x684.jpg',
+    heroImage: '/images/vertical_it_services.jpg',
     
     heroHeadline: 'Innovative Solutions for Growth',
-    heroIntro: 'At SCN Business Group, we are committed to empowering people by creating inclusive and sustainable workspaces. By blending human-first design with the power of top brains, we foster collaboration and increase engagement across all roles. Our tailored, persona-driven environments enhance productivity, promote well-being, and support a healthy work-life balance. These dynamic spaces fuel innovation and creativity—placing individuals at the centre of progress.',
+    heroIntro: 'At SCN Global, we are committed to empowering people by creating inclusive and sustainable workspaces. By blending human-first design with the power of top brains, we foster collaboration and increase engagement across all roles. Our tailored, persona-driven environments enhance productivity, promote well-being, and support a healthy work-life balance. These dynamic spaces fuel innovation and creativity—placing individuals at the centre of progress.',
     
     numberedServices: [
       {
@@ -16,25 +16,25 @@ const verticalsData = {
         title: 'Web Development',
         tagline: 'Elevate your brand with our custom web design and development solutions.',
         description: 'We craft visually impactful, user-centric websites tailored to your specific business goals. Enhance your digital presence with a site that not only impresses but also fosters engagement and drives sustainable growth. Let’s create your digital masterpiece together.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181271-1181271-1024x684.jpg'
+        image: '/images/service_web_dev.jpg'
       },
       {
         num: '02',
         title: 'Digital Marketing',
         tagline: 'Accelerate your brand’s growth with our results-driven digital marketing solutions.',
         description: 'We design data-backed strategies to increase visibility, boost engagement, and drive conversions across all digital platforms. From SEO and social media to paid campaigns and content marketing, we tailor every approach to your unique business goals. Let’s amplify your online impact and grow your digital footprint with precision.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-95916-95916-1024x683.jpg'
+        image: '/images/service_digital_marketing.jpg'
       },
       {
         num: '03',
         title: 'Android & Mobile App Development',
         tagline: 'Empower your business with high-performance native Android & iOS mobile applications.',
         description: 'We deliver innovative, scalable, and secure Android and cross-platform mobile apps designed to streamline operations, enhance customer engagement, and future-proof your enterprise. From native Android development (Kotlin/Java) and Flutter apps to UI/UX design, cloud API integration, and Play Store deployment, our solutions turn your mobile vision into reality.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7793726-7793726-1024x683.jpg'
+        image: '/images/service_mobile_dev.jpg'
       }
     ],
 
-    coreEmpowermentStatement: 'At SCN Business Group, we empower businesses with cutting-edge digital solutions. Our expert team delivers high-performance Web Development, results-driven Digital Marketing, strategic SEO, native Android App Development, and impactful UI/UX & Graphic Design services. Whether you’re building your online presence or optimising for growth, we provide tailored solutions that turn ideas into digital success.',
+    coreEmpowermentStatement: 'At SCN Global, we empower businesses with cutting-edge digital solutions. Our expert team delivers high-performance Web Development, results-driven Digital Marketing, strategic SEO, native Android App Development, and impactful UI/UX & Graphic Design services. Whether you’re building your online presence or optimising for growth, we provide tailored solutions that turn ideas into digital success.',
 
     workplaceEvolutionTitle: 'Cutting-Edge Solutions for Workplace Evolution',
     workplaceEvolutionServices: [
@@ -43,21 +43,21 @@ const verticalsData = {
         title: 'Android & Mobile Solutions',
         tagline: 'Custom Android apps, Play Store deployment, and mobile API integration.',
         description: 'Our mobile engineering team builds responsive, feature-rich Android applications with intuitive interfaces, real-time sync, secure authentication, and high performance across all mobile devices.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7709224-7709224-1024x683.jpg'
+        image: '/images/service_mobile_dev.jpg'
       },
       {
         icon: '🔌',
         title: 'Network Engineering',
         tagline: 'Build a reliable, high-performance digital foundation with our Network Engineering services.',
         description: 'We design, implement, and manage secure and scalable network infrastructures that support your business operations. From LAN/WAN optimisation to cloud connectivity and network security, our expert engineers ensure uninterrupted performance, enhanced data flow, and future-ready architecture tailored to your enterprise needs.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-442150-442150-1024x683.jpg'
+        image: '/images/vertical_it_services.jpg'
       },
       {
         icon: '💻',
         title: 'IT Development Solution',
         tagline: 'Drive innovation with our comprehensive IT Development Solutions.',
         description: 'We deliver end-to-end software and application development services tailored to your unique business objectives. Whether it’s building custom platforms, modernising legacy systems, or integrating cutting-edge technologies, our expert team ensures scalable, secure, and high-performing solutions that accelerate your digital growth.',
-        image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181271-1181271-1024x684.jpg'
+        image: '/images/service_web_dev.jpg'
       }
     ],
 
@@ -83,7 +83,7 @@ const verticalsData = {
   'it-training': {
     title: 'SCN Global IT Training Institute',
     subtitle: 'Skill Development & Job-Oriented Technical Training Programs',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/annie-spratt-QckxruozjRg-unsplash-1-1024x683.jpg',
+    heroImage: '/images/vertical_it_training.jpg',
     heroHeadline: 'Job-Oriented Technical Training',
     heroIntro: 'SCN Global IT Training Institute is dedicated to empowering students, fresh graduates, and working professionals with job-ready technical skills. Our practical, project-based curriculum is led by industry veterans to bridge the gap between academic education and corporate technology demands.',
     numberedServices: [
@@ -138,7 +138,7 @@ const verticalsData = {
   'personality-development': {
     title: 'SCN Global Personality Development Training',
     subtitle: 'Professional Growth, Soft Skills & Leadership Mentorship',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-15543214-15543214-1024x683.jpg',
+    heroImage: '/images/vertical_personality_training.jpg',
     heroHeadline: 'Transform Your Executive Presence',
     heroIntro: 'Our Personality Development Training program is designed to enhance personal transformation and career growth. We empower individuals with essential soft skills, corporate etiquette, fluent communication, and confidence needed to excel in competitive corporate environments.',
     numberedServices: [
@@ -178,7 +178,7 @@ const verticalsData = {
   'hr-training': {
     title: 'SCN Global HR Training Institute',
     subtitle: 'Practical Human Resource Management & Payroll Certification',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-8730276-8730276-1024x684.jpg',
+    heroImage: '/images/vertical_hr_training.jpg',
     heroHeadline: 'Practical HR Generalist & Payroll Mastery',
     heroIntro: 'The SCN Global HR Training Institute offers practical, hands-on HR training designed to transform candidates into job-ready HR Generalists and Specialists. Our training covers real-world payroll calculation, statutory compliance, talent acquisition, labor laws, and HR portal operations.',
     numberedServices: [
@@ -203,7 +203,7 @@ const verticalsData = {
   'us-staffing': {
     title: 'SCN Global U. S. Staffing',
     subtitle: 'Offshore Talent Acquisition & Staffing for North American Clients',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1024248-1024248-1024x683.jpg',
+    heroImage: '/images/vertical_us_staffing.jpg',
     heroHeadline: 'Offshore & Cross-Border US Recruitment',
     heroIntro: 'SCN Global U.S. Staffing specializes in delivering high-caliber offshore recruitment services to US IT consulting firms, MSPs, and enterprise clients. We bridge US talent demand with dedicated offshore recruiters, bench sales experts, and technical recruiters working in night shifts.',
     numberedServices: [
@@ -228,7 +228,7 @@ const verticalsData = {
   'payroll-management': {
     title: 'SCN Global Payroll & Corporate Solutions',
     subtitle: 'One Stop Corporate Solutions, Facility Management & Automated Payroll Outsourcing',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-6694543-6694543-1024x683.jpg',
+    heroImage: '/images/vertical_payroll_management.jpg',
     heroHeadline: 'One Stop Corporate Solutions & Payroll Management',
     heroIntro: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.',
     corporateOverviewParagraphs: [
@@ -259,7 +259,7 @@ const verticalsData = {
   'general-staffing': {
     title: 'SCN Global General Staffing',
     subtitle: 'Temporary, Flexible & Permanent Workforce Deployment Nationwide',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-5990042-5990042-1024x683.jpg',
+    heroImage: '/images/vertical_general_staffing.jpg',
     heroHeadline: 'Agile Pan-India Staffing Solutions',
     heroIntro: 'SCN Global General Staffing provides agile workforce solutions tailored for industrial, retail, administrative, logistics, and commercial operations across India. We manage recruitment, employment contracts, payroll, and compliance so you can focus on core business growth.',
     numberedServices: [
@@ -284,7 +284,7 @@ const verticalsData = {
   'bpo-services': {
     title: 'SCN Global BPO Services',
     subtitle: '24/7 Inbound, Outbound & Non-Voice Customer Support Center',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7709224-7709224-1024x683.jpg',
+    heroImage: '/images/vertical_bpo_services.jpg',
     heroHeadline: 'Omnichannel BPO & Customer Experience Support',
     heroIntro: 'SCN Global BPO Services provides multi-channel customer relationship management and business process outsourcing solutions. We operate 24/7 contact centers equipped with trained agents and modern IVR infrastructure to deliver exceptional customer experiences.',
     numberedServices: [
@@ -309,7 +309,7 @@ const verticalsData = {
   'real-estate': {
     title: 'SCN Global Real Estate',
     subtitle: 'Commercial Property Advisory & Corporate Office Space Leasing',
-    heroImage: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-101808-101808-1024x683.jpg',
+    heroImage: '/images/vertical_real_estate.jpg',
     heroHeadline: 'Commercial Property & Workspace Advisory',
     heroIntro: 'SCN Global Real Estate provides end-to-end commercial property advisory, office space leasing, and real estate investment management. We assist growing companies, tech firms, and enterprises in securing prime commercial spaces tailored for modern work cultures.',
     numberedServices: [

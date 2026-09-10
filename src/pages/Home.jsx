@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const heroSlides = [
   {
-    badge: 'SCN BUSINESS GROUP • EST. 2004',
+    badge: 'SCN GLOBAL • EST. 2004',
     line1: 'Building <em>high-performing</em> teams &',
     line2: 'empowering global business growth.',
     subtitle: 'Leading provider of staffing, IT solutions, HR training, and corporate management services.'
@@ -33,70 +33,70 @@ const businessOverview = [
     id: 1,
     slug: 'it-services',
     title: 'SCN Global IT Services',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181316-1181316-1024x684.jpg',
+    image: '/images/vertical_it_services.jpg',
     desc: 'Custom web apps, mobile solutions, cloud management, UI/UX design, and SEO services.'
   },
   {
     id: 2,
     slug: 'it-training',
     title: 'SCN Global IT Training Institute',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/annie-spratt-QckxruozjRg-unsplash-1-1024x683.jpg',
+    image: '/images/vertical_it_training.jpg',
     desc: 'Job-oriented technical training in full-stack web development, SEO, and digital marketing.'
   },
   {
     id: 3,
     slug: 'personality-development',
     title: 'SCN Global Personality Training',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-15543214-15543214-1024x683.jpg',
+    image: '/images/vertical_personality_training.jpg',
     desc: 'Soft skills, corporate etiquette, public speaking, and confidence building for professionals.'
   },
   {
     id: 4,
     slug: 'hr-training',
     title: 'SCN Global HR Training Institute',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-8730276-8730276-1024x684.jpg',
+    image: '/images/vertical_hr_training.jpg',
     desc: 'End-to-end practical HR generalist training, payroll, and recruitment certification.'
   },
   {
     id: 5,
     slug: 'us-staffing',
     title: 'SCN Global U. S. Staffing',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1024248-1024248-1024x683.jpg',
+    image: '/images/vertical_us_staffing.jpg',
     desc: 'Offshore recruitment solutions, US IT bench sales recruiters, W2/C2C placements.'
   },
   {
     id: 6,
     slug: 'payroll-management',
     title: 'SCN Global Payroll Management',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-6694543-6694543-1024x683.jpg',
+    image: '/images/vertical_payroll_management.jpg',
     desc: 'Automated salary administration, tax compliance, PF/ESI filing, and statutory audits.'
   },
   {
     id: 7,
     slug: 'general-staffing',
     title: 'SCN Global General Staffing',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-5990042-5990042-1024x683.jpg',
+    image: '/images/vertical_general_staffing.jpg',
     desc: 'Temporary, contractual, and permanent workforce deployment for diverse industries.'
   },
   {
     id: 8,
     slug: 'bpo-services',
     title: 'SCN Global BPO Services',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7709224-7709224-1024x683.jpg',
+    image: '/images/vertical_bpo_services.jpg',
     desc: '24/7 Voice and non-voice customer support, inbound/outbound sales, and live help desk.'
   },
   {
     id: 9,
     slug: 'real-estate',
     title: 'SCN Global Real Estate',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-101808-101808-1024x683.jpg',
+    image: '/images/vertical_real_estate.jpg',
     desc: 'Corporate office space leasing, commercial property advisory, and asset management.'
   }
 ];
 
 const testimonials = [
   {
-    quote: "SCN Business Group helped streamline our HR and staffing needs with exceptional professionalism. Their team is responsive, reliable, and results-driven.",
+    quote: "SCN Global helped streamline our HR and staffing needs with exceptional professionalism. Their team is responsive, reliable, and results-driven.",
     author: "Rohit Gupta",
     role: "VP Operations, Tech Enterprise"
   },
@@ -113,29 +113,29 @@ const testimonials = [
 ];
 
 const partnerLogos = [
-  { name: 'IDT', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/IDT.png' },
-  { name: 'Noble', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Noble-.png' },
-  { name: 'CubeWeb', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/CubeWeb.png' },
-  { name: 'Hurculas Structure', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Hurculas-structure.png' },
-  { name: 'Tracking Africa System', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Tracking-Africa-System.png' },
-  { name: 'DevWeb Solution', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/DevWev-solution.png' },
-  { name: 'Khetan', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Khetan.png' },
-  { name: 'SDK Travels', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/SDK-Travals.png' },
-  { name: 'Waves', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Wveves.png' },
-  { name: 'CW', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/CW.png' },
-  { name: 'Tangent', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/tangent.png' },
-  { name: 'Imperial Medicare', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/imparial-medicare.png' },
-  { name: 'Sky Group', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Sky-Group.png' },
-  { name: 'Markup Design', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/markup-design.png' },
-  { name: 'Connect Infosoft', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Connect-Infosoft.png' },
-  { name: 'Nazeer Food', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/nazeer-Food.png' },
-  { name: 'Money Tick', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/monney-tick.png' },
-  { name: 'InXpress', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/inxpress.png' },
-  { name: 'Future Group', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Future-Group.png' },
-  { name: 'JSR Global Network', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/JSR-dlobal-network.png' },
-  { name: 'Filo', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Filo.png' },
-  { name: 'MS Infotech', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/MS-Infotech.png' },
-  { name: 'Dangal Games', src: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/Dangal-games.png' }
+  { name: 'IDT', tagline: 'Tech Solutions' },
+  { name: 'Noble', tagline: 'Enterprise' },
+  { name: 'CubeWeb', tagline: 'Digital' },
+  { name: 'Hurculas', tagline: 'Structure' },
+  { name: 'Tracking Africa', tagline: 'Systems' },
+  { name: 'DevWeb', tagline: 'Solutions' },
+  { name: 'Khetan', tagline: 'Industries' },
+  { name: 'SDK', tagline: 'Travels' },
+  { name: 'Waves', tagline: 'Media' },
+  { name: 'CW', tagline: 'Global' },
+  { name: 'Tangent', tagline: 'Technologies' },
+  { name: 'Imperial', tagline: 'Medicare' },
+  { name: 'Sky Group', tagline: 'Ventures' },
+  { name: 'Markup', tagline: 'Design' },
+  { name: 'Connect', tagline: 'Infosoft' },
+  { name: 'Nazeer', tagline: 'Foods' },
+  { name: 'Money Tick', tagline: 'Fintech' },
+  { name: 'InXpress', tagline: 'Logistics' },
+  { name: 'Future Group', tagline: 'Retail' },
+  { name: 'JSR Global', tagline: 'Network' },
+  { name: 'Filo', tagline: 'EdTech' },
+  { name: 'MS Infotech', tagline: 'Software' },
+  { name: 'Dangal Games', tagline: 'Gaming' }
 ];
 
 function Home({ onEnquireClick }) {
@@ -340,10 +340,10 @@ function Home({ onEnquireClick }) {
         <div className="row align-items-center g-4">
           <div className="col-lg-6">
             <div className="pe-lg-3">
-              <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>About SCN Business Group</span>
+              <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>About SCN Global</span>
               <h2 className="display-6 fw-bold text-white my-2">Your Trusted Partner in Workforce & Technology Excellence</h2>
               <p className="text-light opacity-75" style={{ lineHeight: '1.7' }}>
-                SCN Business Group is a premier multi-level business company providing top-tier staffing solutions, IT services, HR training, personality development programs, payroll management, BPO operations, and real estate services.
+                SCN Global is a premier multi-level business company providing top-tier staffing solutions, IT services, HR training, personality development programs, payroll management, BPO operations, and real estate services.
               </p>
               <p className="text-light opacity-75" style={{ lineHeight: '1.7' }}>
                 Headquartered in Noida Sector 63, our deep industry expertise empowers companies to build high-performing teams, optimize operational efficiency, and drive sustainable growth across India and international markets.
@@ -361,7 +361,7 @@ function Home({ onEnquireClick }) {
           <div className="col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-25">
               <img 
-                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-8730276-8730276-1024x684.jpg" 
+                src="/images/vertical_general_staffing.jpg" 
                 alt="SCN Corporate Team" 
                 className="w-100 h-100 object-fit-cover"
                 style={{ maxHeight: '380px' }}
@@ -461,8 +461,9 @@ function Home({ onEnquireClick }) {
           <div className="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
             {partnerLogos.map((partner, index) => (
               <div className="col" key={index}>
-                <div className="client-logo-item bg-dark border border-secondary border-opacity-25 rounded-3" title={partner.name}>
-                  <img src={partner.src} alt={partner.name} loading="lazy" />
+                <div className="client-logo-item bg-dark border border-secondary border-opacity-25 rounded-3 p-3 text-center d-flex flex-column justify-content-center align-items-center h-100" title={partner.name} style={{ minHeight: '80px' }}>
+                  <span className="fw-bold text-white small d-block mb-1">{partner.name}</span>
+                  <span className="text-primary opacity-75" style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{partner.tagline}</span>
                 </div>
               </div>
             ))}

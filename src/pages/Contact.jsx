@@ -34,7 +34,7 @@ function Contact() {
         {/* Helpdesk Contacts Header */}
         <div className="text-center max-w-3xl mx-auto mb-5">
           <span className="badge bg-primary px-3 py-2 text-uppercase mb-2">Client Help Desk</span>
-          <h2 className="display-6 fw-bold text-white mb-3">Get in Touch with SCN Business Group</h2>
+          <h2 className="display-6 fw-bold text-white mb-3">Get in Touch with SCN Global</h2>
           <p className="text-light opacity-75">Have questions regarding staffing, IT services, Android app development, HR training, or corporate partnerships? We are here to assist you.</p>
         </div>
 
@@ -61,7 +61,7 @@ function Contact() {
               </div>
               <div>
                 <span className="badge bg-black text-primary border border-secondary mb-1">Corporate Client Relations</span>
-                <h4 className="h5 fw-bold text-white mb-1">SCN Business Desk</h4>
+                <h4 className="h5 fw-bold text-white mb-1">SCN Global Desk</h4>
                 <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> contact@scnbusinessgroup.com</p>
                 <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 96500 68863</p>
               </div>
@@ -80,7 +80,7 @@ function Contact() {
                 <div className="alert alert-success p-4 rounded-3 text-center my-4 bg-dark text-white border-success">
                   <div className="fs-1 mb-2">✅</div>
                   <h4 className="fw-bold alert-heading text-white">Message Sent!</h4>
-                  <p className="small mb-0 text-white-50">Thank you for contacting SCN Business Group. Our team will respond shortly.</p>
+                  <p className="small mb-0 text-white-50">Thank you for contacting SCN Global. Our team will respond shortly.</p>
                   <button onClick={() => setSubmitted(false)} className="btn btn-solid btn-sm mt-3 px-4 rounded-pill">
                     Send Another Message
                   </button>

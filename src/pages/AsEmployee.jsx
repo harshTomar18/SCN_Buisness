@@ -49,7 +49,7 @@ function AsEmployee({ onEnquireClick }) {
               </span>
               <h2 className="fw-bold text-white mb-3">Accelerate Your Career with SCN</h2>
               <p className="text-light opacity-75 mb-4" style={{ lineHeight: '1.7' }}>
-                Whether you are a fresh graduate seeking your first job or an experienced professional aiming for career advancement, SCN Business Group connects you with leading employers in IT, Android App Development, BPO, HR, Banking, and Corporate sectors across India & Global markets.
+                Whether you are a fresh graduate seeking your first job or an experienced professional aiming for career advancement, SCN Global connects you with leading employers in IT, Android App Development, BPO, HR, Banking, and Corporate sectors across India & Global markets.
               </p>
 
               {/* Employee Helpdesk Box */}

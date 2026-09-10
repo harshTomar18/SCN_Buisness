@@ -47,9 +47,9 @@ function AsEmployer({ onEnquireClick }) {
               <span className="badge bg-primary px-3 py-2 text-uppercase mb-3" style={{ letterSpacing: '1px' }}>
                 Employer Solutions
               </span>
-              <h2 className="fw-bold text-white mb-3">Partner with SCN Business Group</h2>
+              <h2 className="fw-bold text-white mb-3">Partner with SCN Global</h2>
               <p className="text-light opacity-75 mb-4" style={{ lineHeight: '1.7' }}>
-                Backed by 21+ years of experience, SCN Business Group partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, Android app development, executive recruitment, and HR management solutions.
+                Backed by 21+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, Android app development, executive recruitment, and HR management solutions.
               </p>
 
               {/* Employer Helpdesk Box */}
@@ -100,7 +100,7 @@ function AsEmployer({ onEnquireClick }) {
                 <div className="alert alert-success p-4 rounded-3 text-center my-4 bg-dark text-white border-success">
                   <div className="fs-1 mb-2">🎉</div>
                   <h4 className="fw-bold alert-heading text-white">Requirement Received!</h4>
-                  <p className="small mb-0 text-white-50">Thank you for reaching out to SCN Business Group. Our corporate employer relations team will contact you shortly.</p>
+                  <p className="small mb-0 text-white-50">Thank you for reaching out to SCN Global. Our corporate employer relations team will contact you shortly.</p>
                   <button onClick={() => setSubmitted(false)} className="btn btn-solid btn-sm mt-3 px-4 rounded-pill">
                     Submit Another Requirement
                   </button>

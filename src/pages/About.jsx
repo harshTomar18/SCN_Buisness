@@ -1,74 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const coreValues = [
-  {
-    title: 'Honesty',
-    desc: 'Operating with full transparency and truthful communication across all transactions.',
-    icon: '🤝',
-    image: '/images/core_honesty.jpg'
-  },
-  {
-    title: 'Integrity',
-    desc: 'Upholding strict ethical standards and maintaining client & candidate confidentiality.',
-    icon: '🛡️',
-    image: '/images/core_integrity.jpg'
-  },
-  {
-    title: 'Accountability',
-    desc: 'Taking full ownership of project outcomes and service commitments.',
-    icon: '⚖️',
-    image: '/images/core_accountability.jpg'
-  },
-  {
-    title: 'Respect',
-    desc: 'Fostering inclusive workplaces, valuing diversity, and appreciating every individual.',
-    icon: '🌟',
-    image: '/images/core_respect.jpg'
-  },
-  {
-    title: 'Dedication',
-    desc: 'Unwavering commitment to client goals and candidate career progression.',
-    icon: '🎯',
-    image: '/images/core_dedication.jpg'
-  },
-  {
-    title: 'Operational Excellence',
-    desc: 'Relentless pursuit of quality, efficiency, and zero-defect execution.',
-    icon: '🚀',
-    image: '/images/core_excellence.jpg'
-  },
-  {
-    title: 'Client Focus',
-    desc: 'Designing customized solutions aligned precisely with enterprise strategy.',
-    icon: '💼',
-    image: '/images/core_client_focus.jpg'
-  }
+const payrollServices = [
+  { icon: '⚡', title: 'End-to-End Payroll Processing', desc: 'Complete lifecycle management from attendance capture to salary disbursal.' },
+  { icon: '💰', title: 'Salary Calculation & Processing', desc: 'Accurate computation of gross pay, net pay, allowances, and deductions.' },
+  { icon: '📅', title: 'Attendance & Leave Management', desc: 'Seamless tracking of employee shifts, leaves, overtime, and time-off policies.' },
+  { icon: '📄', title: 'Payslip Generation', desc: 'Automated generation and secure delivery of monthly digital payslips.' },
+  { icon: '⚖️', title: 'Statutory Compliance Support', desc: 'Full compliance with PF, ESI, Professional Tax, LWF, and statutory filings.' },
+  { icon: '📊', title: 'Payroll MIS & Reports', desc: 'Detailed analytics, variance reports, and audit-ready management summaries.' },
+  { icon: '🗂️', title: 'Employee Data Management', desc: 'Centralized and secure management of complete employee master records.' },
+  { icon: '🤝', title: 'Full & Final Settlement', desc: 'Hassle-free exit management, leave encashment, and final dues settlement.' },
+  { icon: '🔄', title: 'Payroll Reconciliation', desc: 'Comprehensive audit trails and reconciliation prior to salary disbursal.' },
+  { icon: '👔', title: 'HR & Workforce Administration', desc: 'Integrated administrative support for ongoing HR & workforce operations.' }
 ];
 
-const faqs = [
-  {
-    q: 'When was SCN Business Group established?',
-    a: 'SCN Business Group was established in 2004 and has been delivering corporate staffing, HR training, IT, Android app development, and payroll solutions for over 21 years.'
-  },
-  {
-    q: 'Where is the corporate head office located?',
-    a: 'Our corporate head office is located at H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301. We also operate branch offices in Rohini and Seemapuri, Delhi.'
-  },
-  {
-    q: 'What business verticals does SCN operate in?',
-    a: 'SCN operates 9 specialized verticals: IT Services (Web & Android Apps), IT Training, Personality Development, HR Training, US Staffing, Payroll Management, General Staffing, BPO Services, and Real Estate Advisory.'
-  },
-  {
-    q: 'How can employers submit hiring requirements?',
-    a: 'Employers can navigate to our "As Employer" page or contact our Client Helpdesk (Mr. Jatin Chandel +91 9891910542 / info@scnbusinessgroup.com) to submit talent requirements.'
-  }
+const missionPoints = [
+  'Delivering accurate and timely payroll services.',
+  'Helping businesses reduce the complexity and cost of HR administration.',
+  'Maintaining the highest standards of confidentiality and data security.',
+  'Supporting clients with efficient and scalable workforce solutions.',
+  'Using technology and process-driven practices to improve HR efficiency.',
+  'Building long-term relationships based on trust, transparency, and professional service.',
+  'Enabling our clients to focus on their core business and growth while we manage their HR and payroll requirements.'
 ];
 
 function About({ onEnquireClick }) {
   return (
     <div className="about-page animate-fade-in bg-black text-white min-vh-100">
-      {/* Top Banner */}
+      {/* Top Banner / Breadcrumb */}
       <div className="bradcam_area position-relative">
         <div className="container py-4">
           <div className="row align-items-center">
@@ -94,150 +53,160 @@ function About({ onEnquireClick }) {
         </div>
       </div>
 
-      {/* Main Story & Heritage Section */}
+      {/* Main Overview Section */}
       <div className="container py-5">
         <div className="row align-items-center g-5">
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <span className="badge bg-primary px-3 py-2 text-uppercase mb-3" style={{ letterSpacing: '1px' }}>
-              Established in 2004
+              Payroll Outsourcing & HR Solutions
             </span>
-            <h2 className="display-6 fw-bold text-white mb-4">Building High-Performing Teams & Empowering Growth</h2>
-            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
-              Established in 2004, <strong>SCN Business Group</strong> has positioned itself as a leading provider of staffing, payroll, IT, Android app development, and training solutions in India. Headquartered in Noida Sector 63—the company leverages its strategic location to offer high-impact human resource and technology services to businesses nationwide.
+            <h1 className="display-6 fw-bold text-white mb-4">
+              Simplifying Payroll. Supporting People. Enabling Business Growth.
+            </h1>
+            <p className="text-light opacity-85" style={{ lineHeight: '1.75', fontSize: '16px' }}>
+              <strong>SCN Global Pvt. Ltd.</strong> is a professional <strong>Payroll Outsourcing and HR Solutions company</strong> committed to helping businesses simplify workforce management and streamline their HR operations.
             </p>
-            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
-              With a dedicated focus on workforce solutions, SCN Business Group has evolved into a trusted partner for companies seeking reliable, scalable, and efficient staffing models. Our operations span IT staffing, general staffing, industrial placements, payroll processing, and specialized US staffing.
+            <p className="text-light opacity-75" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+              We provide reliable and efficient payroll solutions covering the complete payroll lifecycle, including <strong>salary processing, attendance and leave management, payroll calculations, payslip generation, statutory deductions, payroll reports, and compliance support</strong>.
             </p>
-            <p className="text-light opacity-75" style={{ lineHeight: '1.7', fontSize: '16px' }}>
-              What truly sets SCN Business Group apart is its holistic perspective on human capital. By bridging the gap between people and purpose, SCN not only supports business growth but also uplifts individual careers and communities.
+            <p className="text-light opacity-75" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+              At SCN Global Pvt. Ltd., we understand that payroll requires <strong>accuracy, confidentiality, timeliness, and compliance</strong>. Our experienced team works closely with organizations to reduce administrative workload, minimize payroll errors, and ensure smooth and timely payroll processing.
+            </p>
+            <p className="text-light opacity-75 mb-0" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+              Our solutions are designed to support <strong>startups, SMEs, and established organizations</strong> with flexible and scalable payroll services tailored to their workforce requirements. By managing critical payroll activities, we enable our clients to focus on their core business while we take care of their payroll and HR administration.
             </p>
           </div>
-          <div className="col-lg-6">
-            <div className="row g-3">
-              <div className="col-6">
-                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
-                  <h3 className="display-5 fw-bold text-primary mb-1">21+</h3>
-                  <p className="text-white-50 small mb-0 fw-semibold">Years of Industry Legacy</p>
-                </div>
+
+          <div className="col-lg-5">
+            <div className="p-4 p-md-5 rounded-4 bg-dark border border-secondary border-opacity-25 shadow-lg position-relative overflow-hidden">
+              <div className="position-absolute top-0 end-0 p-3 opacity-10">
+                <i className="fa fa-briefcase display-1 text-primary"></i>
               </div>
-              <div className="col-6">
-                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
-                  <h3 className="display-5 fw-bold text-primary mb-1">500+</h3>
-                  <p className="text-white-50 small mb-0 fw-semibold">Corporate Partners</p>
-                </div>
+              <h3 className="fw-bold text-white mb-3" style={{ fontSize: '22px' }}>Why Choose SCN Global?</h3>
+              <p className="text-light opacity-80 small mb-4" style={{ lineHeight: '1.7' }}>
+                We combine <strong>professional expertise, technology, accuracy, and client-focused service</strong> to deliver dependable payroll solutions. Our goal is to build long-term partnerships by providing transparent, secure, and hassle-free payroll management.
+              </p>
+              <div className="p-3 bg-black rounded-3 border-start border-4 border-primary mb-4 border border-secondary border-opacity-25">
+                <p className="text-primary fw-semibold mb-0 small" style={{ fontStyle: 'italic' }}>
+                  "SCN Global Pvt. Ltd. — Simplifying Payroll. Supporting People. Enabling Business Growth."
+                </p>
               </div>
-              <div className="col-6">
-                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
-                  <h3 className="display-5 fw-bold text-primary mb-1">10k+</h3>
-                  <p className="text-white-50 small mb-0 fw-semibold">Candidates Placed</p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="stat-box text-center bg-dark text-white border border-secondary border-opacity-25 rounded-4 p-4">
-                  <h3 className="display-5 fw-bold text-primary mb-1">3</h3>
-                  <p className="text-white-50 small mb-0 fw-semibold">Corporate Offices</p>
-                </div>
+              <div className="p-3 bg-primary bg-opacity-10 rounded-3 border border-primary border-opacity-25 text-center">
+                <span className="d-block small text-primary fw-bold text-uppercase mb-1">Our Promise</span>
+                <p className="text-white fw-bold mb-0" style={{ fontSize: '15px' }}>
+                  "We don't just process payroll — we help businesses manage their people better."
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mission & Vision Section */}
+      {/* One Stop Corporate Solutions & Payroll Management Section */}
       <div className="py-5 border-top border-bottom border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
         <div className="container py-2">
-          <div className="row g-4">
-            <div className="col-md-6">
-              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25">
-                <div className="card-icon-badge mb-3">
-                  <i className="fa fa-bullseye"></i>
+          <div className="row align-items-center g-4">
+            <div className="col-lg-12">
+              <div className="p-4 p-md-5 bg-dark text-white rounded-4 border border-secondary border-opacity-25 shadow-sm">
+                <span className="badge bg-primary px-3 py-2 text-uppercase mb-3" style={{ letterSpacing: '1px' }}>
+                  Integrated Corporate Support
+                </span>
+                <h2 className="display-6 fw-bold text-white mb-4">
+                  One Stop Corporate Solutions & Payroll Management
+                </h2>
+                <div className="row g-4 text-light opacity-80" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+                  <div className="col-md-6">
+                    <p className="mb-3">
+                      <strong>One Stop Corporate Solutions</strong> is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.
+                    </p>
+                    <p className="mb-0">
+                      We bring manpower, facility management, workplace support, procurement, maintenance, safety, technology and corporate services together under one roof. This enables clients to reduce fragmented vendor coordination and manage multiple operational requirements through a single accountable partner.
+                    </p>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="mb-3">
+                      Our services are shaped around each site's specific requirements, including operating hours, manpower strength, recurring supply needs, maintenance priorities, workplace safety and reporting expectations.
+                    </p>
+                    <p className="mb-0">
+                      Our objective is to deliver dependable services, quality products, trained manpower and customized solutions with timely execution and clear coordination.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="fw-bold text-white mb-3">Our Mission</h3>
-                <p className="text-light opacity-75 mb-0" style={{ lineHeight: '1.7' }}>
-                  To bridge talent with opportunity by offering exceptional recruitment, training, payroll, Android app development, and IT services that drive sustainable growth for organizations and meaningful career advancement for individuals.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25">
-                <div className="card-icon-badge mb-3">
-                  <i className="fa fa-eye"></i>
-                </div>
-                <h3 className="fw-bold text-white mb-3">Our Vision</h3>
-                <p className="text-light opacity-75 mb-0" style={{ lineHeight: '1.7' }}>
-                  To be India's most trusted multi-level corporate services provider, recognized for operational excellence, innovation in workforce deployment, and unwavering client commitment.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Core Values Section */}
+      {/* Our Payroll Services Section */}
       <div className="container py-5">
         <div className="text-center max-w-2xl mx-auto mb-5">
-          <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Our Guiding Principles</span>
-          <h2 className="display-6 fw-bold text-white">SCN Core Values</h2>
+          <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Comprehensive Lifecycle</span>
+          <h2 className="display-6 fw-bold text-white">Our Payroll Services</h2>
+          <p className="text-light opacity-75">End-to-end payroll administration designed for precision, speed, and 100% compliance.</p>
         </div>
 
         <div className="row g-4">
-          {coreValues.map((v, idx) => (
+          {payrollServices.map((service, idx) => (
             <div className="col-lg-4 col-md-6" key={idx}>
-              <div className="attractive-card h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex flex-column">
-                <div className="business-card-img-wrapper" style={{ height: '190px' }}>
-                  <img src={v.image} alt={v.title} loading="lazy" />
-                </div>
-                <div className="p-4 d-flex flex-column flex-grow-1">
-                  <div className="d-flex align-items-center gap-2 mb-2">
-                    <span className="fs-5">{v.icon}</span>
-                    <h4 className="h5 fw-bold text-white mb-0">{v.title}</h4>
+              <div className="attractive-card p-4 h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex flex-column">
+                <div className="d-flex align-items-center gap-3 mb-3">
+                  <div className="bg-primary bg-opacity-25 text-primary p-2 rounded-3 fs-4 d-flex align-items-center justify-content-center" style={{ width: '48px', height: '48px' }}>
+                    <span>{service.icon}</span>
                   </div>
-                  <p className="text-light opacity-75 small mb-0 flex-grow-1" style={{ lineHeight: '1.65' }}>
-                    {v.desc}
-                  </p>
+                  <h3 className="h6 fw-bold text-white mb-0 flex-grow-1" style={{ fontSize: '16px' }}>{service.title}</h3>
                 </div>
+                <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.65' }}>
+                  {service.desc}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* FAQs Section */}
+      {/* Vision & Mission Section */}
       <div className="py-5 border-top border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}>
         <div className="container py-2">
-          <div className="text-center max-w-2xl mx-auto mb-5">
-            <span className="badge bg-primary px-3 py-2 text-uppercase mb-2">FAQs</span>
-            <h2 className="display-6 fw-bold text-white">Frequently Asked Questions</h2>
-          </div>
-
-          <div className="max-w-3xl mx-auto" style={{ maxWidth: '800px' }}>
-            <div className="accordion" id="scnFaqAccordion">
-              {faqs.map((faq, index) => (
-                <div className="accordion-item bg-dark border border-secondary border-opacity-25" key={index}>
-                  <h2 className="accordion-header" id={`heading${index}`}>
-                    <button
-                      className={`accordion-button bg-dark text-white ${index !== 0 ? 'collapsed' : ''}`}
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#collapse${index}`}
-                      aria-expanded={index === 0 ? 'true' : 'false'}
-                      aria-controls={`collapse${index}`}
-                    >
-                      {faq.q}
-                    </button>
-                  </h2>
-                  <div
-                    id={`collapse${index}`}
-                    className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                    aria-labelledby={`heading${index}`}
-                    data-bs-parent="#scnFaqAccordion"
-                  >
-                    <div className="accordion-body bg-dark text-light opacity-90">
-                      {faq.a}
-                    </div>
-                  </div>
+          <div className="row g-4">
+            {/* Vision */}
+            <div className="col-md-5">
+              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25 h-100 d-flex flex-column">
+                <div className="card-icon-badge mb-3">
+                  <i className="fa fa-eye text-primary fs-3"></i>
                 </div>
-              ))}
+                <h3 className="fw-bold text-white mb-3" style={{ fontSize: '24px' }}>Our Vision</h3>
+                <p className="text-light opacity-85 flex-grow-1" style={{ lineHeight: '1.75', fontSize: '15px' }}>
+                  To become a <strong>trusted and leading HR and Payroll Outsourcing partner</strong>, recognized for delivering accurate, technology-driven, and people-focused workforce solutions that help businesses grow with confidence.
+                </p>
+                <div className="p-3 bg-black rounded-3 border-start border-4 border-primary mt-3">
+                  <p className="text-white-50 small mb-0">
+                    Empowering organizations nationwide through technology-driven HR leadership.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mission */}
+            <div className="col-md-7">
+              <div className="attractive-card p-4 p-md-5 bg-dark text-white border border-secondary border-opacity-25 h-100">
+                <div className="card-icon-badge mb-3">
+                  <i className="fa fa-bullseye text-primary fs-3"></i>
+                </div>
+                <h3 className="fw-bold text-white mb-3" style={{ fontSize: '24px' }}>Our Mission</h3>
+                <p className="text-light opacity-85 mb-3" style={{ lineHeight: '1.7', fontSize: '15px' }}>
+                  At <strong>SCN Global Pvt. Ltd.</strong>, our mission is to simplify HR and payroll management for organizations through <strong>reliable, accurate, transparent, and cost-effective solutions</strong>.
+                </p>
+                <p className="text-primary fw-semibold small mb-3">We are committed to:</p>
+                <ul className="list-unstyled text-light opacity-85 small d-flex flex-column gap-2 mb-0" style={{ fontSize: '14px' }}>
+                  {missionPoints.map((pt, index) => (
+                    <li key={index} className="d-flex align-items-start gap-2">
+                      <i className="fa fa-check-circle text-primary mt-1"></i>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

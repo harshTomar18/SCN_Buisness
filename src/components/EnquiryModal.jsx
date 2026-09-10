@@ -35,13 +35,13 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
         {/* Title & Subtitle */}
         <div className="text-center mb-4 mt-2">
           <img 
-            src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
-            alt="SCN Business Group Logo" 
-            className="mb-2" 
-            style={{ maxHeight: '42px' }} 
+            src="/images/scn_global_logo.jpg" 
+            alt="SCN Global Logo" 
+            className="mb-2 rounded-circle border border-info border-opacity-25" 
+            style={{ maxHeight: '54px', width: 'auto', objectFit: 'cover' }} 
           />
           <h2 className="fw-bold mb-1 text-white" style={{ fontSize: '22px' }}>
-            SCN Business Group
+            SCN Global
           </h2>
           <h3 className="fw-semibold text-primary mb-3" style={{ fontSize: '15px' }}>
             {title}

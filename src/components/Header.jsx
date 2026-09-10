@@ -28,12 +28,13 @@ function Header({ onEnquireClick }) {
 
       <header className="header appear appear--scale" style={{ '--d': '0.08s' }}>
         {/* Left - SCN Brand Logo */}
-        <Link to="/" className="logo appear appear--scale" style={{ '--d': '0.08s' }} aria-label="SCN Business Group" onClick={closeMenu}>
+        <Link to="/" className="logo appear appear--scale" style={{ '--d': '0.08s' }} aria-label="SCN Global" onClick={closeMenu}>
           <img 
-            src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png" 
-            alt="SCN Business Group Logo" 
-            title="SCN Business Group Logo" 
-            style={{ maxHeight: '38px', width: 'auto' }}
+            src="/images/scn_global_logo.jpg" 
+            alt="SCN Global Logo" 
+            title="SCN Global Logo" 
+            className="rounded-circle"
+            style={{ maxHeight: '44px', width: 'auto', objectFit: 'cover' }}
           />
         </Link>
 

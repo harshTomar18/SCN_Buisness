@@ -6,7 +6,7 @@ const businessVerticals = [
     id: 1,
     slug: 'it-services',
     title: 'SCN Global IT Services',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1181316-1181316-1024x684.jpg',
+    image: '/images/vertical_it_services.jpg',
     alt: 'SCN Global IT Services',
     tagline: 'End-to-End Enterprise Technology Solutions & Software Services',
     description: 'We deliver cutting-edge IT services including Web Development, Android & Mobile App Development, UI/UX Design, SEO, Digital Marketing, and Cloud Infrastructure management to empower business digital transformation.'
@@ -15,7 +15,7 @@ const businessVerticals = [
     id: 2,
     slug: 'it-training',
     title: 'SCN Global IT Training Institute',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/annie-spratt-QckxruozjRg-unsplash-1-1024x683.jpg',
+    image: '/images/vertical_it_training.jpg',
     alt: 'SCN Global IT Training Institute',
     tagline: 'Skill Development & Technical Training Programs',
     description: 'Empowering students and working professionals with job-ready tech skills in Full Stack Web Development, Android App Development, UI/UX Design, SEO, Graphic Design, and modern software engineering.'
@@ -24,7 +24,7 @@ const businessVerticals = [
     id: 3,
     slug: 'personality-development',
     title: 'SCN Global Personality Development Training',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-15543214-15543214-1024x683.jpg',
+    image: '/images/vertical_personality_training.jpg',
     alt: 'SCN Global Personality Development Training',
     tagline: 'Professional Growth & Soft Skills Mentorship',
     description: 'Comprehensive soft skills training covering effective communication, corporate etiquette, leadership development, interview preparation, and confidence building for workplace success.'
@@ -33,7 +33,7 @@ const businessVerticals = [
     id: 4,
     slug: 'hr-training',
     title: 'SCN Global HR Training Institute',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-8730276-8730276-1024x684.jpg',
+    image: '/images/vertical_hr_training.jpg',
     alt: 'SCN Global HR Training Institute',
     tagline: 'Practical Human Resource Management Certification',
     description: 'In-depth HR operational training on talent acquisition, payroll processing, statutory compliance, employee engagement, labor laws, and HR generalist functions.'
@@ -42,7 +42,7 @@ const businessVerticals = [
     id: 5,
     slug: 'us-staffing',
     title: 'SCN Global U. S. Staffing',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-1024248-1024248-1024x683.jpg',
+    image: '/images/vertical_us_staffing.jpg',
     alt: 'SCN Global U. S. Staffing',
     tagline: 'Offshore & Cross-Border Talent Recruitment for US Clients',
     description: 'Specialized US staffing solutions providing US IT recruiters, Bench Sales recruiters, W2/C2C placement services, and technical talent acquisition for North American enterprises.'
@@ -51,7 +51,7 @@ const businessVerticals = [
     id: 6,
     slug: 'payroll-management',
     title: 'SCN Global Payroll & Corporate Solutions',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-6694543-6694543-1024x683.jpg',
+    image: '/images/vertical_payroll_management.jpg',
     alt: 'SCN Global Payroll & Corporate Solutions',
     tagline: 'One Stop Corporate Solutions, Facility Management & Payroll Outsourcing',
     description: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations, manpower, procurement, maintenance, safety, and payroll efficiently and cost-effectively.'
@@ -60,7 +60,7 @@ const businessVerticals = [
     id: 7,
     slug: 'general-staffing',
     title: 'SCN Global General Staffing',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-5990042-5990042-1024x683.jpg',
+    image: '/images/vertical_general_staffing.jpg',
     alt: 'SCN Global General Staffing',
     tagline: 'Temporary, Flexible & Permanent Workforce Deployment',
     description: 'Comprehensive general staffing across administrative, industrial, retail, and corporate operations tailored to meet seasonal and long-term organizational demands.'
@@ -69,7 +69,7 @@ const businessVerticals = [
     id: 8,
     slug: 'bpo-services',
     title: 'SCN Global BPO Services',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-7709224-7709224-1024x683.jpg',
+    image: '/images/vertical_bpo_services.jpg',
     alt: 'SCN Global BPO Services',
     tagline: 'Inbound, Outbound & Non-Voice Customer Care Operations',
     description: '24/7 customer support center operations, tele-calling, back-office data processing, live chat support, and client relationship handling.'
@@ -78,7 +78,7 @@ const businessVerticals = [
     id: 9,
     slug: 'real-estate',
     title: 'SCN Global Real Estate',
-    image: 'https://scnbusinessgroup.com/wp-content/uploads/2025/08/pexels-photo-101808-101808-1024x683.jpg',
+    image: '/images/vertical_real_estate.jpg',
     alt: 'SCN Global Real Estate',
     tagline: 'Commercial & Corporate Property Advisory Services',
     description: 'Strategic commercial space leasing, corporate office setup advisory, real estate investments, and asset management tailored for enterprise growth.'
@@ -186,7 +186,7 @@ function OurBusiness({ onEnquireClick }) {
         <div className="container text-center py-3">
           <h3 className="fw-bold text-white mb-3">Looking for Customized Corporate Solutions?</h3>
           <p className="text-light opacity-75 max-w-2xl mx-auto mb-4" style={{ maxWidth: '650px' }}>
-            Partner with SCN Business Group today to elevate your business operations with our end-to-end staffing, IT, Android app development, and HR management services.
+            Partner with SCN Global today to elevate your business operations with our end-to-end staffing, IT, Android app development, and HR management services.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <button 

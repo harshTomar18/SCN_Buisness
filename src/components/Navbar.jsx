@@ -10,9 +10,9 @@ function Navbar() {
           <div className="logo_main py-1">
             <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none">
               <img
-                src="https://scnbusinessgroup.com/wp-content/uploads/2025/08/SCN-GROUP-LOGO1.png"
-                alt="SCN Business Group Logo"
-                title="SCN Business Group Logo"
+                src="/images/scn_global_logo.jpg"
+                alt="SCN Global Logo"
+                title="SCN Global Logo"
                 className="main_logo"
                 style={{ maxHeight: '42px', width: 'auto' }}
               />
@@ -55,7 +55,7 @@ function Navbar() {
             </ul>
 
             {/* Quick Consultation button */}
-            <Link to="/contact-us" className="btn-vesper btn-solid-vesper ms-2" title="SCN Business Group Enquiry">
+            <Link to="/contact-us" className="btn-vesper btn-solid-vesper ms-2" title="SCN Global Enquiry">
               <i className="fa fa-envelope-o me-1"></i> Enquire Now
             </Link>
           </nav>

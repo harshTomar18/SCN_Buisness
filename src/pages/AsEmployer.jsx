@@ -26,13 +26,12 @@ function AsEmployer({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button
-                type="button"
+              <Link
+                to="/contact-us"
                 className="btn btn-solid px-4 py-2 fw-bold"
-                onClick={() => onEnquireClick && onEnquireClick('Employer Hiring Request')}
               >
                 <i className="fa fa-users me-2"></i> Hire Top Talent
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -74,7 +73,7 @@ function AsEmployer({ onEnquireClick }) {
                     <div>
                       <p className="mb-0 fw-semibold text-white">Client Account Services</p>
                       <p className="mb-0 text-white-50 small">Senior Accounts Desk</p>
-                      <a href="mailto:info@scnbusinessgroup.com" className="text-primary fw-semibold small text-decoration-none">info@scnbusinessgroup.com</a>
+                      <a href="mailto:info@scnglobalpvtltd.com" className="text-primary fw-semibold small text-decoration-none">info@scnglobalpvtltd.com</a>
                     </div>
                   </div>
                 </div>

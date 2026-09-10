@@ -753,3 +753,29 @@ input.form-control::placeholder {
     white-space: normal;
   }
 }
+
+/* Commitment Cards */
+.commitment-card {
+  border-radius: 16px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.commitment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.12);
+  border-color: rgba(13, 110, 253, 0.35) !important;
+}
+
+/* Attractive card base */
+.attractive-card {
+  border-radius: 16px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.attractive-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover white utility */
+.hover-white:hover {
+  color: #ffffff !important;
+}

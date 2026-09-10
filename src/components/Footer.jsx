@@ -15,8 +15,12 @@ function Footer() {
               style={{ maxHeight: '55px', width: 'auto', objectFit: 'cover' }}
             />
             <h5 className="text-white fw-bold mb-2">SCN Global</h5>
-            <p className="small text-white-50 mb-3" style={{ fontSize: '13px', lineHeight: '1.6' }}>
+            <p className="small text-white-50 mb-2" style={{ fontSize: '13px', lineHeight: '1.6' }}>
               Backed by 21+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, IT, and HR solutions.
+            </p>
+            <p className="small mb-3">
+              <i className="fa fa-envelope text-primary me-2"></i>
+              <a href="mailto:info@scnglobalpvtltd.com" className="text-white-50 text-decoration-none hover-white">info@scnglobalpvtltd.com</a>
             </p>
             {/* Social Media Links */}
             <div className="d-flex gap-2">

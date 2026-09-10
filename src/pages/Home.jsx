@@ -66,10 +66,10 @@ const businessOverview = [
   },
   {
     id: 6,
-    slug: 'payroll-management',
-    title: 'SCN Global Payroll Management',
+    slug: 'event-management',
+    title: 'SCN Global Event Management',
     image: '/images/vertical_payroll_management.jpg',
-    desc: 'Automated salary administration, tax compliance, PF/ESI filing, and statutory audits.'
+    desc: 'Corporate events, trade shows, BTL promotions, exhibitions, custom exhibits, and MICE services.'
   },
   {
     id: 7,
@@ -208,14 +208,13 @@ function Home({ onEnquireClick }) {
 
             {/* Hero Action Buttons */}
             <div className="hero-actions">
-              <button
-                type="button"
+              <Link
+                to="/contact-us"
                 className="btn btn-solid appear appear--btn"
                 style={{ '--d': '0.80s' }}
-                onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
               >
                 Get Started Now
-              </button>
+              </Link>
               <Link
                 to="/our-business"
                 className="btn btn-ghost appear appear--side"
@@ -405,13 +404,12 @@ function Home({ onEnquireClick }) {
                       >
                         Explore Details <i className="fa fa-arrow-right ms-1"></i>
                       </Link>
-                      <button 
-                        type="button" 
+                      <Link 
+                        to="/contact-us" 
                         className="btn btn-ghost btn-sm fw-semibold"
-                        onClick={() => onEnquireClick && onEnquireClick(`Enquiry for ${item.title}`)}
                       >
                         Enquire
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -479,13 +477,12 @@ function Home({ onEnquireClick }) {
             Get in touch with our Client Helpdesk or visit our Corporate Head Office in Noida Sector 63.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <button 
-              type="button" 
+            <Link 
+              to="/contact-us" 
               className="btn btn-solid px-4 py-3"
-              onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
             >
               Request Call Back
-            </button>
+            </Link>
             <Link to="/contact-us" className="btn btn-ghost px-4 py-3">
               Contact Helpdesk
             </Link>

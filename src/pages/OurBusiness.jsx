@@ -49,12 +49,12 @@ const businessVerticals = [
   },
   {
     id: 6,
-    slug: 'payroll-management',
-    title: 'SCN Global Payroll & Corporate Solutions',
+    slug: 'event-management',
+    title: 'SCN Global Event Management',
     image: '/images/vertical_payroll_management.jpg',
-    alt: 'SCN Global Payroll & Corporate Solutions',
-    tagline: 'One Stop Corporate Solutions, Facility Management & Payroll Outsourcing',
-    description: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations, manpower, procurement, maintenance, safety, and payroll efficiently and cost-effectively.'
+    alt: 'SCN Global Event Management',
+    tagline: 'Corporate Events, Trade Shows, Exhibitions & MICE Services',
+    description: 'Complete event management solutions for corporate events, trade shows, BTL promotions, activation campaigns, exhibitions, custom exhibits, wedding management, and MICE services—delivering memorable experiences with precision and creativity.'
   },
   {
     id: 7,
@@ -102,13 +102,12 @@ function OurBusiness({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
+              <Link 
+                to="/contact-us" 
                 className="btn btn-solid px-4 py-2 fw-bold"
-                onClick={() => onEnquireClick && onEnquireClick('Business Consultation')}
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -165,13 +164,12 @@ function OurBusiness({ onEnquireClick }) {
                       >
                         Explore Details <i className="fa fa-arrow-right ms-1"></i>
                       </Link>
-                      <button 
-                        type="button" 
+                      <Link 
+                        to="/contact-us" 
                         className="btn btn-ghost btn-sm"
-                        onClick={() => onEnquireClick && onEnquireClick(`Enquiry for ${item.title}`)}
                       >
                         Enquire Now
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -189,13 +187,12 @@ function OurBusiness({ onEnquireClick }) {
             Partner with SCN Global today to elevate your business operations with our end-to-end staffing, IT, Android app development, and HR management services.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <button 
-              type="button" 
+            <Link 
+              to="/contact-us" 
               className="btn btn-solid px-4 py-2 fw-bold"
-              onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
             >
               Contact Sales Team
-            </button>
+            </Link>
             <Link to="/contact-us" className="btn btn-ghost px-4 py-2 fw-bold">
               Visit Branch Office
             </Link>

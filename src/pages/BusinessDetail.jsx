@@ -225,34 +225,34 @@ const verticalsData = {
     ]
   },
 
-  'payroll-management': {
-    title: 'SCN Global Payroll & Corporate Solutions',
-    subtitle: 'One Stop Corporate Solutions, Facility Management & Automated Payroll Outsourcing',
+  'event-management': {
+    title: 'SCN Global Event Management',
+    subtitle: 'Corporate Events, Trade Shows, Exhibitions & MICE Services',
     heroImage: '/images/vertical_payroll_management.jpg',
-    heroHeadline: 'One Stop Corporate Solutions & Payroll Management',
-    heroIntro: 'One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.',
+    heroHeadline: 'End-to-End Event Management Solutions',
+    heroIntro: 'SCN Global Event Management is your one-stop solution for all corporate event planning, trade show management, and exhibition needs. We deliver memorable experiences with precision, creativity, and professional execution—from concept to completion.',
     corporateOverviewParagraphs: [
-      "One Stop Corporate Solutions is a comprehensive Corporate Facility Management and Business Support Services company, providing integrated solutions that help organizations manage workplace operations efficiently, professionally and cost-effectively.",
-      "We bring manpower, facility management, workplace support, procurement, maintenance, safety, technology and corporate services together under one roof. This enables clients to reduce fragmented vendor coordination and manage multiple operational requirements through a single accountable partner.",
-      "Our services are shaped around each site's specific requirements, including operating hours, manpower strength, recurring supply needs, maintenance priorities, workplace safety and reporting expectations.",
-      "Our objective is to deliver dependable services, quality products, trained manpower and customized solutions with timely execution and clear coordination."
+      "SCN Global Event Management provides complete event planning and execution services for corporate events, trade shows, BTL promotions, activation campaigns, exhibitions, custom exhibits, wedding management, and MICE (Meetings, Incentives, Conferences & Exhibitions) services.",
+      "We handle every aspect of event management including venue selection, stage design, AV production, branding, logistics, guest management, catering coordination, and on-ground execution—delivering seamless experiences that leave lasting impressions.",
+      "Our team brings together creative designers, event planners, production specialists, and logistics coordinators to ensure every event is executed flawlessly, on time, and within budget.",
+      "Whether it's a corporate conference for 50 attendees or a large-scale trade exhibition with thousands of visitors, we deliver memorable experiences with precision and creativity."
     ],
     numberedServices: [
-      { num: '01', title: 'Monthly Salary & Payroll Processing', tagline: 'Accurate salary calculation & disbursal.', description: 'Computation of gross-to-net pay, CTC breakdowns, overtime, bonus, incentives, and automated bank transfer files.' },
-      { num: '02', title: 'Corporate Facility & Workplace Management', tagline: 'Integrated manpower, maintenance & safety.', description: 'Facility support, workplace procurement, site maintenance, safety standards, and single-window vendor coordination.' },
-      { num: '03', title: 'Statutory Filings (PF/ESI/PT) & Tax', tagline: 'Zero non-compliance & audit-ready TDS.', description: 'Timely generation of ECR challans, ESI returns, Professional Tax, Form 16 issuance, and statutory compliance audits.' }
+      { num: '01', title: 'Corporate Events & Conferences', tagline: 'Professional corporate gatherings.', description: 'End-to-end management of corporate conferences, seminars, product launches, annual day celebrations, and team-building events.' },
+      { num: '02', title: 'Trade Shows & Exhibitions', tagline: 'Impactful trade show presence.', description: 'Custom booth design, exhibition stall fabrication, portable displays, and complete trade show management for maximum brand visibility.' },
+      { num: '03', title: 'BTL Promotions & Activations', tagline: 'On-ground brand engagement.', description: 'Below-the-line promotional campaigns, brand activations, roadshows, and experiential marketing that drive direct customer engagement.' }
     ],
-    coreEmpowermentStatement: 'Our objective is to deliver dependable services, quality products, trained manpower and customized solutions with timely execution and clear coordination.',
-    workplaceEvolutionTitle: 'One Stop Corporate Solutions Overview',
+    coreEmpowermentStatement: 'We are dedicated to delivering memorable experiences with precision, creativity, and professional execution—from concept to completion.',
+    workplaceEvolutionTitle: 'Our Event Services',
     workplaceEvolutionServices: [
-      { icon: '🏢', title: 'Workplace Operations & Support', tagline: 'Customized site solutions.', description: 'Services shaped around operating hours, manpower strength, recurring supply needs, and workplace reporting expectations.' },
-      { icon: '📱', title: 'Employee Self-Service (ESS)', tagline: 'Digital payslips & leave management.', description: 'Mobile app and web portal for downloading payslips, applying for leave, and viewing Form 16.' },
-      { icon: '🛡️', title: 'Single Accountable Partner', tagline: 'Zero fragmented vendor coordination.', description: 'Integrated management bringing manpower, facility management, procurement, maintenance, and safety under one roof.' }
+      { icon: '🎪', title: 'Custom Exhibits & Stage Design', tagline: 'Bespoke exhibit solutions.', description: 'Custom exhibits bring your story to life on the trade show floor. We listen to your needs and craft design solutions tailored to your brand.' },
+      { icon: '💒', title: 'Wedding & Social Events', tagline: 'Unforgettable celebrations.', description: 'Complete wedding management, destination events, and social celebrations with meticulous attention to detail and creative décor.' },
+      { icon: '🌐', title: 'MICE Services', tagline: 'Meetings, Incentives, Conferences & Exhibitions.', description: 'Comprehensive MICE solutions including venue management, delegate registration, travel coordination, and post-event analytics.' }
     ],
     differentiators: [
-      { icon: '✅', title: 'Integrated Solutions', desc: 'Bringing manpower, facility management, safety, and tech under one single accountable partner.' },
-      { icon: '🔒', title: 'Tailored Site Execution', desc: 'Customized around site operating hours, manpower strength, and maintenance priorities.' },
-      { icon: '🧑‍💼', title: 'Dependable Coordination', desc: 'Quality products, trained manpower, and timely execution with clear coordination.' }
+      { icon: '🎯', title: 'Concept to Completion', desc: 'Full-service event management from ideation, planning, and design to flawless on-ground execution.' },
+      { icon: '🎨', title: 'Creative Excellence', desc: 'Innovative designs, immersive experiences, and creative branding that make your events stand out.' },
+      { icon: '📋', title: 'Professional Coordination', desc: 'Dedicated project managers ensuring seamless logistics, vendor coordination, and timeline management.' }
     ]
   },
 
@@ -357,13 +357,12 @@ function BusinessDetail({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
+              <Link 
+                to="/contact-us" 
                 className="btn btn-solid px-4 py-2 fw-bold"
-                onClick={() => onEnquireClick && onEnquireClick(`Consultation for ${data.title}`)}
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -433,13 +432,12 @@ function BusinessDetail({ onEnquireClick }) {
                     <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                       {service.description}
                     </p>
-                    <button 
-                      type="button" 
+                    <Link 
+                      to="/contact-us" 
                       className="btn btn-ghost btn-sm rounded-2 fw-semibold mt-auto align-self-start"
-                      onClick={() => onEnquireClick && onEnquireClick(`Inquiry for ${service.title}`)}
                     >
                       Enquire for Details <i className="fa fa-arrow-right ms-1"></i>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -469,13 +467,12 @@ function BusinessDetail({ onEnquireClick }) {
                     <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                       {item.description}
                     </p>
-                    <button 
-                      type="button" 
+                    <Link 
+                      to="/contact-us" 
                       className="btn btn-solid btn-sm rounded-2 fw-semibold mt-auto align-self-start"
-                      onClick={() => onEnquireClick && onEnquireClick(`Consultation for ${item.title}`)}
                     >
                       Learn More <i className="fa fa-arrow-right ms-1"></i>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -520,13 +517,12 @@ function BusinessDetail({ onEnquireClick }) {
             Contact our Client Account Managers or visit our Head Office in Noida Sector 63 to discuss tailored enterprise solutions.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <button 
-              type="button" 
+            <Link 
+              to="/contact-us" 
               className="btn btn-solid px-4 py-3 rounded-3 fw-bold"
-              onClick={() => onEnquireClick && onEnquireClick(`Get Consultation for ${data.title}`)}
             >
               Get Instant Consultation
-            </button>
+            </Link>
             <Link to="/our-business" className="btn btn-ghost px-4 py-3 rounded-3 fw-bold">
               Explore All Business Verticals
             </Link>

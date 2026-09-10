@@ -26,13 +26,12 @@ function AsEmployee({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
+              <Link 
+                to="/contact-us" 
                 className="btn btn-solid px-4 py-2 fw-bold"
-                onClick={() => onEnquireClick && onEnquireClick('Job Seeker Registration')}
               >
                 <i className="fa fa-file-text-o me-2"></i> Submit Resume
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ function AsEmployee({ onEnquireClick }) {
                   <div>
                     <p className="mb-0 fw-semibold text-white">SCN Talent Acquisition Desk</p>
                     <p className="mb-0 text-white-50 small">Recruitment & Placement Lead</p>
-                    <p className="mb-0 text-white small"><i className="fa fa-envelope text-success me-1"></i> <a href="mailto:hr@scnbusinessgroup.com" className="text-decoration-none text-success font-weight-bold">hr@scnbusinessgroup.com</a></p>
+                    <p className="mb-0 text-white small"><i className="fa fa-envelope text-success me-1"></i> <a href="mailto:info@scnglobalpvtltd.com" className="text-decoration-none text-success font-weight-bold">info@scnglobalpvtltd.com</a></p>
                     <p className="mb-0 text-white small"><i className="fa fa-phone text-success me-1"></i> <a href="tel:+917982941427" className="text-decoration-none text-success font-weight-bold">+91-7982941427</a></p>
                   </div>
                 </div>

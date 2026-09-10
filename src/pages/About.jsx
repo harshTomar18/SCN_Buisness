@@ -14,14 +14,49 @@ const payrollServices = [
   { icon: '👔', title: 'HR & Workforce Administration', desc: 'Integrated administrative support for ongoing HR & workforce operations.' }
 ];
 
-const missionPoints = [
-  'Delivering accurate and timely payroll services.',
-  'Helping businesses reduce the complexity and cost of HR administration.',
-  'Maintaining the highest standards of confidentiality and data security.',
-  'Supporting clients with efficient and scalable workforce solutions.',
-  'Using technology and process-driven practices to improve HR efficiency.',
-  'Building long-term relationships based on trust, transparency, and professional service.',
-  'Enabling our clients to focus on their core business and growth while we manage their HR and payroll requirements.'
+const commitmentCards = [
+  {
+    icon: 'fa-clock-o',
+    title: 'Accurate & Timely Services',
+    desc: 'Delivering accurate and timely payroll services.',
+    gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.05))'
+  },
+  {
+    icon: 'fa-line-chart',
+    title: 'Reduce HR Complexity',
+    desc: 'Helping businesses reduce the complexity and cost of HR administration.',
+    gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.05))'
+  },
+  {
+    icon: 'fa-shield',
+    title: 'Data Security & Confidentiality',
+    desc: 'Maintaining the highest standards of confidentiality and data security.',
+    gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.05))'
+  },
+  {
+    icon: 'fa-expand',
+    title: 'Scalable Workforce Solutions',
+    desc: 'Supporting clients with efficient and scalable workforce solutions.',
+    gradient: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(109, 40, 217, 0.05))'
+  },
+  {
+    icon: 'fa-cogs',
+    title: 'Technology & Process-Driven',
+    desc: 'Using technology and process-driven practices to improve HR efficiency.',
+    gradient: 'linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(219, 39, 119, 0.05))'
+  },
+  {
+    icon: 'fa-handshake-o',
+    title: 'Trust & Transparency',
+    desc: 'Building long-term relationships based on trust, transparency, and professional service.',
+    gradient: 'linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(2, 132, 199, 0.05))'
+  },
+  {
+    icon: 'fa-rocket',
+    title: 'Focus on Growth',
+    desc: 'Enabling our clients to focus on their core business and growth while we manage their HR and payroll requirements.',
+    gradient: 'linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.05))'
+  }
 ];
 
 function About({ onEnquireClick }) {
@@ -41,13 +76,12 @@ function About({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button
-                type="button"
+              <Link
+                to="/contact-us"
                 className="btn btn-solid px-4 py-2 fw-bold"
-                onClick={() => onEnquireClick && onEnquireClick('Corporate Consultation')}
               >
                 <i className="fa fa-phone me-2"></i> Contact Corporate HQ
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -177,13 +211,13 @@ function About({ onEnquireClick }) {
                 </div>
                 <h3 className="fw-bold text-white mb-3" style={{ fontSize: '24px' }}>Our Vision</h3>
                 <p className="text-light opacity-85 flex-grow-1" style={{ lineHeight: '1.75', fontSize: '15px' }}>
-                  To become a <strong>trusted and leading HR and Payroll Outsourcing partner</strong>, recognized for delivering accurate, technology-driven, and people-focused workforce solutions that help businesses grow with confidence.
+                  To become a <strong>trusted and leading HR and Payroll Outsourcing partner</strong>, delivering accurate, technology-driven, and people-focused workforce solutions that enable our clients to reduce complexity, improve efficiency, ensure compliance, and build high-performing teams—helping their businesses grow with confidence and achieve lasting success.
                 </p>
-                <div className="p-3 bg-black rounded-3 border-start border-4 border-primary mt-3">
+                {/* <div className="p-3 bg-black rounded-3 border-start border-4 border-primary mt-3">
                   <p className="text-white-50 small mb-0">
                     Empowering organizations nationwide through technology-driven HR leadership.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -194,20 +228,78 @@ function About({ onEnquireClick }) {
                   <i className="fa fa-bullseye text-primary fs-3"></i>
                 </div>
                 <h3 className="fw-bold text-white mb-3" style={{ fontSize: '24px' }}>Our Mission</h3>
-                <p className="text-light opacity-85 mb-3" style={{ lineHeight: '1.7', fontSize: '15px' }}>
-                  At <strong>SCN Global Pvt. Ltd.</strong>, our mission is to simplify HR and payroll management for organizations through <strong>reliable, accurate, transparent, and cost-effective solutions</strong>.
+                <p className="text-light opacity-85 mb-0" style={{ lineHeight: '1.7', fontSize: '15px' }}>
+                  At <strong>SCN Global Pvt. Ltd.</strong>, our mission is to simplify HR and payroll management through <strong>reliable, accurate, transparent, and cost-effective solutions</strong>. We are committed to helping our clients reduce administrative complexity, improve operational efficiency, ensure compliance, and focus on what matters most—growing their business and building a successful workforce.
                 </p>
-                <p className="text-primary fw-semibold small mb-3">We are committed to:</p>
-                <ul className="list-unstyled text-light opacity-85 small d-flex flex-column gap-2 mb-0" style={{ fontSize: '14px' }}>
-                  {missionPoints.map((pt, index) => (
-                    <li key={index} className="d-flex align-items-start gap-2">
-                      <i className="fa fa-check-circle text-primary mt-1"></i>
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* We Are Committed To — Cards Section */}
+      <div className="py-5 position-relative" style={{ backgroundColor: '#000000' }}>
+        <div className="container py-2">
+          <div className="text-center max-w-2xl mx-auto mb-5">
+            <span className="badge bg-primary px-3 py-2 text-uppercase mb-2" style={{ letterSpacing: '1px' }}>Our Promise</span>
+            <h2 className="display-6 fw-bold text-white">We Are Committed To</h2>
+            <p className="text-light opacity-75">The principles that guide everything we do at SCN Global Pvt. Ltd.</p>
+          </div>
+
+          <div className="row g-4">
+            {commitmentCards.map((card, idx) => (
+              <div className={`col-lg-4 col-md-6 ${idx === 6 ? 'col-lg-4 offset-lg-4' : ''}`} key={idx}>
+                <div
+                  className="commitment-card attractive-card p-4 h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm d-flex flex-column position-relative overflow-hidden"
+                  style={{ background: card.gradient }}
+                >
+                  {/* Floating Number */}
+                  <div
+                    className="position-absolute top-0 end-0 m-3"
+                    style={{
+                      fontSize: '48px',
+                      fontWeight: '900',
+                      lineHeight: '1',
+                      opacity: '0.06',
+                      color: '#ffffff'
+                    }}
+                  >
+                    0{idx + 1}
+                  </div>
+
+                  {/* Icon */}
+                  <div
+                    className="d-flex align-items-center justify-content-center rounded-3 mb-3"
+                    style={{
+                      width: '52px',
+                      height: '52px',
+                      backgroundColor: 'rgba(var(--bs-primary-rgb, 13, 110, 253), 0.15)',
+                      border: '1px solid rgba(var(--bs-primary-rgb, 13, 110, 253), 0.25)'
+                    }}
+                  >
+                    <i className={`fa ${card.icon} text-primary fs-5`}></i>
+                  </div>
+
+                  {/* Title */}
+                  <h4 className="fw-bold text-white mb-2" style={{ fontSize: '17px' }}>{card.title}</h4>
+
+                  {/* Description */}
+                  <p className="text-light opacity-80 small mb-0 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                    {card.desc}
+                  </p>
+
+                  {/* Bottom accent bar */}
+                  <div
+                    className="mt-3 rounded-pill"
+                    style={{
+                      height: '3px',
+                      width: '40px',
+                      backgroundColor: 'var(--colorPrimary)'
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -216,3 +308,4 @@ function About({ onEnquireClick }) {
 }
 
 export default About;
+

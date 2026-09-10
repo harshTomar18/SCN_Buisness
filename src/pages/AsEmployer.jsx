@@ -48,7 +48,7 @@ function AsEmployer({ onEnquireClick }) {
               </span>
               <h2 className="fw-bold text-white mb-3">Partner with SCN Global</h2>
               <p className="text-light opacity-75 mb-4" style={{ lineHeight: '1.7' }}>
-                Backed by 21+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, Android app development, executive recruitment, and HR management solutions.
+                Backed by 20+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, Android app development, executive recruitment, and HR management solutions.
               </p>
 
               {/* Employer Helpdesk Box */}

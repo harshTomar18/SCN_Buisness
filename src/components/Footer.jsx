@@ -8,15 +8,15 @@ function Footer() {
         <div className="row g-4 mb-4 text-start">
           {/* Company Brief & Logo */}
           <div className="col-lg-4 col-md-6">
-            <img 
-              src="/images/scn_global_logo.jpg" 
-              alt="SCN Global Logo" 
+            <img
+              src="/images/scn_global_logo.jpg"
+              alt="SCN Global Logo"
               className="rounded-circle mb-3 border border-secondary border-opacity-50"
               style={{ maxHeight: '55px', width: 'auto', objectFit: 'cover' }}
             />
             <h5 className="text-white fw-bold mb-2">SCN Global</h5>
             <p className="small text-white-50 mb-2" style={{ fontSize: '13px', lineHeight: '1.6' }}>
-              Backed by 21+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, IT, and HR solutions.
+              Backed by 20+ years of experience, SCN Global partners with organisations of all sizes—from emerging start-ups to Fortune 5000 leaders—to deliver impactful staffing, IT, and HR solutions.
             </p>
             <p className="small mb-3">
               <i className="fa fa-envelope text-primary me-2"></i>

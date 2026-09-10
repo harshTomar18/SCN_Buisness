@@ -47,23 +47,24 @@ const businessVerticals = [
     tagline: 'Offshore & Cross-Border Talent Recruitment for US Clients',
     description: 'Specialized US staffing solutions providing US IT recruiters, Bench Sales recruiters, W2/C2C placement services, and technical talent acquisition for North American enterprises.'
   },
+
   {
     id: 6,
-    slug: 'event-management',
-    title: 'SCN Global Event Management',
-    image: '/images/vertical_payroll_management.jpg',
-    alt: 'SCN Global Event Management',
-    tagline: 'Corporate Events, Trade Shows, Exhibitions & MICE Services',
-    description: 'Complete event management solutions for corporate events, trade shows, BTL promotions, activation campaigns, exhibitions, custom exhibits, wedding management, and MICE services—delivering memorable experiences with precision and creativity.'
-  },
-  {
-    id: 7,
     slug: 'general-staffing',
     title: 'SCN Global General Staffing',
     image: '/images/vertical_general_staffing.jpg',
     alt: 'SCN Global General Staffing',
     tagline: 'Temporary, Flexible & Permanent Workforce Deployment',
     description: 'Comprehensive general staffing across administrative, industrial, retail, and corporate operations tailored to meet seasonal and long-term organizational demands.'
+  },
+  {
+    id: 7,
+    slug: 'event-management',
+    title: 'SCN Global Event Management',
+    image: '/images/vertical_payroll_management.jpg',
+    alt: 'SCN Global Event Management',
+    tagline: 'Corporate Events, Trade Shows, Exhibitions & MICE Services',
+    description: 'Complete event management solutions for corporate events, trade shows, BTL promotions, activation campaigns, exhibitions, custom exhibits, wedding management, and MICE services—delivering memorable experiences with precision and creativity.'
   },
   {
     id: 8,
@@ -102,8 +103,8 @@ function OurBusiness({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <Link 
-                to="/contact-us" 
+              <Link
+                to="/contact-us"
                 className="btn btn-solid px-4 py-2 fw-bold"
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
@@ -135,10 +136,10 @@ function OurBusiness({ onEnquireClick }) {
                 <div className="business-card attractive-card h-100 bg-dark text-white border border-secondary border-opacity-25 shadow-sm">
                   <div className="business-card-img-wrapper">
                     <Link to={`/our-business/${item.slug}`}>
-                      <img 
-                        src={item.image} 
-                        alt={item.alt} 
-                        loading="lazy" 
+                      <img
+                        src={item.image}
+                        alt={item.alt}
+                        loading="lazy"
                       />
                     </Link>
                     <div className="position-absolute top-0 end-0 m-3">
@@ -158,14 +159,14 @@ function OurBusiness({ onEnquireClick }) {
                       {item.description}
                     </p>
                     <div className="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center flex-wrap gap-2">
-                      <Link 
-                        to={`/our-business/${item.slug}`} 
+                      <Link
+                        to={`/our-business/${item.slug}`}
                         className="btn btn-solid btn-sm px-3"
                       >
                         Explore Details <i className="fa fa-arrow-right ms-1"></i>
                       </Link>
-                      <Link 
-                        to="/contact-us" 
+                      <Link
+                        to="/contact-us"
                         className="btn btn-ghost btn-sm"
                       >
                         Enquire Now
@@ -187,8 +188,8 @@ function OurBusiness({ onEnquireClick }) {
             Partner with SCN Global today to elevate your business operations with our end-to-end staffing, IT, Android app development, and HR management services.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <Link 
-              to="/contact-us" 
+            <Link
+              to="/contact-us"
               className="btn btn-solid px-4 py-2 fw-bold"
             >
               Contact Sales Team

@@ -48,7 +48,7 @@ function Contact() {
               <div>
                 <span className="badge bg-black text-primary border border-secondary mb-1">General Support Help Desk</span>
                 <h4 className="h5 fw-bold text-white mb-1">SCN Client Support Team</h4>
-                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:info@scnglobalpvtltd.com" className="text-decoration-none text-light">info@scnglobalpvtltd.com</a></p>
+                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:hr@scnglobalpvtltd.com" className="text-decoration-none text-light">info@scnglobalpvtltd.com</a></p>
                 <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 9891910542</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ function Contact() {
               <div>
                 <span className="badge bg-black text-primary border border-secondary mb-1">Corporate Client Relations</span>
                 <h4 className="h5 fw-bold text-white mb-1">SCN Global Desk</h4>
-                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:hr@scnglobalpvtltd.com" className="text-decoration-none text-light">info@scnglobalpvtltd.com</a></p>
+                <p className="text-light opacity-75 small mb-1"><i className="fa fa-envelope text-primary me-2"></i> <a href="mailto:info@scnglobalpvtltd.com" className="text-decoration-none text-light">info@scnglobalpvtltd.com</a></p>
                 <p className="text-light opacity-75 small mb-0"><i className="fa fa-phone text-primary me-2"></i> +91 9811068863</p>
               </div>
             </div>
@@ -164,20 +164,20 @@ function Contact() {
               {/* Head Office */}
               <div className="attractive-card p-4 bg-dark text-white border border-secondary border-opacity-25">
                 <span className="badge bg-primary text-uppercase mb-2">Corporate Head Office</span>
-                <h4 className="h5 fw-bold text-white mb-2">Noida Sector 63-Uttar Pradesh</h4>
+                <h4 className="h5 fw-bold text-white mb-2">Rohini Sector-3, Delhi</h4>
                 <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.6' }}>
                   <i className="fa fa-map-marker text-primary me-2 fs-5"></i>
-                  H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301
+                  Office No-111, 1st floor, Aggarwal City Square, Mangalam Place, Sector-3, Rohini, Delhi, 110085
                 </p>
               </div>
 
               {/* Branch 1 */}
               <div className="attractive-card p-4 bg-dark text-white border border-secondary border-opacity-25">
-                <span className="badge bg-secondary text-uppercase mb-2">Branch Office - Rohini</span>
-                <h4 className="h5 fw-bold text-white mb-2">Rohini Sector-3, Delhi</h4>
+                <span className="badge bg-secondary text-uppercase mb-2">Branch Office </span>
+                <h4 className="h5 fw-bold text-white mb-2">Noida Sector 63-Uttar Pradesh</h4>
                 <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.6' }}>
                   <i className="fa fa-map-marker text-secondary me-2 fs-5"></i>
-                  Office No-111, 1st floor, Aggarwal City Square, Mangalam Place, Sector-3, Rohini, Delhi, 110085
+                  H-25, Ground Floor Office No G- 9 Sector 63, Noida, Uttar Pradesh 201301
                 </p>
               </div>
 

@@ -15,18 +15,18 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
   };
 
   return (
-    <div 
+    <div
       className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center animate-fade-in"
       style={{ backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1050 }}
     >
-      <div 
-        className="bg-dark text-white rounded-4 shadow-lg p-4 position-relative mx-3 border border-secondary border-opacity-25 animate-slide-down" 
+      <div
+        className="bg-dark text-white rounded-4 shadow-lg p-4 position-relative mx-3 border border-secondary border-opacity-25 animate-slide-down"
         style={{ maxWidth: '460px', width: '100%' }}
       >
         {/* Close Button */}
-        <button 
-          type="button" 
-          className="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+        <button
+          type="button"
+          className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
           aria-label="Close"
           onClick={onClose}
           style={{ cursor: 'pointer' }}
@@ -34,11 +34,11 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
 
         {/* Title & Subtitle */}
         <div className="text-center mb-4 mt-2">
-          <img 
-            src="/images/scn_global_logo.jpg" 
-            alt="SCN Global Logo" 
-            className="mb-2 rounded-circle border border-info border-opacity-25" 
-            style={{ maxHeight: '54px', width: 'auto', objectFit: 'cover' }} 
+          <img
+            src="/images/scn_global_logo.jpg"
+            alt="SCN Global Logo"
+            className="mb-2 rounded-circle border border-info border-opacity-25"
+            style={{ maxHeight: '54px', width: 'auto', objectFit: 'cover' }}
           />
           <h2 className="fw-bold mb-1 text-white" style={{ fontSize: '22px' }}>
             SCN Global
@@ -59,7 +59,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
             </div>
             <div>
               <i className="fa fa-certificate fs-4 text-primary d-block mb-1"></i>
-              <span className="text-light opacity-75" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>21+ Yrs Legacy</span>
+              <span className="text-light opacity-75" style={{ fontSize: '11px', display: 'block', lineHeight: '1.2' }}>20+ Yrs Legacy</span>
             </div>
           </div>
         </div>
@@ -77,25 +77,25 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
           <form onSubmit={handleSubmit} className="d-flex flex-column gap-3">
             {/* Full Name */}
             <div>
-              <input 
-                type="text" 
-                className="form-control modal-underline-input" 
-                placeholder="Full Name" 
+              <input
+                type="text"
+                className="form-control modal-underline-input"
+                placeholder="Full Name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required 
+                required
               />
             </div>
-            
+
             {/* Email ID */}
             <div>
-              <input 
-                type="email" 
-                className="form-control modal-underline-input" 
-                placeholder="Email ID" 
+              <input
+                type="email"
+                className="form-control modal-underline-input"
+                placeholder="Email ID"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required 
+                required
               />
             </div>
 
@@ -108,9 +108,9 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
                 <option value="+44" style={{ background: '#0f172a' }}>UK (+44)</option>
               </select>
               <div style={{ width: '1px', height: '20px', backgroundColor: 'rgba(255,255,255,0.3)' }}></div>
-              <input 
-                type="tel" 
-                className="form-control border-0 bg-transparent py-1 shadow-none text-white" 
+              <input
+                type="tel"
+                className="form-control border-0 bg-transparent py-1 shadow-none text-white"
                 style={{ outline: 'none', fontSize: '15px' }}
                 placeholder="Mobile Number"
                 value={formData.phone}
@@ -121,7 +121,7 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
 
             {/* Service Selection */}
             <div>
-              <select 
+              <select
                 className="form-select border-0 border-bottom border-secondary border-opacity-50 rounded-0 shadow-none text-white bg-transparent"
                 value={formData.service}
                 onChange={(e) => setFormData({ ...formData, service: e.target.value })}
@@ -143,11 +143,11 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
 
             {/* Message */}
             <div>
-              <textarea 
-                className="form-control modal-underline-input" 
-                rows="2" 
+              <textarea
+                className="form-control modal-underline-input"
+                rows="2"
                 style={{ resize: 'none' }}
-                placeholder="How can we help you?" 
+                placeholder="How can we help you?"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               ></textarea>
@@ -155,9 +155,9 @@ function EnquiryModal({ isOpen, onClose, title = 'Get Instant Consultation' }) {
 
             {/* Submit Button */}
             <div className="mt-2">
-              <button 
-                type="submit" 
-                className="btn btn-solid w-100 py-3 border-0 rounded-3 text-white fw-bold" 
+              <button
+                type="submit"
+                className="btn btn-solid w-100 py-3 border-0 rounded-3 text-white fw-bold"
                 style={{ fontSize: '16px', letterSpacing: '0.5px' }}
               >
                 Submit Enquiry

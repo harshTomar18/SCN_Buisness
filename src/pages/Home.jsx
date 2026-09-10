@@ -21,7 +21,7 @@ const heroSlides = [
     subtitle: 'Deploying expert US IT recruiters, general staffing, BPO support, and enterprise workforce management.'
   },
   {
-    badge: '21+ YEARS INDUSTRY LEGACY',
+    badge: '20+ YEARS INDUSTRY LEGACY',
     line1: 'Job-oriented <em>training institutes</em> &',
     line2: 'practical HR generalist certification.',
     subtitle: 'Empowering students and corporate professionals with hands-on skill modules and placement support.'
@@ -277,7 +277,7 @@ function Home({ onEnquireClick }) {
               <rect x="13.4" y="2.6" width="7.2" height="18.8" rx="3.6" fill="url(#pillGrad2)" />
               <rect x="9.2" y="10.9" width="5.6" height="2.2" rx="1.1" fill="#4a4a4a" />
             </svg>
-            <span>21+ Years Industry Legacy & Workflows</span>
+            <span>20+ Years Industry Legacy & Workflows</span>
           </div>
 
           <div className="stat appear appear--stat" style={{ '--d': '1.28s' }}>
@@ -315,7 +315,7 @@ function Home({ onEnquireClick }) {
         <div className="container">
           <div className="row text-center g-3">
             <div className="col-md-3 col-6">
-              <h3 className="fw-bold mb-0 text-white">21+</h3>
+              <h3 className="fw-bold mb-0 text-white">20+</h3>
               <p className="small mb-0 text-white-50">Years Legacy (Est. 2004)</p>
             </div>
             <div className="col-md-3 col-6">
@@ -359,9 +359,9 @@ function Home({ onEnquireClick }) {
           </div>
           <div className="col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-25">
-              <img 
-                src="/images/vertical_general_staffing.jpg" 
-                alt="SCN Corporate Team" 
+              <img
+                src="/images/vertical_general_staffing.jpg"
+                alt="SCN Corporate Team"
                 className="w-100 h-100 object-fit-cover"
                 style={{ maxHeight: '380px' }}
               />
@@ -398,14 +398,14 @@ function Home({ onEnquireClick }) {
                       {item.desc}
                     </p>
                     <div className="d-flex gap-2 mt-auto">
-                      <Link 
-                        to={`/our-business/${item.slug}`} 
+                      <Link
+                        to={`/our-business/${item.slug}`}
                         className="btn btn-solid btn-sm flex-grow-1 fw-semibold"
                       >
                         Explore Details <i className="fa fa-arrow-right ms-1"></i>
                       </Link>
-                      <Link 
-                        to="/contact-us" 
+                      <Link
+                        to="/contact-us"
                         className="btn btn-ghost btn-sm fw-semibold"
                       >
                         Enquire
@@ -477,8 +477,8 @@ function Home({ onEnquireClick }) {
             Get in touch with our Client Helpdesk or visit our Corporate Head Office in Noida Sector 63.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <Link 
-              to="/contact-us" 
+            <Link
+              to="/contact-us"
               className="btn btn-solid px-4 py-3"
             >
               Request Call Back

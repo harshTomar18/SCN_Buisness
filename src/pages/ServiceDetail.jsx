@@ -308,14 +308,6 @@ const servicesDatabase = {
       'Caretakers & Other Support Staff'
     ],
     solutionGoal: 'We connect you with the right people to ensure smooth operations, productivity, and reliable day-to-day support.',
-    highlights: [
-      { icon: '📞', title: 'BPO Tele Callers', desc: 'Trained, articulate callers for customer care, lead generation, appointment booking, and tele-support.' },
-      { icon: '🏢', title: 'Office Boys & Support Staff', desc: 'Reliable assistants for document dispatch, mailroom handling, filing, and day-to-day desk support.' },
-      { icon: '🧹', title: 'Housekeeping & Cleaners', desc: 'Trained housekeeping personnel maintaining clean, hygienic, and sanitized corporate and residential spaces.' },
-      { icon: '☕', title: 'Pantry Boys & Tea/Coffee Staff', desc: 'Courteous hospitality assistants managing office pantries, tea/coffee service, and guest refreshments.' },
-      { icon: '🚗', title: 'Drivers & Professional Cooks', desc: 'Licensed chauffeurs, commercial vehicle drivers, and trained cooks with thorough background vetting.' },
-      { icon: '🛡️', title: 'Security & Facility Caretakers', desc: 'Vigilant security guards, premises caretakers, and facility assistants ensuring safety and upkeep.' }
-    ],
     process: [
       { step: '01', title: 'Staffing Needs Analysis', desc: 'Identifying your exact operational shift schedules, role specifications, and daily support requirements.' },
       { step: '02', title: 'KYC & Police Clearance Checks', desc: 'Aadhaar authentication, permanent address verification, prior background checks, and medical screening.' },
@@ -349,14 +341,6 @@ const servicesDatabase = {
       'Contract & Permanent Staffing'
     ],
     solutionGoal: 'We help businesses reduce hiring challenges and maintain a reliable workforce, enabling smoother operations and improved productivity.',
-    highlights: [
-      { icon: '⚙️', title: 'Skilled & Semi-Skilled Technicians', desc: 'Pre-screened machine operators, assembly line workers, and technical trade professionals.' },
-      { icon: '📦', title: 'Warehouse & Logistics Staff', desc: 'Trained forklift drivers, dispatch assistants, packaging personnel, and inventory coordinators.' },
-      { icon: '🔧', title: 'Electricians, Plumbers & Carpenters', desc: 'Certified utility tradesmen for ongoing preventive maintenance, repairs, and facility upgrades.' },
-      { icon: '🚚', title: 'Drivers & Delivery Executives', desc: 'Licensed heavy/light vehicle drivers and reliable last-mile delivery fleet personnel.' },
-      { icon: '🛡️', title: 'Security & Facility Staff', desc: 'Trained site guards, housekeeping personnel, and workplace safety compliance teams.' },
-      { icon: '⚖️', title: '100% Statutory & Labor Shield', desc: 'SCN Global handles all PF/ESIC deductions, minimum wages act compliance, and insurance coverage.' }
-    ],
     process: [
       { step: '01', title: 'Operational Requirement Mapping', desc: 'Understanding plant headcount needs, shift schedules, skill certifications, and deployment timelines.' },
       { step: '02', title: 'KYC & Trade Skill Vetting', desc: 'Aadhaar verification, background checks, trade competency evaluation, and medical screening.' },
@@ -392,14 +376,6 @@ const servicesDatabase = {
       'Contract, Temporary & Permanent Staffing'
     ],
     solutionGoal: 'Our goal is to connect businesses with the right people, reduce hiring time, and build high-performing teams that drive sustainable growth.',
-    highlights: [
-      { icon: '💼', title: 'Executive & Management Hiring', desc: 'Targeted headhunting and recruitment for managerial, directorial, and department leadership roles.' },
-      { icon: '📈', title: 'Sales & Business Development', desc: 'High-performing enterprise sales executives, account managers, and business development leads.' },
-      { icon: '👥', title: 'HR & Administrative Support', desc: 'Talent acquisition specialists, payroll officers, HR generalists, and executive assistants.' },
-      { icon: '📊', title: 'Finance, Accounts & Taxation', desc: 'Chartered accountants, financial analysts, tax specialists, and corporate billing professionals.' },
-      { icon: '💻', title: 'IT & Software Engineers', desc: 'Full-stack engineers, cloud architects, mobile app developers, and technical support staff.' },
-      { icon: '🎯', title: 'Flexible Engagement Models', desc: 'Seamless contract staffing, contract-to-hire (C2H), and direct permanent talent placements.' }
-    ],
     process: [
       { step: '01', title: 'Role Profiling & Talent Benchmarking', desc: 'Aligning on specific technical skill sets, culture fit, performance milestones, and compensation bounds.' },
       { step: '02', title: 'Multi-Channel Sourcing & Screening', desc: 'Searching extensive talent databases, LinkedIn Recruiter networks, and conducting rigorous technical screens.' },
@@ -702,31 +678,33 @@ function ServiceDetail({ onEnquireClick }) {
               )}
 
               {/* Deliverables Section */}
-              <div className="mb-5">
-                <div className="mb-4">
-                  <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>
-                    What We Deliver
-                  </span>
-                  <h3 className="h3 fw-bold text-white mt-1">Key Capabilities & Deliverables</h3>
-                  <p className="text-light opacity-75">Engineered to exceed corporate performance benchmarks and deliver immediate ROI.</p>
-                </div>
+              {service.highlights && service.highlights.length > 0 && (
+                <div className="mb-5">
+                  <div className="mb-4">
+                    <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>
+                      What We Deliver
+                    </span>
+                    <h3 className="h3 fw-bold text-white mt-1">Key Capabilities & Deliverables</h3>
+                    <p className="text-light opacity-75">Engineered to exceed corporate performance benchmarks and deliver immediate ROI.</p>
+                  </div>
 
-                <div className="row g-3">
-                  {service.highlights.map((item, idx) => (
-                    <div className="col-md-6" key={idx}>
-                      <div className="service-feature-card h-100 d-flex flex-column">
-                        <div className="service-icon-box">
-                          <span>{item.icon}</span>
+                  <div className="row g-3">
+                    {service.highlights.map((item, idx) => (
+                      <div className="col-md-6" key={idx}>
+                        <div className="service-feature-card h-100 d-flex flex-column">
+                          <div className="service-icon-box">
+                            <span>{item.icon}</span>
+                          </div>
+                          <h4 className="h6 fw-bold text-white mb-2" style={{ fontSize: '17px' }}>{item.title}</h4>
+                          <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.65' }}>
+                            {item.desc}
+                          </p>
                         </div>
-                        <h4 className="h6 fw-bold text-white mb-2" style={{ fontSize: '17px' }}>{item.title}</h4>
-                        <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.65' }}>
-                          {item.desc}
-                        </p>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Technologies / Tools Badges */}
               {service.techStack && (

@@ -502,47 +502,20 @@ function BusinessDetail({ onEnquireClick }) {
             </div>
 
             <div className="row g-4">
-              {data.workplaceEvolutionServices.map((item, idx) => {
-                const getEvolutionSlug = (title, vSlug) => {
-                  const lower = (title || '').toLowerCase();
-                  if (lower.includes('android') || lower.includes('mobile')) return 'android-mobile-app';
-                  if (lower.includes('network')) return 'network-engineering';
-                  if (lower.includes('it development') || lower.includes('software')) return 'it-development';
-                  if (lower.includes('training') || lower.includes('seo') || lower.includes('qa')) return 'full-stack-web-android';
-                  if (lower.includes('public speaking') || lower.includes('interview') || lower.includes('dynamics')) return 'corporate-communication';
-                  if (lower.includes('generalist') || lower.includes('labor') || lower.includes('analytics')) return 'hr-generalist-payroll';
-                  if (lower.includes('tax') || lower.includes('us portal') || lower.includes('night shift')) return 'us-technical-recruitment';
-                  if (lower.includes('turnaround') || lower.includes('off-roll') || lower.includes('executive hiring')) return 'flexi-general-staffing';
-                  if (lower.includes('voice') || lower.includes('back-office') || lower.includes('quality assurance')) return 'bpo-customer-care';
-                  if (lower.includes('park') || lower.includes('legal') || lower.includes('fit-out')) return 'commercial-real-estate';
-                  if (lower.includes('exhibits') || lower.includes('wedding') || lower.includes('mice')) return 'corporate-event-management';
-                  return vSlug || 'it-development';
-                };
-                const itemSlug = item.slug || getEvolutionSlug(item.title, slug);
-
-                return (
-                  <div className="col-lg-4 col-md-6" key={idx}>
-                    <div className="attractive-card p-4 d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
-                      <div className="card-icon-badge mb-3">
-                        <span>{item.icon}</span>
-                      </div>
-                      <h3 className="h5 fw-bold text-white mb-2">{item.title}</h3>
-                      <p className="text-primary fw-semibold small mb-2">{item.tagline}</p>
-                      <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
-                        {item.description}
-                      </p>
-                      <div className="mt-auto pt-2">
-                        <Link 
-                          to={`/service-detail/${itemSlug}`} 
-                          className="btn btn-solid btn-sm rounded-2 fw-semibold"
-                        >
-                          Learn More <i className="fa fa-arrow-right ms-1"></i>
-                        </Link>
-                      </div>
+              {data.workplaceEvolutionServices.map((item, idx) => (
+                <div className="col-lg-4 col-md-6" key={idx}>
+                  <div className="attractive-card p-4 d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
+                    <div className="card-icon-badge mb-3">
+                      <span>{item.icon}</span>
                     </div>
+                    <h3 className="h5 fw-bold text-white mb-2">{item.title}</h3>
+                    <p className="text-primary fw-semibold small mb-2">{item.tagline}</p>
+                    <p className="text-light opacity-75 small mb-0 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                      {item.description}
+                    </p>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -364,8 +364,8 @@ function Home({ onEnquireClick }) {
           <div className="col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-25">
               <img
-                src="/images/vertical_general_staffing.jpg"
-                alt="SCN Corporate Team"
+                src="/images/corporate_meeting_about.jpg"
+                alt="SCN Corporate Meeting & Strategy"
                 className="w-100 h-100 object-fit-cover"
                 style={{ maxHeight: '380px' }}
               />

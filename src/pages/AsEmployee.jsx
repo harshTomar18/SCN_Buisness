@@ -70,27 +70,39 @@ function AsEmployee({ onEnquireClick }) {
               <h5 className="fw-bold text-white mb-3">Available Training & Placement Tracks:</h5>
               <div className="row g-3">
                 <div className="col-md-6">
-                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25">
+                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25 d-flex flex-column h-100">
                     <h6 className="fw-bold text-white mb-1">📱 Android & IT Development</h6>
-                    <p className="text-white-50 small mb-0">Android (Kotlin/Java), React, Node, Python, UI/UX</p>
+                    <p className="text-white-50 small mb-2 flex-grow-1">Android (Kotlin/Java), React, Node, Python, UI/UX</p>
+                    <Link to="/service-detail/full-stack-web-android" className="text-success small text-decoration-none fw-semibold">
+                      More Details <i className="fa fa-arrow-right ms-1"></i>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25">
+                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25 d-flex flex-column h-100">
                     <h6 className="fw-bold text-white mb-1">👔 HR Management</h6>
-                    <p className="text-white-50 small mb-0">Talent Sourcing, Payroll, Statutory Compliance</p>
+                    <p className="text-white-50 small mb-2 flex-grow-1">Talent Sourcing, Payroll, Statutory Compliance</p>
+                    <Link to="/service-detail/hr-generalist-payroll" className="text-success small text-decoration-none fw-semibold">
+                      More Details <i className="fa fa-arrow-right ms-1"></i>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25">
+                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25 d-flex flex-column h-100">
                     <h6 className="fw-bold text-white mb-1">🌐 US Staffing & Recruiting</h6>
-                    <p className="text-white-50 small mb-0">US IT Recruiter training & job placement</p>
+                    <p className="text-white-50 small mb-2 flex-grow-1">US IT Recruiter training & job placement</p>
+                    <Link to="/service-detail/us-technical-recruitment" className="text-success small text-decoration-none fw-semibold">
+                      More Details <i className="fa fa-arrow-right ms-1"></i>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25">
+                  <div className="attractive-card p-3 bg-black text-white border border-secondary border-opacity-25 d-flex flex-column h-100">
                     <h6 className="fw-bold text-white mb-1">🎧 BPO & Voice Care</h6>
-                    <p className="text-white-50 small mb-0">Inbound / Outbound Customer Support jobs</p>
+                    <p className="text-white-50 small mb-2 flex-grow-1">Inbound / Outbound Customer Support jobs</p>
+                    <Link to="/service-detail/bpo-customer-care" className="text-success small text-decoration-none fw-semibold">
+                      More Details <i className="fa fa-arrow-right ms-1"></i>
+                    </Link>
                   </div>
                 </div>
               </div>

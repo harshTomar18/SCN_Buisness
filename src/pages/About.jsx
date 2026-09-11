@@ -166,6 +166,14 @@ function About({ onEnquireClick }) {
                     </p>
                   </div>
                 </div>
+                <div className="d-flex gap-3 mt-4 pt-3 border-top border-secondary border-opacity-25 flex-wrap">
+                  <Link to="/solutions" className="btn btn-solid px-4 py-2 fw-semibold">
+                    Explore Corporate Solutions <i className="fa fa-arrow-right ms-1"></i>
+                  </Link>
+                  <Link to="/service-detail/payroll-outsourcing" className="btn btn-ghost px-4 py-2 fw-semibold">
+                    Payroll Outsourcing Details
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -190,9 +198,15 @@ function About({ onEnquireClick }) {
                   </div>
                   <h3 className="h6 fw-bold text-white mb-0 flex-grow-1" style={{ fontSize: '16px' }}>{service.title}</h3>
                 </div>
-                <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.65' }}>
+                <p className="text-light opacity-75 small mb-3 flex-grow-1" style={{ lineHeight: '1.65' }}>
                   {service.desc}
                 </p>
+                <div className="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <Link to="/service-detail/payroll-outsourcing" className="text-primary small text-decoration-none fw-semibold">
+                    More Details <i className="fa fa-arrow-right ms-1"></i>
+                  </Link>
+                  <span className="badge bg-primary bg-opacity-25 text-primary small">100% Compliant</span>
+                </div>
               </div>
             </div>
           ))}

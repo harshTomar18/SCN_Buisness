@@ -420,27 +420,58 @@ function BusinessDetail({ onEnquireClick }) {
             </div>
 
             <div className="row g-4">
-              {data.numberedServices.map((service, index) => (
-                <div className="col-lg-4 col-md-6" key={index}>
-                  <div className="attractive-card p-4 d-flex flex-column h-100 position-relative bg-dark text-white border border-secondary border-opacity-25">
-                    <div className="d-flex justify-content-between align-items-center mb-3">
-                      <span className="display-6 fw-bold text-primary font-monospace">{service.num}</span>
-                      <span className="badge bg-primary text-white px-2 py-1 small rounded-pill">Vertical Focus</span>
+              {data.numberedServices.map((service, index) => {
+                const getServiceSlug = (title, vSlug) => {
+                  const lower = (title || '').toLowerCase();
+                  if (lower.includes('web')) return 'web-development';
+                  if (lower.includes('android') || lower.includes('mobile')) return 'android-mobile-app';
+                  if (lower.includes('digital marketing') || lower.includes('seo') || lower.includes('ppc')) return 'digital-marketing';
+                  if (lower.includes('network')) return 'network-engineering';
+                  if (lower.includes('it development') || lower.includes('software')) return 'it-development';
+                  if (lower.includes('full-stack') || lower.includes('full stack')) return 'full-stack-web-android';
+                  if (lower.includes('ui/ux') || lower.includes('design')) return 'full-stack-web-android';
+                  if (lower.includes('payroll') || lower.includes('pf') || lower.includes('statutory') || lower.includes('hr generalist') || lower.includes('labor')) return 'hr-generalist-payroll';
+                  if (lower.includes('communication') || lower.includes('personality') || lower.includes('etiquette') || lower.includes('speaking')) return 'corporate-communication';
+                  if (lower.includes('us technical') || lower.includes('bench') || lower.includes('visa') || lower.includes('us staffing') || lower.includes('recruiter')) return 'us-technical-recruitment';
+                  if (lower.includes('flexi') || lower.includes('blue-collar') || lower.includes('white-collar') || lower.includes('staffing')) return 'flexi-general-staffing';
+                  if (lower.includes('bpo') || lower.includes('inbound') || lower.includes('outbound') || lower.includes('call') || lower.includes('voice')) return 'bpo-customer-care';
+                  if (lower.includes('commercial') || lower.includes('office') || lower.includes('leasing') || lower.includes('estate')) return 'commercial-real-estate';
+                  if (lower.includes('event') || lower.includes('trade show') || lower.includes('exhibit') || lower.includes('mice') || lower.includes('btl')) return 'corporate-event-management';
+                  return vSlug || 'web-development';
+                };
+                const serviceSlug = service.slug || getServiceSlug(service.title, slug);
+
+                return (
+                  <div className="col-lg-4 col-md-6" key={index}>
+                    <div className="attractive-card p-4 d-flex flex-column h-100 position-relative bg-dark text-white border border-secondary border-opacity-25">
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <span className="display-6 fw-bold text-primary font-monospace">{service.num}</span>
+                        <span className="badge bg-primary text-white px-2 py-1 small rounded-pill">Vertical Focus</span>
+                      </div>
+                      <h3 className="h5 fw-bold text-white mb-2">{service.title}</h3>
+                      <p className="text-primary fw-semibold small mb-3">{service.tagline}</p>
+                      <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                        {service.description}
+                      </p>
+                      <div className="d-flex gap-2 mt-auto align-items-center flex-wrap">
+                        <Link 
+                          to={`/service-detail/${serviceSlug}`} 
+                          className="btn btn-solid btn-sm rounded-2 fw-semibold"
+                        >
+                          More Details <i className="fa fa-arrow-right ms-1"></i>
+                        </Link>
+                        <button 
+                          type="button" 
+                          onClick={() => onEnquireClick && onEnquireClick(`Enquiry: ${service.title}`)}
+                          className="btn btn-ghost btn-sm rounded-2 fw-semibold"
+                        >
+                          Enquire
+                        </button>
+                      </div>
                     </div>
-                    <h3 className="h5 fw-bold text-white mb-2">{service.title}</h3>
-                    <p className="text-primary fw-semibold small mb-3">{service.tagline}</p>
-                    <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
-                      {service.description}
-                    </p>
-                    <Link 
-                      to="/contact-us" 
-                      className="btn btn-ghost btn-sm rounded-2 fw-semibold mt-auto align-self-start"
-                    >
-                      Enquire for Details <i className="fa fa-arrow-right ms-1"></i>
-                    </Link>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -456,26 +487,54 @@ function BusinessDetail({ onEnquireClick }) {
             </div>
 
             <div className="row g-4">
-              {data.workplaceEvolutionServices.map((item, idx) => (
-                <div className="col-lg-4 col-md-6" key={idx}>
-                  <div className="attractive-card p-4 d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
-                    <div className="card-icon-badge mb-3">
-                      <span>{item.icon}</span>
+              {data.workplaceEvolutionServices.map((item, idx) => {
+                const getEvolutionSlug = (title, vSlug) => {
+                  const lower = (title || '').toLowerCase();
+                  if (lower.includes('android') || lower.includes('mobile')) return 'android-mobile-app';
+                  if (lower.includes('network')) return 'network-engineering';
+                  if (lower.includes('it development') || lower.includes('software')) return 'it-development';
+                  if (lower.includes('training') || lower.includes('seo') || lower.includes('qa')) return 'full-stack-web-android';
+                  if (lower.includes('public speaking') || lower.includes('interview') || lower.includes('dynamics')) return 'corporate-communication';
+                  if (lower.includes('generalist') || lower.includes('labor') || lower.includes('analytics')) return 'hr-generalist-payroll';
+                  if (lower.includes('tax') || lower.includes('us portal') || lower.includes('night shift')) return 'us-technical-recruitment';
+                  if (lower.includes('turnaround') || lower.includes('off-roll') || lower.includes('executive hiring')) return 'flexi-general-staffing';
+                  if (lower.includes('voice') || lower.includes('back-office') || lower.includes('quality assurance')) return 'bpo-customer-care';
+                  if (lower.includes('park') || lower.includes('legal') || lower.includes('fit-out')) return 'commercial-real-estate';
+                  if (lower.includes('exhibits') || lower.includes('wedding') || lower.includes('mice')) return 'corporate-event-management';
+                  return vSlug || 'it-development';
+                };
+                const itemSlug = item.slug || getEvolutionSlug(item.title, slug);
+
+                return (
+                  <div className="col-lg-4 col-md-6" key={idx}>
+                    <div className="attractive-card p-4 d-flex flex-column h-100 bg-dark text-white border border-secondary border-opacity-25">
+                      <div className="card-icon-badge mb-3">
+                        <span>{item.icon}</span>
+                      </div>
+                      <h3 className="h5 fw-bold text-white mb-2">{item.title}</h3>
+                      <p className="text-primary fw-semibold small mb-2">{item.tagline}</p>
+                      <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
+                        {item.description}
+                      </p>
+                      <div className="d-flex gap-2 mt-auto align-items-center flex-wrap">
+                        <Link 
+                          to={`/service-detail/${itemSlug}`} 
+                          className="btn btn-solid btn-sm rounded-2 fw-semibold"
+                        >
+                          Learn More <i className="fa fa-arrow-right ms-1"></i>
+                        </Link>
+                        <button 
+                          type="button" 
+                          onClick={() => onEnquireClick && onEnquireClick(`Enquiry: ${item.title}`)}
+                          className="btn btn-ghost btn-sm rounded-2 fw-semibold"
+                        >
+                          Enquire
+                        </button>
+                      </div>
                     </div>
-                    <h3 className="h5 fw-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-primary fw-semibold small mb-2">{item.tagline}</p>
-                    <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
-                      {item.description}
-                    </p>
-                    <Link 
-                      to="/contact-us" 
-                      className="btn btn-solid btn-sm rounded-2 fw-semibold mt-auto align-self-start"
-                    >
-                      Learn More <i className="fa fa-arrow-right ms-1"></i>
-                    </Link>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

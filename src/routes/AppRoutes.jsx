@@ -7,6 +7,8 @@ import BusinessDetail from '../pages/BusinessDetail';
 import AsEmployer from '../pages/AsEmployer';
 import AsEmployee from '../pages/AsEmployee';
 import Contact from '../pages/Contact';
+import ServiceDetail from '../pages/ServiceDetail';
+import Solutions from '../pages/Solutions';
 
 function AppRoutes() {
   return (
@@ -15,8 +17,15 @@ function AppRoutes() {
       <Route path="/about-us" element={<About />} />
       <Route path="/about" element={<Navigate to="/about-us" replace />} />
       
+      <Route path="/solutions" element={<Solutions />} />
+      <Route path="/corporate-solutions" element={<Navigate to="/solutions" replace />} />
+
       <Route path="/our-business" element={<OurBusiness />} />
       <Route path="/our-business/:slug" element={<BusinessDetail />} />
+      
+      <Route path="/service-detail/:slug" element={<ServiceDetail />} />
+      <Route path="/services/:slug" element={<ServiceDetail />} />
+      <Route path="/service/:slug" element={<ServiceDetail />} />
       
       {/* SCN Website Inner Page URL Compatibility */}
       <Route path="/it-service" element={<Navigate to="/our-business/it-services" replace />} />

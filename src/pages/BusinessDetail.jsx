@@ -263,9 +263,27 @@ const verticalsData = {
     heroHeadline: 'Agile Pan-India Staffing Solutions',
     heroIntro: 'SCN Global General Staffing provides agile workforce solutions tailored for industrial, retail, administrative, logistics, and commercial operations across India. We manage recruitment, employment contracts, payroll, and compliance so you can focus on core business growth.',
     numberedServices: [
-      { num: '01', title: 'Flexi-Staffing & Temp Contracts', tagline: 'Adapt workforce size to market demands.', description: 'Scale your team up or down seamlessly during peak seasons, product launches, or project deadlines.' },
-      { num: '02', title: 'Industrial & Blue-Collar Staffing', tagline: 'Reliable plant and warehouse workforce.', description: 'Deployment of machine operators, warehouse associates, assembly technicians, and logistics personnel.' },
-      { num: '03', title: 'White-Collar Support Staffing', tagline: 'Trained office and admin personnel.', description: 'Administrative assistants, data entry operators, accountants, front-office executives, and customer service staff.' }
+      {
+        num: '01',
+        title: 'Corporate Domestic Support Staffing',
+        tagline: 'Skilled, trustworthy & efficient corporate and domestic support personnel.',
+        description: 'We provide reliable Corporate Domestic Support Staffing solutions to help organizations and households find skilled, trustworthy, and efficient support staff for their daily operational needs.',
+        slug: 'corporate-domestic-support-staffing'
+      },
+      {
+        num: '02',
+        title: 'Industrial & Blue-Collar Staffing',
+        tagline: 'Reliable, skilled, and productive blue-collar workforce.',
+        description: 'We provide reliable Industrial and Blue-Collar Staffing solutions to help businesses quickly build a skilled, dependable, and productive workforce across manufacturing, construction, logistics, and facilities.',
+        slug: 'industrial-blue-collar-staffing'
+      },
+      {
+        num: '03',
+        title: 'Corporate White-Collar Support Staffing',
+        tagline: 'Attract, hire, and retain high-performing professional talent.',
+        description: 'We deliver professional Corporate Blue & White-Collar Staffing solutions that help organizations attract, hire, and retain the right talent across functions and industries aligned with your business goals.',
+        slug: 'corporate-white-collar-staffing'
+      }
     ],
     coreEmpowermentStatement: 'SCN General Staffing ensures rapid turnaround time, 100% statutory compliance, and zero co-employment risk for commercial clients.',
     workplaceEvolutionTitle: 'Staffing Models',
@@ -433,7 +451,10 @@ function BusinessDetail({ onEnquireClick }) {
                   if (lower.includes('payroll') || lower.includes('pf') || lower.includes('statutory') || lower.includes('hr generalist') || lower.includes('labor')) return 'hr-generalist-payroll';
                   if (lower.includes('communication') || lower.includes('personality') || lower.includes('etiquette') || lower.includes('speaking')) return 'corporate-communication';
                   if (lower.includes('us technical') || lower.includes('bench') || lower.includes('visa') || lower.includes('us staffing') || lower.includes('recruiter')) return 'us-technical-recruitment';
-                  if (lower.includes('flexi') || lower.includes('blue-collar') || lower.includes('white-collar') || lower.includes('staffing')) return 'flexi-general-staffing';
+                  if (lower.includes('domestic') || lower.includes('support staff')) return 'corporate-domestic-support-staffing';
+                  if (lower.includes('blue-collar') || lower.includes('industrial')) return 'industrial-blue-collar-staffing';
+                  if (lower.includes('white-collar')) return 'corporate-white-collar-staffing';
+                  if (lower.includes('flexi') || lower.includes('staffing')) return 'flexi-general-staffing';
                   if (lower.includes('bpo') || lower.includes('inbound') || lower.includes('outbound') || lower.includes('call') || lower.includes('voice')) return 'bpo-customer-care';
                   if (lower.includes('commercial') || lower.includes('office') || lower.includes('leasing') || lower.includes('estate')) return 'commercial-real-estate';
                   if (lower.includes('event') || lower.includes('trade show') || lower.includes('exhibit') || lower.includes('mice') || lower.includes('btl')) return 'corporate-event-management';
@@ -453,6 +474,7 @@ function BusinessDetail({ onEnquireClick }) {
                       <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                         {service.description}
                       </p>
+
                       <div className="mt-auto pt-2">
                         <Link 
                           to={`/service-detail/${serviceSlug}`} 

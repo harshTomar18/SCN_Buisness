@@ -289,6 +289,132 @@ const servicesDatabase = {
     ]
   },
 
+  'corporate-domestic-support-staffing': {
+    title: 'Corporate Domestic Support Staffing',
+    category: 'Workforce & Support Staffing',
+    tagline: 'Reliable, skilled, and efficient support staff for organizations, facilities, and households.',
+    heroImage: '/images/vertical_general_staffing.jpg',
+    parentVertical: { name: 'General Staffing', slug: 'general-staffing' },
+    overview: 'We provide reliable Corporate Domestic Support Staffing solutions to help organizations and households find skilled, trustworthy, and efficient support staff for their daily operational needs. We connect you with the right people to ensure smooth operations, productivity, and reliable day-to-day support.',
+    staffingSolutions: [
+      'BPO Tele Caller',
+      'Office Boys & Office Support Staff',
+      'Housekeeping Staff',
+      'Pantry Boys & Tea/Coffee Staff',
+      'Drivers / Cook',
+      'Security & Support Personnel',
+      'Facility Management Staff',
+      'Domestic Helpers',
+      'Caretakers & Other Support Staff'
+    ],
+    solutionGoal: 'We connect you with the right people to ensure smooth operations, productivity, and reliable day-to-day support.',
+    highlights: [
+      { icon: '📞', title: 'BPO Tele Callers', desc: 'Trained, articulate callers for customer care, lead generation, appointment booking, and tele-support.' },
+      { icon: '🏢', title: 'Office Boys & Support Staff', desc: 'Reliable assistants for document dispatch, mailroom handling, filing, and day-to-day desk support.' },
+      { icon: '🧹', title: 'Housekeeping & Cleaners', desc: 'Trained housekeeping personnel maintaining clean, hygienic, and sanitized corporate and residential spaces.' },
+      { icon: '☕', title: 'Pantry Boys & Tea/Coffee Staff', desc: 'Courteous hospitality assistants managing office pantries, tea/coffee service, and guest refreshments.' },
+      { icon: '🚗', title: 'Drivers & Professional Cooks', desc: 'Licensed chauffeurs, commercial vehicle drivers, and trained cooks with thorough background vetting.' },
+      { icon: '🛡️', title: 'Security & Facility Caretakers', desc: 'Vigilant security guards, premises caretakers, and facility assistants ensuring safety and upkeep.' }
+    ],
+    process: [
+      { step: '01', title: 'Staffing Needs Analysis', desc: 'Identifying your exact operational shift schedules, role specifications, and daily support requirements.' },
+      { step: '02', title: 'KYC & Police Clearance Checks', desc: 'Aadhaar authentication, permanent address verification, prior background checks, and medical screening.' },
+      { step: '03', title: 'Service Orientation & Induction', desc: 'Professional workplace etiquette, hygiene protocols, safety standards, and role-specific briefing.' },
+      { step: '04', title: 'Deployment & SLA Guarantee', desc: 'Seamless on-site deployment, attendance monitoring, and immediate replacement support within 24 to 48 hours.' }
+    ],
+    techStack: ['Aadhaar KYC Verification', 'Police Clearance Checks', 'Biometric Shift Tracking', 'EPFO & ESIC Compliance', '24/7 Support Desk', 'Replacement SLA Engine'],
+    faqs: [
+      { q: 'How do you verify the background of domestic and office support staff?', a: 'All personnel undergo strict multi-tier verification including Aadhaar authentication, permanent address proof, prior employer verification, and police clearance.' },
+      { q: 'What happens if a support staff member is absent or on leave?', a: 'SCN Global maintains a standby bench and provides an immediate backup replacement within 24 to 48 hours to ensure zero operational disruption.' },
+      { q: 'Do you provide staffing for both corporate offices and private residences?', a: 'Yes! We cater to corporate enterprises, IT parks, commercial complexes, and private households with tailored staffing solutions.' },
+      { q: 'Who manages the payroll and compliance for deployed personnel?', a: 'SCN Global acts as the principal employer on record, managing monthly salary disbursals, PF/ESIC deductions, insurance, and labor law compliance.' }
+    ]
+  },
+
+  'industrial-blue-collar-staffing': {
+    title: 'Industrial & Blue-Collar Staffing Solutions',
+    category: 'Workforce Solutions & Blue-Collar Staffing',
+    tagline: 'Reliable, skilled, and productive blue-collar workforce for manufacturing, logistics, and facilities.',
+    heroImage: '/images/vertical_general_staffing.jpg',
+    parentVertical: { name: 'General Staffing', slug: 'general-staffing' },
+    overview: 'We provide reliable Industrial and Blue-Collar Staffing solutions to help businesses quickly build a skilled, dependable, and productive workforce. From manufacturing and construction to logistics, warehousing, and facility management, we connect organizations with the right talent to meet their operational needs. We help businesses reduce hiring challenges and maintain a reliable workforce, enabling smoother operations and improved productivity.',
+    staffingSolutions: [
+      'Skilled & Semi-Skilled Workers',
+      'Machine Operators & Technicians',
+      'Electricians, Plumbers & Carpenters',
+      'Warehouse & Logistics Staff',
+      'Helpers & General Workers',
+      'Drivers & Delivery Executives',
+      'Security & Facility Management Staff',
+      'Contract & Permanent Staffing'
+    ],
+    solutionGoal: 'We help businesses reduce hiring challenges and maintain a reliable workforce, enabling smoother operations and improved productivity.',
+    highlights: [
+      { icon: '⚙️', title: 'Skilled & Semi-Skilled Technicians', desc: 'Pre-screened machine operators, assembly line workers, and technical trade professionals.' },
+      { icon: '📦', title: 'Warehouse & Logistics Staff', desc: 'Trained forklift drivers, dispatch assistants, packaging personnel, and inventory coordinators.' },
+      { icon: '🔧', title: 'Electricians, Plumbers & Carpenters', desc: 'Certified utility tradesmen for ongoing preventive maintenance, repairs, and facility upgrades.' },
+      { icon: '🚚', title: 'Drivers & Delivery Executives', desc: 'Licensed heavy/light vehicle drivers and reliable last-mile delivery fleet personnel.' },
+      { icon: '🛡️', title: 'Security & Facility Staff', desc: 'Trained site guards, housekeeping personnel, and workplace safety compliance teams.' },
+      { icon: '⚖️', title: '100% Statutory & Labor Shield', desc: 'SCN Global handles all PF/ESIC deductions, minimum wages act compliance, and insurance coverage.' }
+    ],
+    process: [
+      { step: '01', title: 'Operational Requirement Mapping', desc: 'Understanding plant headcount needs, shift schedules, skill certifications, and deployment timelines.' },
+      { step: '02', title: 'KYC & Trade Skill Vetting', desc: 'Aadhaar verification, background checks, trade competency evaluation, and medical screening.' },
+      { step: '03', title: 'On-Site Induction & Safety Briefing', desc: 'Safety gear (PPE) issuance, site induction, workplace rules alignment, and shift assignment.' },
+      { step: '04', title: 'Shift Management & Compliance', desc: 'Biometric attendance tracking, monthly statutory challan filings, and immediate replacement guarantee.' }
+    ],
+    techStack: ['Biometric Shift Clocks', 'Aadhaar KYC Verification', 'EPFO & ESIC Challans', 'Safety Standards (PPE)', 'Workforce ERP', 'Replacement SLA Engine'],
+    faqs: [
+      { q: 'How quickly can industrial and blue-collar workers be deployed?', a: 'We can deploy vetted associates within 3 to 5 business days for bulk requirements, and within 24 to 48 hours for immediate replacement needs.' },
+      { q: 'Who is legally responsible for PF, ESI, and statutory benefits?', a: 'SCN Global acts as the principal employer on record, assuming complete statutory responsibility for PF, ESI, gratuity, and labor law regulations.' },
+      { q: 'Do you manage on-site attendance and payroll processing?', a: 'Yes, we provide digital and biometric attendance tracking integrated with automated monthly payroll and transparent client billing.' },
+      { q: 'What happens if a worker leaves or is absent?', a: 'We provide an immediate replacement guarantee within 24 to 48 hours to prevent any disruption to your production schedule.' }
+    ]
+  },
+
+  'corporate-white-collar-staffing': {
+    title: 'Corporate White-Collar Support Staffing',
+    category: 'Corporate Talent & Professional Staffing',
+    tagline: 'Professional corporate talent acquisition across management, IT, finance, sales, HR, and operations.',
+    heroImage: '/images/corporate_white_collar_staffing.jpg',
+    parentVertical: { name: 'General Staffing', slug: 'general-staffing' },
+    overview: 'We deliver professional Corporate Blue & White-Collar Staffing solutions that help organizations attract, hire, and retain the right talent across functions and industries. From entry-level professionals to experienced executives, we provide workforce solutions aligned with your business goals. Our goal is to connect businesses with the right people, reduce hiring time, and build high-performing teams that drive sustainable growth.',
+    staffingSolutions: [
+      'Executive & Management Hiring',
+      'Sales & Business Development',
+      'HR & Administration',
+      'Finance & Accounting',
+      'IT & Software Professionals',
+      'Customer Support & Operations',
+      'Marketing & Digital Marketing',
+      'Supply Chain & Logistics',
+      'Back-Office & Front-Office Staff',
+      'Contract, Temporary & Permanent Staffing'
+    ],
+    solutionGoal: 'Our goal is to connect businesses with the right people, reduce hiring time, and build high-performing teams that drive sustainable growth.',
+    highlights: [
+      { icon: '💼', title: 'Executive & Management Hiring', desc: 'Targeted headhunting and recruitment for managerial, directorial, and department leadership roles.' },
+      { icon: '📈', title: 'Sales & Business Development', desc: 'High-performing enterprise sales executives, account managers, and business development leads.' },
+      { icon: '👥', title: 'HR & Administrative Support', desc: 'Talent acquisition specialists, payroll officers, HR generalists, and executive assistants.' },
+      { icon: '📊', title: 'Finance, Accounts & Taxation', desc: 'Chartered accountants, financial analysts, tax specialists, and corporate billing professionals.' },
+      { icon: '💻', title: 'IT & Software Engineers', desc: 'Full-stack engineers, cloud architects, mobile app developers, and technical support staff.' },
+      { icon: '🎯', title: 'Flexible Engagement Models', desc: 'Seamless contract staffing, contract-to-hire (C2H), and direct permanent talent placements.' }
+    ],
+    process: [
+      { step: '01', title: 'Role Profiling & Talent Benchmarking', desc: 'Aligning on specific technical skill sets, culture fit, performance milestones, and compensation bounds.' },
+      { step: '02', title: 'Multi-Channel Sourcing & Screening', desc: 'Searching extensive talent databases, LinkedIn Recruiter networks, and conducting rigorous technical screens.' },
+      { step: '03', title: 'Shortlisting & Client Interviews', desc: 'Presenting pre-screened candidate dossiers, coordinating interview rounds, and gathering feedback.' },
+      { step: '04', title: 'Offer Rollout & Day-One Onboarding', desc: 'Managing offer acceptance, salary discussions, background verifications, and seamless onboarding.' }
+    ],
+    techStack: ['LinkedIn Recruiter', 'Naukri Resdex', 'Enterprise ATS', 'Automated KYC Checks', 'HRIS / Payroll Engine', 'SLA Performance Portals'],
+    faqs: [
+      { q: 'What functional departments do you recruit for?', a: 'We provide corporate talent across Executive Management, Sales & Marketing, HR & Administration, Finance & Accounting, IT & Software, Supply Chain, and Customer Operations.' },
+      { q: 'Can we hire candidates on contract before offering permanent roles?', a: 'Yes! We offer flexible Contract-to-Hire (C2H) arrangements where you can evaluate candidate performance on-the-job before conversion.' },
+      { q: 'How do you vet candidate credentials and backgrounds?', a: 'We conduct multi-tier candidate evaluations including education verification, previous employment validation, identity KYC, and professional reference checks.' },
+      { q: 'What is the standard turnaround time for presenting candidates?', a: 'For most white-collar corporate roles, we submit qualified and verified candidate profiles within 48 to 72 hours.' }
+    ]
+  },
+
   'bpo-customer-care': {
     title: '24/7 Omnichannel BPO & Contact Center Support',
     category: 'Customer Experience Operations',
@@ -425,6 +551,20 @@ function ServiceDetail({ onEnquireClick }) {
     'personality-development': 'corporate-communication',
     'us-staffing': 'us-technical-recruitment',
     'general-staffing': 'flexi-general-staffing',
+    'corporate-domestic-support-staffing': 'corporate-domestic-support-staffing',
+    'domestic-support-staffing': 'corporate-domestic-support-staffing',
+    'domestic-staffing': 'corporate-domestic-support-staffing',
+    'corporate-domestic-staffing': 'corporate-domestic-support-staffing',
+    'industrial-blue-collar-staffing': 'industrial-blue-collar-staffing',
+    'blue-collar-staffing': 'industrial-blue-collar-staffing',
+    'industrial-staffing': 'industrial-blue-collar-staffing',
+    'industrial-blue-collar': 'industrial-blue-collar-staffing',
+    'blue-collar': 'industrial-blue-collar-staffing',
+    'corporate-white-collar-staffing': 'corporate-white-collar-staffing',
+    'white-collar-staffing': 'corporate-white-collar-staffing',
+    'corporate-staffing': 'corporate-white-collar-staffing',
+    'white-collar-support-staffing': 'corporate-white-collar-staffing',
+    'white-collar': 'corporate-white-collar-staffing',
     'bpo': 'bpo-customer-care',
     'bpo-services': 'bpo-customer-care',
     'real-estate': 'commercial-real-estate',
@@ -531,6 +671,36 @@ function ServiceDetail({ onEnquireClick }) {
           <div className="row g-5">
             {/* Left Column: Core Features & Process */}
             <div className="col-lg-8">
+              {/* Featured Staffing Solutions Grid if present */}
+              {service.staffingSolutions && (
+                <div className="mb-5 p-4 rounded-4 bg-dark border border-secondary border-opacity-25 shadow-sm">
+                  <div className="d-flex align-items-center mb-3">
+                    <span className="badge bg-primary px-3 py-1 text-uppercase me-2" style={{ fontSize: '11px', letterSpacing: '1px' }}>
+                      Scope of Talent
+                    </span>
+                    <h3 className="h5 fw-bold text-white mb-0">Our Staffing Solutions Include</h3>
+                  </div>
+                  <div className="row g-2 mt-2">
+                    {service.staffingSolutions.map((item, idx) => (
+                      <div className="col-md-6" key={idx}>
+                        <div className="p-2 px-3 rounded-2 bg-black border border-secondary border-opacity-25 d-flex align-items-center">
+                          <i className="fa fa-check-circle text-primary me-2"></i>
+                          <span className="text-white small fw-medium">{item}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {service.solutionGoal && (
+                    <div className="mt-3 pt-3 border-top border-secondary border-opacity-25">
+                      <p className="text-light opacity-80 small mb-0 fst-italic">
+                        <i className="fa fa-quote-left text-primary me-2"></i>
+                        {service.solutionGoal}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Deliverables Section */}
               <div className="mb-5">
                 <div className="mb-4">
@@ -557,33 +727,6 @@ function ServiceDetail({ onEnquireClick }) {
                   ))}
                 </div>
               </div>
-
-              {/* Execution Process Section */}
-              {service.process && (
-                <div className="mb-5 pt-4 border-top border-secondary border-opacity-25">
-                  <div className="mb-4">
-                    <span className="text-primary fw-bold text-uppercase small" style={{ letterSpacing: '1px' }}>
-                      Methodology
-                    </span>
-                    <h3 className="h3 fw-bold text-white mt-1">Our 4-Phase Execution Roadmap</h3>
-                    <p className="text-light opacity-75">A proven, transparent process ensuring on-time delivery with zero surprises.</p>
-                  </div>
-
-                  <div className="row g-3">
-                    {service.process.map((step, idx) => (
-                      <div className="col-md-6" key={idx}>
-                        <div className="workflow-step-card">
-                          <div className="workflow-step-num">{step.step}</div>
-                          <h4 className="h6 fw-bold text-white mb-2" style={{ fontSize: '16px' }}>{step.title}</h4>
-                          <p className="text-light opacity-75 small mb-0" style={{ lineHeight: '1.6' }}>
-                            {step.desc}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
 
               {/* Technologies / Tools Badges */}
               {service.techStack && (

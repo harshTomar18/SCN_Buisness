@@ -36,6 +36,9 @@ function AppRoutes() {
       <Route path="/u-s-staffing" element={<Navigate to="/our-business/us-staffing" replace />} />
       <Route path="/event-management" element={<Navigate to="/our-business/event-management" replace />} />
       <Route path="/general-staffing" element={<Navigate to="/our-business/general-staffing" replace />} />
+      <Route path="/corporate-domestic-support-staffing" element={<Navigate to="/service-detail/corporate-domestic-support-staffing" replace />} />
+      <Route path="/industrial-blue-collar-staffing" element={<Navigate to="/service-detail/industrial-blue-collar-staffing" replace />} />
+      <Route path="/corporate-white-collar-staffing" element={<Navigate to="/service-detail/corporate-white-collar-staffing" replace />} />
       <Route path="/bpo-services" element={<Navigate to="/our-business/bpo-services" replace />} />
       <Route path="/real-estate" element={<Navigate to="/our-business/real-estate" replace />} />
 

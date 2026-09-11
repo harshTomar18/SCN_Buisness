@@ -327,7 +327,7 @@ const servicesDatabase = {
     title: 'Industrial & Blue-Collar Staffing Solutions',
     category: 'Workforce Solutions & Blue-Collar Staffing',
     tagline: 'Reliable, skilled, and productive blue-collar workforce for manufacturing, logistics, and facilities.',
-    heroImage: '/images/vertical_general_staffing.jpg',
+    heroImage: '/images/industrial_blue_collar_staffing.jpg',
     parentVertical: { name: 'General Staffing', slug: 'general-staffing' },
     overview: 'We provide reliable Industrial and Blue-Collar Staffing solutions to help businesses quickly build a skilled, dependable, and productive workforce. From manufacturing and construction to logistics, warehousing, and facility management, we connect organizations with the right talent to meet their operational needs. We help businesses reduce hiring challenges and maintain a reliable workforce, enabling smoother operations and improved productivity.',
     staffingSolutions: [

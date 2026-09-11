@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import EnquiryModal from '../components/EnquiryModal';
@@ -22,12 +23,12 @@ function MainLayout({ children }) {
       <Header onEnquireClick={openModal} />
 
       {/* Floating Enquire Sidebar */}
-      <button 
-        className="floating-enquire-sidebar"
-        onClick={() => openModal('Get Instant Call Back')}
+      <Link 
+        to="/contact-us"
+        className="floating-enquire-sidebar text-decoration-none"
       >
         Enquire Now
-      </button>
+      </Link>
 
       {/* Main Content Viewport */}
       <main className="flex-grow-1">

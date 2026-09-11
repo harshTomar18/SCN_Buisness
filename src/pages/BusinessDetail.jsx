@@ -453,20 +453,13 @@ function BusinessDetail({ onEnquireClick }) {
                       <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                         {service.description}
                       </p>
-                      <div className="d-flex gap-2 mt-auto align-items-center flex-wrap">
+                      <div className="mt-auto pt-2">
                         <Link 
                           to={`/service-detail/${serviceSlug}`} 
                           className="btn btn-solid btn-sm rounded-2 fw-semibold"
                         >
                           More Details <i className="fa fa-arrow-right ms-1"></i>
                         </Link>
-                        <button 
-                          type="button" 
-                          onClick={() => onEnquireClick && onEnquireClick(`Enquiry: ${service.title}`)}
-                          className="btn btn-ghost btn-sm rounded-2 fw-semibold"
-                        >
-                          Enquire
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -516,20 +509,13 @@ function BusinessDetail({ onEnquireClick }) {
                       <p className="text-light opacity-75 small mb-4 flex-grow-1" style={{ lineHeight: '1.65' }}>
                         {item.description}
                       </p>
-                      <div className="d-flex gap-2 mt-auto align-items-center flex-wrap">
+                      <div className="mt-auto pt-2">
                         <Link 
                           to={`/service-detail/${itemSlug}`} 
                           className="btn btn-solid btn-sm rounded-2 fw-semibold"
                         >
                           Learn More <i className="fa fa-arrow-right ms-1"></i>
                         </Link>
-                        <button 
-                          type="button" 
-                          onClick={() => onEnquireClick && onEnquireClick(`Enquiry: ${item.title}`)}
-                          className="btn btn-ghost btn-sm rounded-2 fw-semibold"
-                        >
-                          Enquire
-                        </button>
                       </div>
                     </div>
                   </div>

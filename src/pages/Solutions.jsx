@@ -71,13 +71,12 @@ function Solutions({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
-                onClick={() => onEnquireClick && onEnquireClick('Corporate Solutions Consultation')}
+              <Link 
+                to="/contact-us"
                 className="btn btn-solid px-4 py-2 fw-bold"
               >
                 <i className="fa fa-phone me-2"></i> Request Proposal
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -99,15 +98,11 @@ function Solutions({ onEnquireClick }) {
                   <strong>One Stop Corporate Solutions</strong> is SCN Global’s comprehensive Corporate Facility Management and Business Support Services division. We bring manpower, facility maintenance, workplace procurement, compliance, and safety together—freeing your leadership to focus 100% on core business growth.
                 </p>
                 <div className="d-flex flex-wrap gap-3">
-                  <button 
-                    type="button" 
-                    onClick={() => onEnquireClick && onEnquireClick('Facility Audit Request')}
+                  <Link 
+                    to="/contact-us" 
                     className="btn btn-solid px-4 py-3 fw-semibold"
                   >
                     Request Workplace Facility Audit
-                  </button>
-                  <Link to="/contact-us" className="btn btn-ghost px-4 py-3 fw-semibold">
-                    Contact Account Team
                   </Link>
                 </div>
               </div>
@@ -196,13 +191,12 @@ function Solutions({ onEnquireClick }) {
                     <p className="fw-semibold text-white mb-1"><i className="fa fa-phone text-primary me-2"></i> Corporate Desk:</p>
                     <p className="small text-white-50 mb-0">+91 9891910542 | +91 7982941427</p>
                   </div>
-                  <button 
-                    type="button" 
-                    onClick={() => onEnquireClick && onEnquireClick('Site Survey Booking')}
-                    className="btn btn-solid py-3 fw-bold rounded-3 mt-2"
+                  <Link 
+                    to="/contact-us"
+                    className="btn btn-solid py-3 fw-bold rounded-3 mt-2 text-center text-decoration-none d-block"
                   >
                     Book Site Inspection Now
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

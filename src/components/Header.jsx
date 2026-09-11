@@ -94,14 +94,14 @@ function Header({ onEnquireClick }) {
 
         {/* Right - Header CTA */}
         <div className="header-right-actions">
-          <button 
-            type="button"
-            className="btn btn-solid header-cta appear appear--scale" 
+          <Link 
+            to="/contact-us"
+            className="btn btn-solid header-cta appear appear--scale text-decoration-none" 
             style={{ '--d': '0.34s' }}
-            onClick={() => onEnquireClick && onEnquireClick('Get Instant Consultation')}
+            onClick={closeMenu}
           >
             <i className="fa fa-envelope-o me-1"></i> Enquire Now
-          </button>
+          </Link>
 
           {/* Mobile Burger Menu Button */}
           <button 

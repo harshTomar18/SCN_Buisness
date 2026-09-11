@@ -475,13 +475,12 @@ function ServiceDetail({ onEnquireClick }) {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-              <button 
-                type="button" 
-                onClick={() => onEnquireClick && onEnquireClick(`Enquiry: ${service.title}`)}
+              <Link 
+                to="/contact-us"
                 className="btn btn-solid px-4 py-2 fw-bold"
               >
                 <i className="fa fa-phone me-2"></i> Request Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -503,15 +502,11 @@ function ServiceDetail({ onEnquireClick }) {
                   {service.overview}
                 </p>
                 <div className="d-flex flex-wrap gap-3">
-                  <button 
-                    type="button" 
-                    onClick={() => onEnquireClick && onEnquireClick(`Schedule Demo: ${service.title}`)}
+                  <Link 
+                    to="/contact-us" 
                     className="btn btn-solid px-4 py-3 fw-semibold"
                   >
-                    Schedule Service Briefing
-                  </button>
-                  <Link to="/contact-us" className="btn btn-ghost px-4 py-3 fw-semibold">
-                    Contact Specialist
+                    Contact Specialist & Schedule Demo
                   </Link>
                 </div>
               </div>
